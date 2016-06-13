@@ -54,7 +54,7 @@ function shanti_team_roster() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'team',
+		'has_archive'           => 'our-team',
 		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
