@@ -14,10 +14,10 @@
 function shanti_team_roster() {
 
 	$labels = array(
-		'name'                  => 'Team Members',
+		'name'                  => 'Our Team',
 		'singular_name'         => 'Team Member',
-		'menu_name'             => 'Team Members',
-		'name_admin_bar'        => 'Team Member',
+		'menu_name'             => 'Our Team',
+		'name_admin_bar'        => 'Our Team',
 		'archives'              => 'Team Member Archives',
 		'parent_item_colon'     => 'Parent Team Member:',
 		'all_items'             => 'All Team Members',
