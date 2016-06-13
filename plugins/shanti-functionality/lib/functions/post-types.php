@@ -100,7 +100,7 @@ function shanti_events() {
 		'label'                 => 'Event',
 		'description'           => 'Events organized by Shanti Uganda',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
