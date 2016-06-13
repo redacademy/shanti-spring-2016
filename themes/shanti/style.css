@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
+Theme Name: Shanti Theme
+Theme URI:
+Author:
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A Custom Theme for Shanti Uganda.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -404,15 +404,32 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-branding {
+  background: url(../../images/logooo.png) no-repeat;
+  position: relative;
+  height: 10vh;
+  width: 75%; }
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #D22785; }
   a:visited {
-    color: purple; }
+    color: #D22785; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #D22785; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {

@@ -63,14 +63,14 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'inhabitent.dev',
+        proxy: 'shanti.dev',
     });
 
     gulp.watch(files).on('change', browserSync.reload);
 });
 
 gulp.task('watch', function() {
-   gulp.watch('./sass/*.scss', ['sass']);
+   gulp.watch('./sass/**/*.scss', ['sass']);
    gulp.watch('./js/*.js', ['scripts']);
 });
 

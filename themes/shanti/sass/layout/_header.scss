@@ -1,0 +1,18 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+}
+
+.site-branding {
+  background: url(../../images/logooo.png) no-repeat;
+  position: relative;
+  height: 10vh;
+  width: 75%;
+}
