@@ -39,6 +39,12 @@ function shanti_team_roster() {
 		'items_list_navigation' => 'Team Members list navigation',
 		'filter_items_list'     => 'Filter Team Members list',
 	);
+	$rewrite = array(
+		'slug'									=> 'our-team',
+		'with_front'						=> true,
+		'pages'									=> true,
+		'feeds'									=> true
+	);
 	$args = array(
 		'label'                 => 'Our Team',
 		'description'           => 'Shanti Team members',
@@ -58,6 +64,7 @@ function shanti_team_roster() {
 		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
+		'rewrite'								=> $rewrite
 	);
 	register_post_type( 'team_member', $args );
 
