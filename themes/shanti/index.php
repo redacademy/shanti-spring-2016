@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Shanti_Uganda_Theme
  */
 
 get_header(); ?>
