@@ -8,17 +8,16 @@
 // Add your custom post types here...
 // Register Custom Post Type
 
-// Team Members
+// Our Team
 
-// Register Custom Post Type
 function shanti_team_roster() {
 
 	$labels = array(
 		'name'                  => 'Our Team',
-		'singular_name'         => 'Team Member',
+		'singular_name'         => 'Our Team',
 		'menu_name'             => 'Our Team',
 		'name_admin_bar'        => 'Our Team',
-		'archives'              => 'Team Member Archives',
+		'archives'              => 'Our Team Archives',
 		'parent_item_colon'     => 'Parent Team Member:',
 		'all_items'             => 'All Team Members',
 		'add_new_item'          => 'Add New Team Member',
@@ -27,7 +26,7 @@ function shanti_team_roster() {
 		'edit_item'             => 'Edit Team Member',
 		'update_item'           => 'Update Team Member',
 		'view_item'             => 'View Team Member',
-		'search_items'          => 'Search Team Member',
+		'search_items'          => 'Search Our Team',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
 		'featured_image'        => 'Featured Image',
@@ -41,7 +40,7 @@ function shanti_team_roster() {
 		'filter_items_list'     => 'Filter Team Members list',
 	);
 	$args = array(
-		'label'                 => 'Team Member',
+		'label'                 => 'Our Team',
 		'description'           => 'Shanti Team members',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', ),
