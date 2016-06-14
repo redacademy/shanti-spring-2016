@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'shanti.dev',
+        proxy: 'http://localhost:8888/shanti-uganda',
     });
 
     gulp.watch(files).on('change', browserSync.reload);
