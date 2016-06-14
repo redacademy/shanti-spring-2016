@@ -34,3 +34,13 @@ function shanti_featured_image_header() {
 	wp_add_inline_style('shanti-style', $custom_css);
 }
 add_action( 'wp_enqueue_scripts', 'shanti_featured_image_header' );
+
+function shanti_featured_color_css() {
+	$color = CFS()->get('color');
+	$custom_css = ".feature-color { background: $color;}";
+
+	wp_add_inline_style('shanti-style', $custom_css);
+
+}
+
+add_action( 'wp_enqueue_scripts', 'shanti_featured_color_css' );
