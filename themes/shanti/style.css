@@ -786,6 +786,18 @@ a.cta {
   display: table; }
 
 /*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+.container {
+  margin-left: 5%;
+  margin-right: 5%; }
+  @media screen and (min-width: 1050px) {
+    .container {
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -818,7 +830,7 @@ a.cta {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1.5em auto auto; }
 
 .page-links {
   clear: both;

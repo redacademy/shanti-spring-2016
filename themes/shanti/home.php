@@ -7,36 +7,33 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area container">
         <main id="main" class="site-main" role="main">
 
         <?php if ( have_posts() ) : ?>
 
 
 
-            <?php /* Start the Loop */ ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+        <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
 
      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <div class="blog-title-date"
-                    <header class="entry-header">
+
                <?php if ( has_post_thumbnail() ) : ?>
-                   <div class="circle-image">
-                                <?php the_post_thumbnail( 'large' ); ?>
-                   </div>
+                 <div class="circle-image">
+                              <?php the_post_thumbnail( 'large' ); ?>
+                 </div>
                <?php endif; ?>
 
-           </header><!-- .entry-header -->
-                </div>
-                <div class="entry-content">
+                <div class="entry-content container">
                   <div class="blog-date-title">
                     <span class="blog-post-title"><?php the_title(); ?></span>
                     <span><?php red_starter_posted_on(); ?></span>
                   </div>
                <?php the_content(); ?>
            </div><!-- .entry-content -->
-     </article><!-- #post-## -->
+         </article><!-- #post-## -->
 
             <?php endwhile; ?>
 
