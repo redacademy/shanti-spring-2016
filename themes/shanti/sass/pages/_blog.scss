@@ -1,0 +1,54 @@
+.blog-title a {
+  text-decoration: none;
+}
+
+.circle-image{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  margin-right: 70px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  img{
+    display: block;
+    min-width: 100%;
+   min-height: 100%;
+   max-width: none;
+   transform: translate(-24%, -17%);
+  }
+}
+.blog p {
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+// Alternating image position
+.blog{
+color: black;
+padding-top: 100px;
+
+ article:nth-child(odd) .circle-image{
+   float:left}
+
+   article:nth-child(even) .circle-image{
+     float:right}
+}
+
+.blog-post-title{
+  font-weight: bold;
+  float: left;
+  padding-right: 80px;
+  font-size: 28px;
+}
+
+.blog-date-title{
+  font-size: 28px;
+}
+
+.newsletter-tag p{
+ color: #892655;
+ text-align: center;
+ font-weight: bold;
+ font-size: 38px;
+}
