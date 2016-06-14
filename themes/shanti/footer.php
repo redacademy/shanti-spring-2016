@@ -11,7 +11,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="recentPosts">
 				<div class="recentPosts-content">
-					<h2> Recent Blog Posts! </h2>
+					<h2><a href="blog">Recent Blog Posts!</a></h2>
 					<ul class="blogPosts">
 						<?php
 			   $args = array( 'post_type' => 'post',
@@ -20,14 +20,16 @@
 			 ?>
 			 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 				 <li>
-					 <div>
-						 <?php if ( has_post_thumbnail() ) : ?>
-							 <?php the_post_thumbnail( 'thumbnail' ); ?>
-						 <?php endif; ?>
-				 	</div>
-					<p>
-						<?php echo CFS()->get( 'subtitle' ); ?>
-					</p>
+					 <a href="<?php the_permalink(); ?>">
+					 	<div>
+						 	<?php if ( has_post_thumbnail() ) : ?>
+							 	<?php the_post_thumbnail( 'thumbnail' ); ?>
+						 	<?php endif; ?>
+				 		</div>
+						<p>
+							<?php echo CFS()->get( 'subtitle' ); ?>
+						</p>
+					</a>
 				</li>
 		 	 <?php endforeach; wp_reset_postdata(); ?>
 
@@ -52,7 +54,7 @@
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Youtube_icon.png"></a>
 				</div>
 				<div class="insite-links">
-					<a href="#">Blog</a>
+					<a href="blog">Blog</a>
 						<span> &bull; </span>
   				<a href="#">Press</a>
 						<span> &bull; </span>

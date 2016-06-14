@@ -6,7 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120vh;
+  height: 125vh;
+  min-height: 600px;
   width: 100vw;
   color:$color__text-secondary;
 
@@ -14,6 +15,7 @@
   margin: 0 auto;
   color:$color__text-secondary;
   font-size: 30px;
+  padding-top: 5vh;
   }
 
   .subscribe {
@@ -30,11 +32,11 @@
   .subscribe-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: $color__background_footer-subscribe;
   width: 100%;
-  height: 80%;
+  height: 90%;
 
     form{
       width: 75vw;
@@ -80,7 +82,7 @@
         max-width: 600px;
       };
 
-      a{
+      a {
         text-decoration: none;
         text-align: center;
         color: $color__text-secondary;
@@ -116,11 +118,14 @@
   align-items: center;
   background: $color__background_footer-recent;
   width: 100%;
-  height: 80%;
+  height: 90%;
 
-  h2 {
-    padding-bottom: 10px;
+  a{
+    text-decoration: none;
+    color: $color__text-secondary;
+
   }
+
 
   ul {
     width:95%;
@@ -133,11 +138,16 @@
     padding: 0;
 
     @include media-q {
+      width: 80%;
+    };
+
+    @include media-lg {
       width: 70%;
     };
 
     li{
-      max-width: 30%;
+
+      width: 30%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -151,6 +161,7 @@
       text-align: center;
       margin: 0;
       padding: 0;
+      height: 70px;
       }
     }
 
