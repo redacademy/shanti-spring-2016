@@ -4,19 +4,25 @@ $base__space-unit: 1.5em;
 
 // Colors
 
+$color__brand-main: #D22785;
+$color__brand-dark: #892655;
+
 $color__background-body: #fff;
-$color__text-main: #404040;
+$color__text-main: black;
+$color__text-secondary: white;
+$color__text-tertiary: $color__brand-main;
+
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
+
+$color__background-signup: purple;
+
 
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
-
-$color__brand-main: #D22785;
-$color__brand-dark: #892655;
 
 $color__link: $color__brand-main;
 $color__link-visited: $color__brand-main;
