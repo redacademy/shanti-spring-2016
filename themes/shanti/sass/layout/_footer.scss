@@ -1,3 +1,120 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color:$color__text-secondary;
+
+  h2 {
+  margin: 0 auto;
+  color:$color__text-secondary
+  }
+
+  .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+              linear-gradient( $color__background_footer-subscribe, $color__background_footer-subscribe);
+  width: 100%;
+  height: 50%;
+
+  }
+  .subscribe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: $color__background_footer-subscribe;
+  width: 100%;
+  height: 80%;
+
+    form{
+      width: 75vw;
+      height: 5vh;
+
+      @include media-q {
+        width: 85vw;
+        height: 10vh;
+        max-width: 550px;
+        max-height: 35px;
+      };
+    }
+    input {
+      width: 70%;
+      height: 100%;
+    }
+
+    button {
+      width: 25%;
+      height: 100%;
+      background-color: $color__brand-main;
+      color: $color__text-secondary
+    }
+
+    .socialMedia-links {
+      display:flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 500px;
+
+      img {
+      height: 35px;
+      }
+    }
+
+    .insite-links {
+      width: 100vw;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 300px;
+
+      @include media-q {
+        max-width: 600px;
+      };
+
+      a{
+        text-decoration: none;
+        text-align: center;
+        color: $color__text-secondary;
+      }
+
+      span {
+        margin: 0 10px 0 10px;
+      }
+      .hiddenBullet {
+        display: none;
+
+        @include media-lg {
+          display: inline;
+        };
+      }
+    }
+  }
+  .recentPosts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+              linear-gradient( $color__background_footer-recent, $color__background_footer-recent);
+  width: 100%;
+  height: 50%;
+  }
+
+.recentPosts-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: orange;
+  width: 100%;
+  height: 80%;
+  }
+}
