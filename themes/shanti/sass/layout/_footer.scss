@@ -16,6 +16,7 @@
   color:$color__text-secondary;
   font-size: 30px;
   padding-top: 5vh;
+  font-weight: normal;
   }
 
   .subscribe {
@@ -40,25 +41,32 @@
 
     form{
       width: 75vw;
-      height: 5vh;
+      height: 10vh;
+      display: flex;
+      justify-content: space-between;
 
       @include media-q {
         width: 85vw;
-        height: 10vh;
+        height: 15vh;
         max-width: 550px;
-        max-height: 35px;
+        max-height: 45px;
       };
     }
     input {
       width: 70%;
       height: 100%;
+      border-radius: 0
     }
 
     button {
       width: 25%;
       height: 100%;
       background-color: $color__brand-main;
-      color: $color__text-secondary
+      color: $color__text-secondary;
+      border-radius: 0;
+      border: none;
+      box-shadow:none;
+
     }
 
     .socialMedia-links {

@@ -43,7 +43,7 @@
 						Sign up to hear from us!
 					</h2>
 					<form>
-	     			<input type="text" placeholder="Your Email Address...."required></input>
+	     			<input type="email" placeholder="Your Email Address...."required></input>
 	     			<button type="submit">Subscribe</button>
 					</form>
 					<div class="socialMedia-links">
