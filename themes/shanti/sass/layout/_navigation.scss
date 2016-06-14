@@ -167,3 +167,19 @@ a {
 		width: 50%;
 	}
 }
+
+/* UI Button */
+
+a.button {
+	text-transform: uppercase;
+	border: 1px solid $color__brand-main;
+	padding: 0.5rem $base__space-unit;
+	color: $color__brand-main;
+	text-decoration: none;
+}
+
+a.cta {
+	@extend .button;
+	background: $color__brand-main;
+	color: #fff;
+}
