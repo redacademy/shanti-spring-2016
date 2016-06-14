@@ -12,7 +12,8 @@
 
   h2 {
   margin: 0 auto;
-  color:$color__text-secondary
+  color:$color__text-secondary;
+  font-size: 30px;
   }
 
   .subscribe {
@@ -113,8 +114,21 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: orange;
+  background: $color__background_footer-recent;
   width: 100%;
   height: 80%;
+
+  ul {
+    width:70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+
+  }
   }
 }
