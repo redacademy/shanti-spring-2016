@@ -49,3 +49,4 @@ themes/shanti/node_modules/*
 # Ignore build files #
 # ================== #
 themes/shanti/build/*
+themes/shanti/style.css
