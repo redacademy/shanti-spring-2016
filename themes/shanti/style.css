@@ -422,7 +422,7 @@ textarea {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   color: white; }
   .site-footer h2 {
@@ -452,6 +452,15 @@ textarea {
     background: purple;
     width: 100%;
     height: 80%; }
+    .site-footer .subscribe-content form {
+      width: 75vw;
+      height: 5vh; }
+    .site-footer .subscribe-content input {
+      width: 70%;
+      height: 100%; }
+    .site-footer .subscribe-content button {
+      width: 25%;
+      height: 100%; }
     .site-footer .subscribe-content .socialMedia-links {
       display: -ms-flexbox;
       display: flex;
@@ -462,14 +471,20 @@ textarea {
       .site-footer .subscribe-content .socialMedia-links img {
         height: 35px; }
     .site-footer .subscribe-content .insite-links {
-      width: 100%;
-      list-style: none;
+      width: 100vw;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      max-width: 500px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center;
+      max-width: 250px; }
+      .site-footer .subscribe-content .insite-links a {
+        text-decoration: none;
+        text-align: center;
+        color: white; }
   .site-footer .recentPosts {
     display: -ms-flexbox;
     display: flex;

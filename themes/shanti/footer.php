@@ -30,13 +30,13 @@
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Twitter_icon.png"></a>
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Youtube_icon.png"></a>
 				</div>
-				<div class="insite-links">
-					<a href="#">Blog</a>
-  				<a href="#">Press</a>
-					<a href="#">Careers</a>
- 					<a href="#">Events</a>
-					<a href="#">Newsletter</a>
-					<a href="#">Contact Us</a>
+				<ul class="insite-links">
+					<li> <a href="#">Blog</a>
+  				<li> <a href="#">Press</a>
+					<li> <a href="#">Careers</a>
+ 					<li> <a href="#">Events</a>
+					<li> <a href="#">Newsletter</a>
+					<li> <a href="#">Contact Us</a>
 				</div>
 			</div>
 				<div class="site-info">
