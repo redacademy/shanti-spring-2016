@@ -24,6 +24,10 @@
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home"><span class="logo"></span><h1 class="site-title screen-reader-text"><?php echo get_bloginfo('name'); ?></h1></a>
 					</div>
+
+					<div class="call-to-action">
+						<a href="#" class="button cta">Donate Now</a>
+					</div>
 			<!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

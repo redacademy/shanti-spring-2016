@@ -413,6 +413,9 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .site-header {
@@ -433,7 +436,7 @@ textarea {
   padding: 1.5em; }
 
 .admin-bar .site-header {
-  top: 32px; }
+  margin-top: 32px; }
 
 .site-branding {
   background: url(../../images/logooo.png) no-repeat center center;
@@ -444,6 +447,19 @@ textarea {
   @media screen and (min-width: 600px) {
     .site-branding {
       width: 25%; } }
+
+.call-to-action {
+  position: absolute;
+  top: 11vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  left: 0; }
+  @media screen and (min-width: 1050px) {
+    .call-to-action {
+      display: none; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -555,6 +571,21 @@ a {
   text-align: right;
   width: 50%; }
 
+/* UI Button */
+a.button, a.cta {
+  text-transform: uppercase;
+  border: 1px solid #D22785;
+  padding: 0.5rem 1.5em;
+  color: #D22785;
+  text-decoration: none; }
+
+a.cta {
+  background: #D22785;
+  color: #fff; }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
