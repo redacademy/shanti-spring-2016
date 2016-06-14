@@ -49,7 +49,7 @@ get_header(); ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; ?>
-
+<p>Sign up for our newsletter</p>
         </main><!-- #main -->
     </div><!-- #primary -->
 
