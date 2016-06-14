@@ -39,11 +39,17 @@ function shanti_team_roster() {
 		'items_list_navigation' => 'Team Members list navigation',
 		'filter_items_list'     => 'Filter Team Members list',
 	);
+	$rewrite = array(
+		'slug'									=> 'our-team',
+		'with_front'						=> true,
+		'pages'									=> true,
+		'feeds'									=> true
+	);
 	$args = array(
 		'label'                 => 'Our Team',
 		'description'           => 'Shanti Team members',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -54,10 +60,11 @@ function shanti_team_roster() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'team',
+		'has_archive'           => 'our-team',
 		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
+		'rewrite'								=> $rewrite
 	);
 	register_post_type( 'team_member', $args );
 
@@ -100,7 +107,7 @@ function shanti_events() {
 		'label'                 => 'Event',
 		'description'           => 'Events organized by Shanti Uganda',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -111,7 +118,7 @@ function shanti_events() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'Events',
+		'has_archive'           => 'events',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -124,7 +131,7 @@ add_action( 'init', 'shanti_events', 0 );
 // Gifts of Action
 
 // Register Custom Post Type
-function gifts_of_action() {
+function shanti_gifts_of_action() {
 
 	$labels = array(
 		'name'                  => 'Gifts of Action',
@@ -157,7 +164,7 @@ function gifts_of_action() {
 		'label'                 => 'Gift of Action',
 		'description'           => 'These are the potential gifts of action for potential supporters of Shanti',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -167,7 +174,7 @@ function gifts_of_action() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'gifts-of-action',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -175,4 +182,4 @@ function gifts_of_action() {
 	register_post_type( 'gifts_of_action', $args );
 
 }
-add_action( 'init', 'gifts_of_action', 0 );
+add_action( 'init', 'shanti_gifts_of_action', 0 );

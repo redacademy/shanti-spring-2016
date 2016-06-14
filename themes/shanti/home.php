@@ -12,6 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+<<<<<<< HEAD
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -48,6 +49,33 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+=======
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+
+						<section class="infographic">
+							<h2>Our Accomplishments</h2>
+							<ul>
+								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
+										foreach($infographic as $pic):?>
+
+										<li><img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" /></li>
+								 <?php endforeach;?>
+						 </ul>
+						</section>
+
+					</div><!-- .entry-content -->
+				</article><!-- #post-## -->
+
+			<?php endwhile; ?>
+
+>>>>>>> be193945b0a68e790b2aecf84924693f6bd15a56
 
 		<?php else : ?>
 
@@ -57,6 +85,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> be193945b0a68e790b2aecf84924693f6bd15a56
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin media-q {
+
+	@media screen and (min-width: 600px) {
+		@content;
+	}
+}

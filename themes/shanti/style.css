@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
+Theme Name: Shanti Theme
+Theme URI:
+Author:
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A Custom Theme for Shanti Uganda.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -240,6 +240,15 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  color: #D22785;
+  font-size: 24px; }
+
+h2 {
+  color: #892655;
+  font-size: 18px;
+  text-transform: uppercase; }
+
 /* Copy */
 p {
   margin-bottom: 1.5em; }
@@ -404,15 +413,48 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  position: fixed;
+  top: 0px;
+  height: 11vh;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: centers;
+      align-items: centers;
+  border-bottom: 1px solid black;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5em; }
+
+.admin-bar .site-header {
+  top: 32px; }
+
+.site-branding {
+  background: url(../../images/logooo.png) no-repeat center center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 600px) {
+    .site-branding {
+      width: 25%; } }
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #D22785; }
   a:visited {
-    color: purple; }
+    color: #D22785; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #D22785; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -422,8 +464,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -452,18 +493,48 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000; }
+    .main-navigation a:hover {
+      color: #D22785; }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
+.menu-toggle {
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: rotate(-90deg);
+  color: #892655;
+  font-size: 2rem;
+  padding: 0;
+  font-family: serif; }
+  .menu-toggle:hover {
+    box-shadow: none;
+    border: none; }
+
+@media screen and (min-width: 1050px) {
   .menu-toggle {
     display: none; }
+  .main-navigation {
+    width: 70%;
+    padding-top: 0.5rem; }
   .main-navigation ul {
-    display: block; } }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width: 100%; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -655,4 +726,52 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Front Page */
+.home .entry-header {
+  height: 90vh;
+  width: 100vw;
+  background: url(../../images/home-header.jpg) no-repeat center center;
+  background-size: cover; }
+
+.infographic {
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: -5rem;
+  position: relative; }
+  .infographic ul {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media screen and (min-width: 600px) {
+      .infographic ul {
+        background: #E3E3E3; } }
+  .infographic li {
+    width: 50%;
+    height: 250px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media screen and (min-width: 600px) {
+      .infographic li {
+        width: 20%;
+        max-height: 200px; } }
+    .infographic li img {
+      min-height: 150px;
+      width: auto; }
+      @media screen and (min-width: 600px) {
+        .infographic li img {
+          min-height: 0;
+          max-height: 80%; } }
+  .infographic h2 {
+    padding-top: 4rem;
+    text-align: center; }
