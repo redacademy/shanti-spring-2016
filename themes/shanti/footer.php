@@ -23,6 +23,12 @@
 	     			<input type="text" required></input>
 	     			<button type="submit">Subscribe</button>
 					</form>
+					<div class="social-Media_links">
+						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Facebook_icon.png"></a>
+						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Flickr_icon.png"></a>
+						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Pinterest_icon.png"></a>
+						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Twitter_icon.png"></a>
+						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Youtube_icon.png"></a>
 				</div>
 			</div>
 				<div class="site-info">

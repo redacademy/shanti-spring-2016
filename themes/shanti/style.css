@@ -430,6 +430,9 @@ footer h2 {
   margin: 0 auto;
   color: white; }
 
+footer img {
+  height: 25px; }
+
 .footer_subscribe {
   display: -ms-flexbox;
   display: flex;
