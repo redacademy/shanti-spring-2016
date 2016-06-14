@@ -418,7 +418,7 @@ textarea {
 .site-header {
   position: fixed;
   top: 0px;
-  height: 13vh;
+  height: 11vh;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -426,8 +426,8 @@ textarea {
       flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: baseline;
-      align-items: baseline;
+  -ms-flex-align: centers;
+      align-items: centers;
   border-bottom: 1px solid black;
   background: rgba(255, 255, 255, 0.7);
   padding: 1.5em; }
@@ -437,14 +437,13 @@ textarea {
 
 .site-branding {
   background: url(../../images/logooo.png) no-repeat center center;
-  background-size: 50% auto;
+  background-size: contain;
   height: 100%;
   width: 100%;
   margin: 0 auto; }
   @media screen and (min-width: 600px) {
     .site-branding {
-      width: 25%;
-      background-size: contain; } }
+      width: 25%; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -465,8 +464,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 70%; }
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -525,14 +523,18 @@ a {
     box-shadow: none;
     border: none; }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 1050px) {
   .menu-toggle {
     display: none; }
+  .main-navigation {
+    width: 70%;
+    padding-top: 0.5rem; }
   .main-navigation ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-        justify-content: space-between; } }
+        justify-content: space-between;
+    width: 100%; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -771,5 +773,5 @@ object {
           min-height: 0;
           max-height: 80%; } }
   .infographic h2 {
-    padding-top: 3rem;
+    padding-top: 4rem;
     text-align: center; }
