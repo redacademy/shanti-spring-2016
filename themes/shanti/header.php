@@ -21,14 +21,13 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">
 					<div class="site-branding">
-						<h1 class="site-title screen-reader-text"><?php echo get_bloginfo('name'); ?></h1>
+						<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home"><span class="logo"></span><h1 class="site-title screen-reader-text"><?php echo get_bloginfo('name'); ?></h1></a>
 					</div>
-			</a><!-- .site-branding -->
+			<!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">...</button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

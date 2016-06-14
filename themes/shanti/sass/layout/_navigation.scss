@@ -30,13 +30,14 @@ a {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
+	width: 70%;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -87,6 +88,12 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		text-transform: uppercase;
+		color: #000;
+
+		&:hover {
+			color: $color__brand-main;
+		}
 	}
 
 	.current_page_item > a,
@@ -101,12 +108,35 @@ a {
 	display: block;
 }
 
+.menu-toggle {
+	height: 100%;
+	width: 10%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	transform: rotate(-90deg);
+	color: $color__brand-dark;
+	font-size: 2rem;
+	padding: 0;
+	font-family: serif;
+
+	&:hover{
+		box-shadow: none;
+		border: none;
+	}
+}
+
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 

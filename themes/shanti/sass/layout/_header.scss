@@ -4,15 +4,32 @@
 --------------------------------------------------------------*/
 .site-header {
   position: fixed;
-  top: 0;
-  height: 10vh;
+  top: 0px;
+  height: 13vh;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  border-bottom: 1px solid black;
+  background: rgba(255,255,255,0.7);
+  padding: $base__space-unit;
+}
+
+.admin-bar .site-header {
+  top: 32px;
 }
 
 .site-branding {
-  background: url(../../images/logooo.png) no-repeat;
-  position: relative;
-  height: 10vh;
-  width: 75%;
+  background: url(../../images/logooo.png) no-repeat center center;
+  background-size: 50% auto;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-q {
+
+    width: 25%;
+    background-size: contain;
+  }
 }
