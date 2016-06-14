@@ -42,6 +42,7 @@ plugins/*
 # ====================================================== #
 themes/*
 !themes/shanti/
+themes/shanti/gulpfile.js
 # Ignore npm packages #
 # =================== #
 themes/shanti/node_modules/*
