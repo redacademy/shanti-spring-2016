@@ -422,7 +422,7 @@ textarea {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   color: white; }
   .site-footer h2 {
@@ -478,7 +478,7 @@ textarea {
       width: 100%;
       max-width: 500px; }
       .site-footer .subscribe-content .socialMedia-links img {
-        height: 35px; }
+        height: 45px; }
     .site-footer .subscribe-content .insite-links {
       width: 100vw;
       margin: 0 auto;
@@ -522,8 +522,10 @@ textarea {
     background: #EEA28E;
     width: 100%;
     height: 80%; }
+    .site-footer .recentPosts-content h2 {
+      padding-bottom: 10px; }
     .site-footer .recentPosts-content ul {
-      width: 70%;
+      width: 95%;
       height: 100%;
       display: -ms-flexbox;
       display: flex;
@@ -534,6 +536,25 @@ textarea {
       list-style: none;
       margin: 0;
       padding: 0; }
+      @media screen and (min-width: 600px) {
+        .site-footer .recentPosts-content ul {
+          width: 70%; } }
+      .site-footer .recentPosts-content ul li {
+        max-width: 30%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .site-footer .recentPosts-content ul li div {
+          text-align: center; }
+        .site-footer .recentPosts-content ul li img {
+          border-radius: 50%; }
+        .site-footer .recentPosts-content ul li p {
+          text-align: center;
+          margin: 0;
+          padding: 0; }
 
 /*--------------------------------------------------------------
 # Header

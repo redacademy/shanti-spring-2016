@@ -20,13 +20,14 @@
 			 ?>
 			 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 				 <li>
-
 					 <div>
 						 <?php if ( has_post_thumbnail() ) : ?>
 							 <?php the_post_thumbnail( 'thumbnail' ); ?>
 						 <?php endif; ?>
 				 	</div>
-
+					<p>
+						<?php echo CFS()->get( 'subtitle' ); ?>
+					</p>
 				</li>
 		 	 <?php endforeach; wp_reset_postdata(); ?>
 
