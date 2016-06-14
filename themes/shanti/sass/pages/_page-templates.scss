@@ -2,4 +2,61 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Front Page */
+
+.home .entry-header {
+
+  height: 90vh;
+  width: 100vw;
+  background: url(../../images/home-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.infographic {
+  background: rgba(255,255,255,0.7);
+  margin-top: -5rem;
+  position: relative;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include media-q {
+      background: #E3E3E3;
+    }
+  }
+
+  li {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-q {
+      width: 20%;
+      max-height: 200px;
+    }
+
+    img {
+      min-height: 150px;
+      width: auto;
+
+      @include media-q {
+        min-height: 0;
+        max-height: 80%;
+      }
+    }
+  }
+
+  h2 {
+    padding-top: 3rem;
+    text-align: center;
+
+  }
+}
