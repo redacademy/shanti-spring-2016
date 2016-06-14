@@ -455,12 +455,20 @@ textarea {
     .site-footer .subscribe-content form {
       width: 75vw;
       height: 5vh; }
+      @media screen and (min-width: 600px) {
+        .site-footer .subscribe-content form {
+          width: 85vw;
+          height: 10vh;
+          max-width: 550px;
+          max-height: 35px; } }
     .site-footer .subscribe-content input {
       width: 70%;
       height: 100%; }
     .site-footer .subscribe-content button {
       width: 25%;
-      height: 100%; }
+      height: 100%;
+      background-color: #D22785;
+      color: white; }
     .site-footer .subscribe-content .socialMedia-links {
       display: -ms-flexbox;
       display: flex;
@@ -472,19 +480,23 @@ textarea {
         height: 35px; }
     .site-footer .subscribe-content .insite-links {
       width: 100vw;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
       margin: 0 auto;
       text-align: center;
-      max-width: 250px; }
+      max-width: 300px; }
+      @media screen and (min-width: 600px) {
+        .site-footer .subscribe-content .insite-links {
+          max-width: 600px; } }
       .site-footer .subscribe-content .insite-links a {
         text-decoration: none;
         text-align: center;
         color: white; }
+      .site-footer .subscribe-content .insite-links span {
+        margin: 0 10px 0 10px; }
+      .site-footer .subscribe-content .insite-links .hiddenBullet {
+        display: none; }
+        @media screen and (min-width: 1050px) {
+          .site-footer .subscribe-content .insite-links .hiddenBullet {
+            display: inline; } }
   .site-footer .recentPosts {
     display: -ms-flexbox;
     display: flex;
