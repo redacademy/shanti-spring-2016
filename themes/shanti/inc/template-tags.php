@@ -2,7 +2,7 @@
 /**
  * Custom template tags for this theme.
  *
- * @package RED_Starter_Theme
+ * @package Shanti_Uganda_Theme
  */
 
  /**

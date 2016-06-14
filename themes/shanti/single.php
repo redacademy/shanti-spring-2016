@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package Shanti_Uganda_Theme
  */
 
 get_header(); ?>
