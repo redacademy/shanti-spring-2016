@@ -9,13 +9,13 @@
 
 		</div><!-- #content -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="footer_recent-posts">
-				<div class="footer_recent-posts_content">
+			<div class="recentPosts">
+				<div class="recentPosts-content">
 				recent post loop goes here
 				</div>
 			</div>
-			<div class="footer_subscribe">
-				<div class="footer_subscribe_content">
+			<div class="subscribe">
+				<div class="subscribe-content">
 					<h2>
 						Sign up to hear from us!
 					</h2>
@@ -23,12 +23,20 @@
 	     			<input type="text" required></input>
 	     			<button type="submit">Subscribe</button>
 					</form>
-					<div class="social-Media_links">
+					<div class="socialMedia-links">
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Facebook_icon.png"></a>
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Flickr_icon.png"></a>
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Pinterest_icon.png"></a>
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Twitter_icon.png"></a>
 						<a href="#"><img src="wp-content\themes\shanti\images\socialMedia_icons\Youtube_icon.png"></a>
+				</div>
+				<div class="insite-links">
+					<a href="#">Blog</a>
+  				<a href="#">Press</a>
+					<a href="#">Careers</a>
+ 					<a href="#">Events</a>
+					<a href="#">Newsletter</a>
+					<a href="#">Contact Us</a>
 				</div>
 			</div>
 				<div class="site-info">

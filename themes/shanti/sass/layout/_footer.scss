@@ -2,26 +2,20 @@
 # Footer
 --------------------------------------------------------------*/
 
-footer {
+.site-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 70vh;
   width: 100vw;
   color:$color__text-secondary;
-}
 
-footer h2 {
+  h2 {
   margin: 0 auto;
   color:$color__text-secondary
+  }
 
-}
-
-footer img {
-  height: 25px;
-}
-
-.footer_subscribe {
+  .subscribe {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,9 +24,8 @@ footer img {
               linear-gradient( $color__background_footer-subscribe, $color__background_footer-subscribe);
   width: 100%;
   height: 50%;
-}
-
-.footer_subscribe_content {
+  }
+  .subscribe-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -40,9 +33,28 @@ footer img {
   background: $color__background_footer-subscribe;
   width: 100%;
   height: 80%;
-}
 
-.footer_recent-posts {
+    .socialMedia-links {
+      display:flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 500px;
+
+      img {
+      height: 35px;
+      }
+    }
+
+    .insite-links {
+      width: 100%;
+      list-style: none;
+      display:flex;
+      justify-content: space-between;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  .recentPosts {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -51,15 +63,17 @@ footer img {
               linear-gradient( $color__background_footer-recent, $color__background_footer-recent);
   width: 100%;
   height: 50%;
-}
+  }
 
-.footer_recent-posts_content {
+.recentPosts-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   background: orange;
   width: 100%;
   height: 80%;
+  }
+
+
 }
