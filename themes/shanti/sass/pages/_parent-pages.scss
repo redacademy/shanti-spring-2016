@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  height: 60vh;
   &:nth-child(2) {
     .child-page-text {
       order: 2;
@@ -16,17 +19,30 @@
 }
 
 .child-page-text {
+  display: none;
   width: 32%;
+  @include media-q {
+    display: block;
+  }
 }
 
 .child-page-image {
-  height: 300px;
-  width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 60%;
   overflow: hidden;
   text-align: right;
   img {
+    position: absolute;
     width: auto;
-    height: auto;
+    max-width: none;
+    height: 100%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .our-story-headers h3 {
@@ -50,18 +66,4 @@
   p {
     margin-top: 8px;
   }
-}
-
-
-
-.container {
-  margin-left: 5%;
-  margin-right: 5%;
-
-  @include media-lg {
-      max-width: 1050px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
 }

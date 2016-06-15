@@ -43,8 +43,7 @@ get_header(); ?>
 									<div class="discover-button">
 									 <p>Discover Our Story</p>
 								 </div>
-                </div>
-
+							 </div>
                 <div class="child-page-image">
                   <?php the_post_thumbnail('full'); ?>
                 </div>
