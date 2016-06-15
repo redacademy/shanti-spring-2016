@@ -47,11 +47,11 @@
 	     			<button type="submit">Subscribe</button>
 					</form>
 					<div class="socialMedia-links">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Twitter_icon.png"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Facebook_icon.png"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Flickr_icon.png"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Pinterest_icon.png"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Youtube_icon.png"></a>
+						<a href="https://twitter.com/shantiuganda"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Twitter_icon.png"></a>
+						<a href="https://www.facebook.com/shantiuganda"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Facebook_icon.png"></a>
+						<a href="https://www.flickr.com/photos/shantiugandasociety/sets/"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Flickr_icon.png"></a>
+						<a href="https://www.pinterest.com/shantiuganda/"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Pinterest_icon.png"></a>
+						<a href="https://www.youtube.com/user/shantiug"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Youtube_icon.png"></a>
 				</div>
 				<div class="insite-links">
 					<a href="blog">Blog</a>
