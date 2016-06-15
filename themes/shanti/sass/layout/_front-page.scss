@@ -57,6 +57,10 @@
   section{
     height: 20vh;
     width: 100vw;
+
+    @include media-q {
+      height:50vh;
+    }
   }
 
   .who-we-are {

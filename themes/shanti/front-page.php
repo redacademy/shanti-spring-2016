@@ -47,6 +47,12 @@ get_header(); ?>
 		<div class="front-page-content">
 			<section class="who-we-are">
 				<div class="who-we-are-content">
+					<?php
+						$page = get_page_by_title('Who-we-are');
+						print_r ($page);
+
+
+					?>
 				</div>
 			</section>
 			<section class="why-uganda">
