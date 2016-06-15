@@ -48,8 +48,7 @@ get_header(); ?>
 			<section class="who-we-are">
 				<div class="who-we-are-content">
 					<?php
-						$page = get_page_by_title('Who-we-are');
-						print_r ($page);
+						
 
 
 					?>
