@@ -22,7 +22,7 @@ get_header(); ?>
 
         	<div class="entry-content">
 
-            <div class="story-content">
+            <div class="story-content container">
               <?php the_content(); ?>
             </div>
             <ul class="values">
@@ -41,7 +41,9 @@ get_header(); ?>
                 <img src="<?php echo CFS()->get('history_image'); ?>" alt="Our History">
                 <h3>History</h3>
               </div>
-              <?php echo CFS()->get('history'); ?>
+							<div class="history-content container">
+								<?php echo CFS()->get('history'); ?>
+							</div>
             </div>
         	</div><!-- .entry-content -->
         </article><!-- #post-## -->
