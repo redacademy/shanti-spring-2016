@@ -43,14 +43,14 @@
 						Sign up to hear from us!
 					</h2>
 					<form>
-	     			<input type="email" placeholder="Your Email Address...."required></input>
+	     			<input type="email" placeholder="Your E-mail Address...."required></input>
 	     			<button type="submit">Subscribe</button>
 					</form>
 					<div class="socialMedia-links">
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Twitter_icon.png"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Facebook_icon.png"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Flickr_icon.png"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Pinterest_icon.png"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Twitter_icon.png"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Youtube_icon.png"></a>
 				</div>
 				<div class="insite-links">
