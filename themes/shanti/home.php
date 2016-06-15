@@ -29,7 +29,7 @@ get_header(); ?>
                 <div class="entry-content container">
                   <div class="blog-date-title">
                     <span class="blog-post-title"><?php the_title(); ?></span>
-                    <span><?php red_starter_posted_on(); ?></span>
+                    <span><?php shanti_posted_on(); ?></span>
                   </div>
                <?php the_content(); ?>
            </div><!-- .entry-content -->
