@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  &:nth-child(2) {
+    .child-page-text {
+      order: 2;
+    }
+  }
+  p {
+    font-size: 22px;
+  }
 }
 
 .child-page-text {
@@ -12,7 +20,48 @@
 }
 
 .child-page-image {
-  width: 65%;
+  height: 300px;
+  width: 600px;
+  overflow: hidden;
   text-align: right;
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+.our-story-headers h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.discover-story {
+  font-size: 22px;
+}
+
+.discover-button{
+  color:#D22785;
+  text-transform: uppercase;
+  border: 2px solid #D22785;
+  width: 300px;
+  height: 50px;
+  font-size:22px;
+  font-weight: bold;
+  text-align: center;
+  p {
+    margin-top: 8px;
+  }
+}
+
+
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+
+  @include media-lg {
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
 }

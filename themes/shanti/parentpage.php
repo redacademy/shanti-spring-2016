@@ -29,18 +29,24 @@ get_header(); ?>
 
         <!-- loop of child pages -->
 
-        <section class="child-pages">
+        <section class="child-pages container">
   					<?php global $id;
   						$args = array( 'child_of' => $id, 'post_type' => 'page');
   						$child_pages = get_pages($args);
   						foreach($child_pages as $post): setup_postdata($post); ?>
   						<div class="child-page">
                 <div class="child-page-text">
-                  <h3><?php the_title(); ?></h3>
+									<div class="our-story-headers">
+                    <h3><?php the_title(); ?></h3>
+								 </div>
                   <?php echo CFS()->get('excerpt'); ?>
+									<div class="discover-button">
+									 <p>Discover Our Story</p>
+								 </div>
                 </div>
+
                 <div class="child-page-image">
-                  <?php the_post_thumbnail('large'); ?>
+                  <?php the_post_thumbnail('full'); ?>
                 </div>
 
   						</div>
