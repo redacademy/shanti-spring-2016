@@ -57,6 +57,10 @@
   section{
     height: 20vh;
     width: 100vw;
+
+    @include media-q {
+      height:50vh;
+    }
   }
 
   .who-we-are {
@@ -65,12 +69,12 @@
     justify-content: space-around;
     align-items: center;
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( purple, purple);
+                linear-gradient( $color__brand-who-we-are, $color__brand-who-we-are);
 
     .who-we-are-content{
       width: 100%;
-      height: 90%;
-      background: purple;
+      height: 80%;
+      background: $color__brand-who-we-are;
     }
   }
   .why-uganda {
@@ -79,12 +83,12 @@
     justify-content: space-around;
     align-items: center;
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( red, red);
+                linear-gradient( $color__brand-why-uganda, $color__brand-why-uganda);
 
     .why-uganda-content {
       width: 100%;
-      height: 90%;
-      background: red;
+      height: 80%;
+      background: $color__brand-why-uganda;
     }
   }
   .our-projects {
@@ -93,12 +97,12 @@
     justify-content: space-around;
     align-items: center;
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( green, green);
+                linear-gradient( $color__brand-our-projects, $color__brand-our-projects);
 
     .our-projects-content {
       width: 100%;
-      height: 90%;
-      background: green;
+      height: 80%;
+      background: $color__brand-our-projects;
     }
   }
   .get-involved {
@@ -107,12 +111,12 @@
     justify-content: space-around;
     align-items: center;
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( yellow, yellow);
+                linear-gradient( $color__brand-get-involved, $color__brand-get-involved);
 
     .get-involved-content {
       width: 100%;
-      height: 90%;
-      background: yellow;
+      height: 80%;
+      background: $color__brand-get-involved;
     }
   }
   .donate {
@@ -121,12 +125,12 @@
     justify-content: space-around;
     align-items: center;
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( blue, blue);
+                linear-gradient( $color__brand-who-donate, $color__brand-who-donate);
 
     .donate-content {
       width: 100%;
-      height: 90%;
-      background: blue;
+      height: 80%;
+      background: $color__brand-who-donate;
     }
   }
 
