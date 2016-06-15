@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package shanti_Theme
  */
 
 get_header(); ?>
@@ -43,6 +43,35 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+		<div class="front-page-content">
+			<section class="who-we-are">
+				<div class="who-we-are-content">
+					<?php
+						
+
+
+					?>
+				</div>
+			</section>
+			<section class="why-uganda">
+				<div class="why-uganda-content">
+				</div>
+			</section>
+			<section class="our-projects">
+				<div class="our-projects-content">
+				</div>
+			</section>
+			<section class="get-involved">
+				<div class="get-involved-content">
+				</div>
+			</section>
+			<section class="donate">
+				<div class="donate-content">
+				</div>
+			</section>
+		</div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

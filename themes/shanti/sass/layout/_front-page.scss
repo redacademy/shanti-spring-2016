@@ -1,0 +1,137 @@
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+
+.infographic {
+  background: rgba(255,255,255,0.7);
+  margin-top: -5rem;
+  position: relative;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include media-q {
+      background: #E3E3E3;
+    }
+  }
+
+  li {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-q {
+      width: 20%;
+      max-height: 200px;
+    }
+
+    img {
+      min-height: 150px;
+      width: auto;
+
+      @include media-q {
+        min-height: 0;
+        max-height: 80%;
+      }
+    }
+  }
+
+  h2 {
+    padding-top: 4rem;
+    text-align: center;
+
+  }
+}
+
+.front-page-content {
+  border-top: solid lightgrey 25px;
+
+  section{
+    height: 20vh;
+    width: 100vw;
+
+    @include media-q {
+      height:50vh;
+    }
+  }
+
+  .who-we-are {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                linear-gradient( $color__brand-who-we-are, $color__brand-who-we-are);
+
+    .who-we-are-content{
+      width: 100%;
+      height: 80%;
+      background: $color__brand-who-we-are;
+    }
+  }
+  .why-uganda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                linear-gradient( $color__brand-why-uganda, $color__brand-why-uganda);
+
+    .why-uganda-content {
+      width: 100%;
+      height: 80%;
+      background: $color__brand-why-uganda;
+    }
+  }
+  .our-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                linear-gradient( $color__brand-our-projects, $color__brand-our-projects);
+
+    .our-projects-content {
+      width: 100%;
+      height: 80%;
+      background: $color__brand-our-projects;
+    }
+  }
+  .get-involved {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                linear-gradient( $color__brand-get-involved, $color__brand-get-involved);
+
+    .get-involved-content {
+      width: 100%;
+      height: 80%;
+      background: $color__brand-get-involved;
+    }
+  }
+  .donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                linear-gradient( $color__brand-who-donate, $color__brand-who-donate);
+
+    .donate-content {
+      width: 100%;
+      height: 80%;
+      background: $color__brand-who-donate;
+    }
+  }
+
+}
