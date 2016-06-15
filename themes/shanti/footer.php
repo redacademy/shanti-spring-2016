@@ -43,7 +43,7 @@
 						Sign up to hear from us!
 					</h2>
 					<form>
-	     			<input type="email" placeholder="Your E-mail Address...."required></input>
+	     			<input type="email" placeholder="Your Email Address...."required></input>
 	     			<button type="submit">Subscribe</button>
 					</form>
 					<div class="socialMedia-links">
@@ -67,9 +67,6 @@
 					<a href="#">Contact Us</a>
 				</div>
 			</div>
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
