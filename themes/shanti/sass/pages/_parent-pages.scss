@@ -5,24 +5,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  height: 60vh;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+  height: 30vh;
+  @include media-q {
+    height: 60vh;
+  }
+
   &:nth-child(2) {
     .child-page-text {
       order: 2;
     }
   }
-  p {
-    font-size: 22px;
-  }
+
 }
 
 .child-page-text {
-  display: none;
   width: 32%;
-  @include media-q {
-    display: block;
+
+  .excerpt{
+    display: none;
+    @include media-q {
+      display: block;
+    }
   }
 }
 
@@ -46,24 +51,25 @@
   }
 }
 .our-story-headers h3 {
-    font-size: 35px;
+    display: block;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    @include media-q {
+      font-size: 2.1rem;
+    }
 }
 
 .discover-story {
-  font-size: 22px;
+  font-size: 2rem;
 }
 
 .discover-button{
   color:#D22785;
   text-transform: uppercase;
   border: 2px solid #D22785;
-  width: 300px;
-  height: 50px;
-  font-size:22px;
+  font-size:1.4rem;
   font-weight: bold;
   text-align: center;
-  p {
-    margin-top: 8px;
-  }
+  margin-top: .5rem;
+  display: block;
 }

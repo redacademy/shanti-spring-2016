@@ -34,15 +34,17 @@ get_header(); ?>
   						$args = array( 'child_of' => $id, 'post_type' => 'page');
   						$child_pages = get_pages($args);
   						foreach($child_pages as $post): setup_postdata($post); ?>
-  						<div class="child-page">
+  						<div class="child-page container">
                 <div class="child-page-text">
 									<div class="our-story-headers">
                     <h3><?php the_title(); ?></h3>
 								 </div>
+								 <div class="excerpt">
                   <?php echo CFS()->get('excerpt'); ?>
-									<div class="discover-button">
-									 <p>Discover Our Story</p>
-								 </div>
+									<a class="discover-button">
+									 Discover Our Story
+								 </a>
+							 </div>
 							 </div>
                 <div class="child-page-image">
                   <?php the_post_thumbnail('full'); ?>
