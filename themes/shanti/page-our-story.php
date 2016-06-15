@@ -35,6 +35,14 @@ get_header(); ?>
                  </li>
               <?php endforeach; ?>
             </ul>
+
+            <div class="history">
+              <div class="history-header">
+                <img src="<?php echo CFS()->get('history_image'); ?>" alt="Our History">
+                <h3>History</h3>
+              </div>
+              <?php echo CFS()->get('history'); ?>
+            </div>
         	</div><!-- .entry-content -->
         </article><!-- #post-## -->
 

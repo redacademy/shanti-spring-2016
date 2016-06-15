@@ -1,46 +1,26 @@
-.our-story-header {
-  position: absolute;
-  top: 20%;
-  left: $base__space-unit;
-  background: $color__brand-main;
-  color: white;
-  width: 40%;
-
-  h1 {
-    color: white;
-  }
-}
-
 .story-content {
+  text-align: center;
   width: 80%;
   margin: 0 auto;
-  text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $color__background-hr;
 }
 
-ul.values {
-  margin: 0;
-  padding: 0;
-  display: flex;
+ul.values  {
+  margin-left: 0;
+  padding-left: 0;
   list-style: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
-  align-content: space-around;
 }
 
 .values li {
-  width: 26%;
+  width: 80%;
+  height: 55vh;
   text-align: center;
-  height: 30vh;
 
   img {
-    height: 50%;
+    max-height: 50%;
     width: auto;
-  }
-
-  p {
-    padding-left: $base__space-unit;
-    padding-right: $base__space-unit;
   }
 }
