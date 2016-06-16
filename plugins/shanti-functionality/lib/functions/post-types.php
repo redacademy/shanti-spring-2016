@@ -50,7 +50,7 @@ function shanti_team_roster() {
 		'description'           => 'Shanti Team members',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		'taxonomies'            => array(),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
