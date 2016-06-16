@@ -34,7 +34,7 @@ get_header(); ?>
   						$args = array( 'child_of' => $id, 'post_type' => 'page');
   						$child_pages = get_pages($args);
   						foreach($child_pages as $post): setup_postdata($post); ?>
-  						<div class="child-page container">
+  						<div class="child-page">
                 <div class="child-page-text">
 									<div class="our-story-headers">
                     <h3><?php the_title(); ?></h3>

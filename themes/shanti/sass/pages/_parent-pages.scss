@@ -1,6 +1,4 @@
-.child-pages {
-  width: 100%;
-}
+
 .child-page {
   display: flex;
   flex-direction: row;
@@ -11,13 +9,20 @@
   @include media-q {
     height: 60vh;
   }
-
   &:nth-child(2) {
     .child-page-text {
       order: 2;
     }
   }
 
+  &:last-child {
+    .child-page-image {
+      height: 100px;
+    @include media-q {
+      height: 60vh;
+    }
+    }
+  }
 }
 
 .child-page-text {
@@ -36,23 +41,30 @@
   display: flex;
   align-items: center;
   height: 100%;
-  width: 60%;
+  width: 50%;
   overflow: hidden;
   text-align: right;
+  @include media-lg {
+     width: 60%;
+  }
   img {
     position: absolute;
-    width: auto;
+    width: 300px;
     max-width: none;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
+  @include media-lg {
+    width: 100%;
+    height: 80%;
+    left: 50%;
+  }
   }
 }
 .our-story-headers h3 {
     display: block;
-    font-size: 1.5rem;
     text-transform: uppercase;
     @include media-q {
       font-size: 2.1rem;
