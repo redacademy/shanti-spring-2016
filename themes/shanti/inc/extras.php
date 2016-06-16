@@ -44,3 +44,11 @@ function shanti_featured_color_css() {
 }
 
 add_action( 'wp_enqueue_scripts', 'shanti_featured_color_css' );
+
+// add a search field to the navigation menu
+add_filter( 'wp_nav_menu_items', 'shanti_add_search_form_to_nav');
+
+function shanti_add_search_form_to_nav($items) {
+
+  return $items . '<li class="nav-search">' . get_search_form(false) . '</li>';
+}
