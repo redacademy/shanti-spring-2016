@@ -53,8 +53,9 @@
 
 .front-page-content {
   border-top: solid lightgrey 25px;
+
   @include media-q {
-    border-top:none;
+    border-top:none none 0px;
   }
 
   section{
