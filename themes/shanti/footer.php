@@ -43,8 +43,10 @@
 						Sign up to hear from us!
 					</h2>
 					<form>
-	     			<input type="email" placeholder="Your e-mail Address...."required></input>
-	     			<button type="submit">Subscribe</button>
+						<div>
+	     				<input type="email" placeholder="Your e-mail Address...."required></input>
+	     				<button type="submit">Subscribe</button>
+						</div>
 					</form>
 					<div class="socialMedia-links">
 						<a href="https://twitter.com/shantiuganda"><img src="<?php echo get_template_directory_uri(); ?>/images\socialMedia_icons\Twitter_icon.png"></a>

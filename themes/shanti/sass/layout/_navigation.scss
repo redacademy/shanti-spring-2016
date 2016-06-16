@@ -41,11 +41,14 @@ a {
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
-			top: $base__space-unit;
 			left: -999em;
 			z-index: 99999;
+			display: flex;
+			flex-direction: column;
+			width: auto;
+			background: rgba(255,255,255,0.7);
+			border: 1px solid black;
 
 			ul {
 				left: -999em;
@@ -78,13 +81,14 @@ a {
 		}
 	}
 	li {
-		float: left;
+
 		position: relative;
 
 		&:hover > a,
 		&.focus > a {
 		}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -99,22 +103,64 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		color: $color__brand-main;
 	}
 }
+
+.main-navigation > div > ul > li > a{
+		line-height: 10vh;
+	}
+
+.main-navigation > div > ul > li li {
+	border-bottom: 1px solid #E3E3E3;
+}
+
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	position: absolute;
+	top: 11vh;
+	right: 0;
+	background: white;
+	width: 30vh;
+	border: 1px solid black;
+	padding: $base__space-unit;
+	padding-left: 0.5rem;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
 
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+		border: 1px solid $color__brand-main;
+	}
+}
+.main-navigation.toggled ul > li > a {
+	line-height: 2rem;
+	padding: 0.5rem;
+
+	&:after {
+		padding-left: 0.5rem;
+		content: '>';
+	}
+}
+
+
+
+.main-navigation.toggled ul > li > ul {
+	display: none; // don't display submenus on mobile
 }
 
 .menu-toggle {
-	height: 100%;
-	width: 10%;
+	height: auto;
+	width: auto;
 	position: absolute;
-	top: 0;
-	right: 10vw;
+	top: 2.5rem;
+	line-height: 0;
+	right: 1rem;
 	background: none;
 	border: none;
 	border-radius: 0;
@@ -124,6 +170,7 @@ a {
 	font-size: 2rem;
 	padding: 0;
 	font-family: serif;
+	margin: 0;
 
 	&:hover{
 		box-shadow: none;
@@ -168,6 +215,35 @@ a {
 	}
 }
 
+/* Search Bar in mobile nav */
+
+.nav-search {
+	display: none;
+	order: -1; // set as first item in the menu ul
+
+	fieldset {
+		border: none;
+		position: relative;
+	}
+
+	button {
+		font-size: 1rem;
+		border: none;
+		position: absolute;
+		top: 0;
+		right: 1%;
+		background: transparent;
+		box-shadow: none;
+	}
+
+	input {
+		display: inline;
+	}
+}
+
+.main-navigation.toggled .nav-search {
+	display: block;
+}
 /* UI Button */
 
 a.button {
