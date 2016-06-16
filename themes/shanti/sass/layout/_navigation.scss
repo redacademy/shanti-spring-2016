@@ -155,11 +155,12 @@ a {
 }
 
 .menu-toggle {
-	height: 100%;
-	width: 10%;
+	height: auto;
+	width: auto;
 	position: absolute;
-	top: 50%;
-	right: 10px;
+	top: 2.5rem;
+	line-height: 0;
+	right: 1rem;
 	background: none;
 	border: none;
 	border-radius: 0;
