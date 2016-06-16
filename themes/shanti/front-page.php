@@ -47,11 +47,38 @@ get_header(); ?>
 		<div class="front-page-content">
 			<section class="who-we-are">
 				<div class="who-we-are-content">
-					<?php
-						
+					<div class="title">
+						<?php
+							$my_id = 16;
+							$post_id_16 = get_post($my_id);
+							$title = $post_id_16->post_title;
+							$title = apply_filters('the_title', $title);
+							$title = str_replace(']]>', ']]>', $title);
+							echo $title;
+							?>
+					</div>
+					<div class="exerpt">
+						<?php
+							$my_id = 16;
+							$post_id_16 = get_post($my_id);
+							$exerpt = CFS()->get('exerpt');
+							// $exerpt = apply_filters('the_title', $title);
+							// $title = str_replace(']]>', ']]>', $title);
+							echo $exerpt;
+							?>
+					</div>
+					<div class="children">
+					</div>
+
+					<div class="thumbnail">
+						<?php
+							$my_id = 16;
+							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
+						?>
+						<img src="<?php echo $feat_image ?>" alt="test" />
+					</div>
 
 
-					?>
 				</div>
 			</section>
 			<section class="why-uganda">
