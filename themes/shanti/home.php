@@ -7,8 +7,17 @@
 
 get_header(); ?>
 
+<header class="blog-header">
+  <div class="text">
+    <h1>Our Blog</h1>
+    <p>Read our blog posts and articles to stay updated on what we're working on, and see how our wonderful staff and volunteers are making a difference</p>
+  </div>
+
+</header>
+
     <div id="primary" class="content-area container">
         <main id="main" class="site-main" role="main">
+
 
         <?php if ( have_posts() ) : ?>
 
