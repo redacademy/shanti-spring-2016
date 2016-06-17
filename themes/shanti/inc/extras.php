@@ -59,6 +59,8 @@ function shanti_add_search_form_to_nav($items) {
 function shanti_add_team_members_to_tax_archive( $query ) {
 	if ( is_tax( 'team_role' ) && !is_admin() && $query->is_main_query() ) {
 			$query->set( 'post_type', array( 'team_member' ) );
+			$query->set( 'order', 'ASC' );
+			$query->set( 'posts_per_page', -1);
 	}
 }
 add_action( 'pre_get_posts', 'shanti_add_team_members_to_tax_archive' );

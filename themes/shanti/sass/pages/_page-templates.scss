@@ -12,3 +12,36 @@
   z-index: 2;
 
 }
+
+/* Team Member Taxonomy Archive Pages */
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.staff-member {
+  text-align: center;
+
+  @include media-lg {
+    width: 40%;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  a {
+    color: $color__brand-dark;
+  }
+
+  h4 {
+    margin: 0;
+    line-height: normal;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
