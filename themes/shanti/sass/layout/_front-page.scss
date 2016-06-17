@@ -58,14 +58,27 @@
     border-top:none none 0px;
   }
 
+  @include media-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   section{
     height: 20vh;
     min-height: 105px;
-    width: 100vw;
+    width: 100%;
+    max-width: 1000px;
 
     @include media-q {
       height:48vh;
-      max-height: 332px;
+      // max-height: 332px;
+    }
+
+    @include media-lg {
+      height:48vh;
+      // max-height: 450px;
     }
   }
 

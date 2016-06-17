@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   color:$color__text-secondary;
 
   h2 {
@@ -148,7 +148,7 @@
       justify-content: center;
 
       @include media-q {
-        width: 100vw;
+        width: 100%;
         // width: 50vw;
         // max-width: 512px;
         height: 9.9vh;
@@ -240,7 +240,7 @@
     }
 
     .insite-links {
-      width: 100vw;
+      width: 100%;
       max-width: 275px;
       text-align: center;
       text-transform: uppercase;
@@ -251,7 +251,8 @@
 
 
       @include media-q {
-        max-width: 600px;
+        max-width: none;
+        font-size: 15px;
       };
 
       a {
