@@ -118,7 +118,7 @@ a {
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled > div > ul {
 	display: block;
 	position: absolute;
 	top: 11vh;
@@ -149,9 +149,30 @@ a {
 }
 
 
+.main-navigation.toggled > div > ul > li {
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+}
+
+.main-navigation.toggled > div > ul>li> ul.sub-menu {
+	border: none;
+	box-shadow: none;
+	margin-right: 1rem;
+
+	li {
+		border-bottom: none;
+
+		a {
+			text-transform: capitalize;
+		}
+	}
+}
+
 
 .main-navigation.toggled ul > li > ul {
-	display: none; // don't display submenus on mobile
+	display: none; // don't display submenus on mobile until the parent item is clicked
+	position: relative;
 }
 
 .menu-toggle {

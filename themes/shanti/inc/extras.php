@@ -23,9 +23,11 @@ add_filter( 'body_class', 'shanti_body_classes' );
 
 function shanti_featured_image_header() {
 
-	$thumb_id = get_post_thumbnail_id();
-	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
-	$thumb_url = $thumb_url_array[0];
+
+		$thumb_id = get_post_thumbnail_id();
+		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+		$thumb_url = $thumb_url_array[0];
+
 	$custom_css = ".entry-header.hero {
 			background: url('$thumb_url') no-repeat center center;
 			background-size: cover;
