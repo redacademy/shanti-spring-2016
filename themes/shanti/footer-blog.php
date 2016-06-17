@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for displaying the footer on the blog page.
  *
  * @package Shanti_Uganda_Theme
  */
@@ -10,35 +10,6 @@
 		</div><!-- #content -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
-
-				<div class="recentPosts">
-					<div class="recentPosts-content">
-						<h3><a href="blog">Recent Blog Posts!</a></h3>
-						<ul class="blogPosts">
-							<?php
-				   $args = array( 'post_type' => 'post',
-												 	'posts_per_page' => 3);
-				   $blog_posts = get_posts( $args ); // returns an array of posts
-				 ?>
-				 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
-					 <li>
-						 <a href="<?php the_permalink(); ?>">
-						 	<div>
-							 	<?php if ( has_post_thumbnail() ) : ?>
-								 	<?php the_post_thumbnail( 'thumbnail' ); ?>
-							 	<?php endif; ?>
-					 		</div>
-							<p>
-								<?php echo CFS()->get( 'subtitle' ); ?>
-							</p>
-						</a>
-					</li>
-			 	 <?php endforeach; wp_reset_postdata(); ?>
-
-						</ul>
-
-					</div>
-				</div>
 
 			<div class="subscribe">
 				<div class="subscribe-content">
