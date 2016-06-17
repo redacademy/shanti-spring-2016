@@ -48,7 +48,7 @@ a {
 			flex-direction: column;
 			width: auto;
 			background: rgba(255,255,255,0.7);
-			border: 1px solid black;
+			border: 1px solid grey;
 
 			ul {
 				left: -999em;
@@ -136,6 +136,10 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		border: 1px solid $color__brand-main;
+
+		&:after {
+			content: "<";
+		}
 	}
 }
 .main-navigation.toggled ul > li > a {
@@ -144,7 +148,7 @@ a {
 
 	&:after {
 		padding-left: 0.5rem;
-		content: '>';
+
 	}
 }
 
