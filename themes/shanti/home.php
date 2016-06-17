@@ -9,7 +9,7 @@ get_header(); ?>
 
 <header class="blog-header">
   <div class="text">
-    <h1>Our Blog</h1>
+    <h2>Our Blog</h2>
     <p>Read our blog posts and articles to stay updated on what we're working on, and see how our wonderful staff and volunteers are making a difference</p>
   </div>
 
