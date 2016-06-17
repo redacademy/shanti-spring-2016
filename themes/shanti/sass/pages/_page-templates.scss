@@ -12,35 +12,3 @@
   z-index: 2;
 
 }
-
-/* Parent Page Template */
-
-.header-text {
-  position: absolute;
-  color: white;
-  width: 30%;
-  top: 20vh;
-
-  h1 {
-    color: white;
-    text-transform: uppercase;
-  }
-}
-
-.page-parent .entry-content {
-  text-align: center;
-  padding: $base__space-unit 15%;
-  margin-top: 0;
-
-  h2, p {
-    color: white;
-  }
-  h2 {
-    font-size: 31px;
-  }
-  p {
-    font-size: 28px;
-    opacity: 0.75;
-  }
-
-}
