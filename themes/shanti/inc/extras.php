@@ -37,16 +37,19 @@ function shanti_featured_image_header() {
 }
 add_action( 'wp_enqueue_scripts', 'shanti_featured_image_header' );
 
-// function shanti_featured_color_css() {
-//
-// 	$color = CFS()->get('color');
-// 	$custom_css = ".feature-color { background: $color;}";
-//
-// 	wp_add_inline_style('shanti-style', $custom_css);
-//
-// }
-//
-// add_action( 'wp_enqueue_scripts', 'shanti_featured_color_css' );
+function shanti_featured_color_css() {
+
+	if(!is_page_template('parentpage.php')) {
+		return;
+	}
+	$color = CFS()->get('color');
+	$custom_css = ".feature-color { background: $color;}";
+
+	wp_add_inline_style('shanti-style', $custom_css);
+
+}
+
+add_action( 'wp_enqueue_scripts', 'shanti_featured_color_css' );
 
 // add a search field to the navigation menu
 add_filter( 'wp_nav_menu_items', 'shanti_add_search_form_to_nav');
