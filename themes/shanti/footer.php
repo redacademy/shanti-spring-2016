@@ -11,7 +11,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="recentPosts">
 				<div class="recentPosts-content">
-					<h2><a href="blog">Recent Blog Posts!</a></h2>
+					<h3><a href="blog">Recent Blog Posts!</a></h3>
 					<ul class="blogPosts">
 						<?php
 			   $args = array( 'post_type' => 'post',
@@ -39,9 +39,9 @@
 			</div>
 			<div class="subscribe">
 				<div class="subscribe-content">
-					<h2>
+					<h3>
 						Sign up to hear from us!
-					</h2>
+					</h3>
 					<form>
 						<div>
 	     				<input type="email" placeholder="Your e-mail Address...."required></input>

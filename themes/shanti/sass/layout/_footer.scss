@@ -9,7 +9,7 @@
   width: 100%;
   color:$color__text-secondary;
 
-  h2 {
+  h3 {
   margin: 2vh 0 2.5vh 0;
   color:$color__text-secondary;
   font-weight: normal;
@@ -20,6 +20,10 @@
 
 
 
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   .recentPosts {

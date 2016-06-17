@@ -44,9 +44,10 @@
     }
   }
 
-  h2 {
+  h3 {
     padding-top: 4rem;
     text-align: center;
+    text-transform: uppercase;
 
   }
 }
@@ -79,6 +80,10 @@
     @include media-lg {
       height:48vh;
       // max-height: 450px;
+    }
+
+    h3 {
+      text-transform: uppercase;
     }
   }
 
@@ -141,6 +146,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: white;
+        }
       }
 
       .thumbnail {
@@ -214,6 +223,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: white;
+        }
       }
 
       .thumbnail {
