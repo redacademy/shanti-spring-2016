@@ -12,24 +12,27 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="entry-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="staff container">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php the_title(); ?>
-      <p>
-        this is working
-      </p>
+				<div class="staff-member">
+					<?php the_post_thumbnail('thumbnail'); ?>
+					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					
+						<?php the_excerpt(); ?>
 
-			<?php endwhile; ?>
+				</div>
 
-			<?php the_posts_navigation(); ?>
+
+				<?php endwhile; ?>
+			</div>
 
 		<?php else : ?>
 
