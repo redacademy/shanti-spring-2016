@@ -31,6 +31,12 @@ function shanti_team_role_taxonomy() {
 		'items_list'                 => 'Team Roles list',
 		'items_list_navigation'      => 'Team Roles list navigation',
 	);
+	$rewrite = array(
+		'slug'									=> 'team',
+		'with_front'						=> true,
+		'pages'									=> true,
+		'feeds'									=> true
+	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -39,6 +45,7 @@ function shanti_team_role_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
+		'rewrite'										 => $rewrite
 	);
 	register_taxonomy( 'team_role', array( 'team_member' ), $args );
 

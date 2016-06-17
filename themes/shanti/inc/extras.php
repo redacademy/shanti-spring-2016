@@ -37,15 +37,16 @@ function shanti_featured_image_header() {
 }
 add_action( 'wp_enqueue_scripts', 'shanti_featured_image_header' );
 
-function shanti_featured_color_css() {
-	$color = CFS()->get('color');
-	$custom_css = ".feature-color { background: $color;}";
-
-	wp_add_inline_style('shanti-style', $custom_css);
-
-}
-
-add_action( 'wp_enqueue_scripts', 'shanti_featured_color_css' );
+// function shanti_featured_color_css() {
+//
+// 	$color = CFS()->get('color');
+// 	$custom_css = ".feature-color { background: $color;}";
+//
+// 	wp_add_inline_style('shanti-style', $custom_css);
+//
+// }
+//
+// add_action( 'wp_enqueue_scripts', 'shanti_featured_color_css' );
 
 // add a search field to the navigation menu
 add_filter( 'wp_nav_menu_items', 'shanti_add_search_form_to_nav');
@@ -54,3 +55,10 @@ function shanti_add_search_form_to_nav($items) {
 
   return $items . '<li class="nav-search">' . get_search_form(false) . '</li>';
 }
+
+function shanti_add_team_members_to_tax_archive( $query ) {
+	if ( is_tax( 'team_role' ) && !is_admin() && $query->is_main_query() ) {
+			$query->set( 'post_type', array( 'team_member' ) );
+	}
+}
+add_action( 'pre_get_posts', 'shanti_add_team_members_to_tax_archive' );
