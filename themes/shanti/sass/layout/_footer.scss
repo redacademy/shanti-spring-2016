@@ -6,17 +6,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // height: 525vh;
-  min-height: 600px;
   width: 100vw;
   color:$color__text-secondary;
 
   h2 {
-  margin: 0 auto;
+  margin: 2vh 0 2.5vh 0;
   color:$color__text-secondary;
-  font-size: 30px;
-  padding: 20px 0;
   font-weight: normal;
+
+  @include media-q {
+  margin: 5.4vh 0 5vh 0;
+  };
+
+
+
   }
 
   .recentPosts {
@@ -27,7 +30,6 @@
   background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
               linear-gradient( $color__background_footer-recent, $color__background_footer-recent);
   width: 100%;
-  height: 50%;
   }
 
 .recentPosts-content {
@@ -37,57 +39,68 @@
   align-items: center;
   background: $color__background_footer-recent;
   width: 100%;
-  height: 90%;
-  margin: 15px 0 15px 0;
+  // height: 90%;
+  margin: 16px 0;
+
+  @include media-q {
+    margin: 33px;
+  };
 
   a{
     text-decoration: none;
     color: $color__text-secondary;
-
   }
 
 
   ul {
-    width:95%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
 
     @include media-q {
-      width: 80%;
       flex-direction: row;
       align-items: flex-start;
+      justify-content: space-around;
     };
 
-    @include media-lg {
-      width: 70%;
-    };
+
 
     li{
 
-      width: 100%;
-      height: 100%;
+      width: 50vw;
+      min-width: 158px;
+      // height: 26vh;
+      min-height: 160px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10px 0 10px 0;
+      margin-bottom: 14px;
 
       @include media-q {
         width: 30%;
+      };
+      @include media-lg {
+        width: 25%;
       };
 
       div{
         text-align: center;
       }
       img {
-      border-radius: 50%;
-      border: solid white 2px;
-      }
+        height: 14vh;
+        min-height: 82px;
+        width: auto;
+        border-radius: 50%;
+        // border: solid white 2px;
+
+        @include media-q {
+          height:26vh;
+          max-height: 176px;
+        };
+        }
       p {
       text-align: center;
       margin: 0;
@@ -108,9 +121,8 @@
   background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
               linear-gradient( $color__background_footer-subscribe, $color__background_footer-subscribe);
   width: 100%;
-  height: 50%;
-
   }
+
   .subscribe-content {
   display: flex;
   flex-direction: column;
@@ -118,67 +130,125 @@
   align-items: center;
   background: $color__background_footer-subscribe;
   width: 100%;
-  height: 90%;
-  margin: 0 0 30px 0;
+  // height: 27vh;
+  min-height: 150px;
+  margin: 0 0 32px 0;
+    @include media-q {
+      margin: 0 0 62px 0;
+    };
+
 
     form{
-      width: 100%;
-      height: 85px;
+      width: 88vw;
+      min-width:282px;
+      height: 4vh;
+      min-height:23px;
+      margin-bottom: 5vh;
       display: flex;
       justify-content: center;
 
       @include media-q {
+        width: 100vw;
+        // width: 50vw;
+        // max-width: 512px;
+        height: 9.9vh;
+        max-height: 68px;
+        margin-bottom:25px;
         border-bottom: solid grey 2px;
       };
 
     div {
-      width: 80%;
-      max-width: 600px;
+      width: 88vw;
+      min-width:282px;
+      height: 4vh;
+      min-height:23px;
+      margin-bottom: 5vh;
       display: flex;
       justify-content: space-between;
 
+      @include media-q {
+        width: 50vw;
+        max-width: 512px;
+        height: 6.6vh;
+        max-height: 46px;
+      };
+
+
+
     }
       input {
-        width: 60vw;
-        min-width: 190px;
+        width: 59vw;
+        min-width: 188px;
         height: 4vh;
         min-height:23px;
-        border-radius: 0
+        border-radius: 0;
+
+        @include media-q {
+          width: 36vw;
+          max-width: 376px;
+          height: 6.6vh;
+          max-height: 46px;
+        };
       }
 
       button {
-        width: 28vw;
+        width: 27vw;
         min-width: 88px;
         height: 4vh;
         min-height: 23px;
         background-color: $color__brand-main;
         text-transform: uppercase;
+        text-align: center;
         color: $color__text-secondary;
         border-radius: 0;
         border: none;
         box-shadow:none;
+        padding: 0;
+
+        @include media-q {
+          width: 11vw;
+          max-width: 116px;
+          height: 6.6vh;
+          max-height: 46px;
+        };
 
       }
     }
 
     .socialMedia-links {
       display:flex;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 100%;
-      max-width: 500px;
-      margin: 35px 0 20px 0;
+      max-width: 282px;
+      margin-bottom: 14px;
+
+      @include media-q {
+        justify-content: space-between;
+        width: 30vw;
+        max-width: 310px;
+        margin-top: 21px
+      };
+
 
       img {
       height: 4vh;
+
+      @include media-q {
+        height: 6vh;
+      };
       }
     }
 
     .insite-links {
       width: 100vw;
-      margin: 0 auto;
+      max-width: 275px;
       text-align: center;
-      max-width: 300px;
+      text-transform: uppercase;
+      font-size: 10px;
+      margin: 0 auto;
       padding-bottom: 20px;
+
+
 
       @include media-q {
         max-width: 600px;
@@ -196,7 +266,7 @@
       .hiddenBullet {
         display: none;
 
-        @include media-lg {
+        @include media-q {
           display: inline;
         };
       }
