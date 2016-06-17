@@ -45,3 +45,38 @@
     margin-top: 0;
   }
 }
+
+/* Gifts of Action Taxonomy Archive Pages */
+.gift-header {
+  width: 100%;
+  background: $color__background_footer-recent;
+  color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+
+  h3 {
+    color: black;
+  }
+}
+
+section.gift {
+  display: flex;
+  flex-direction: row;
+
+
+  .gift-image {
+    width: 60%;
+    height: 40vh;
+  }
+
+  .gift-text {
+    width: 40%;
+
+  }
+
+  h4, h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
