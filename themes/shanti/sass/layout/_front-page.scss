@@ -98,7 +98,6 @@
     .who-we-are-content{
       width: 100%;
       height: 80%;
-      min-height:105px;
       background: $color__brand-who-we-are;
       display:flex;
       justify-content: space-between;
@@ -117,8 +116,8 @@
         overflow: hidden;
 
         img {
-          height:100%;
-          width: auto;
+          height:auto;
+          width: 100%;
         }
       }
     }
