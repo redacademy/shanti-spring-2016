@@ -39,7 +39,7 @@ add_action( 'wp_enqueue_scripts', 'shanti_featured_image_header' );
 
 function shanti_taxonomy_archive_header() {
 
-	if(!is_tax('action_types')) {
+	if(!is_tax('action_types') && !is_tax('action_price') && !is_tax('team_role')) {
 		return;
 	}
 
@@ -49,7 +49,7 @@ function shanti_taxonomy_archive_header() {
 	$image = $image_data[0];
 
 	if ( !empty($image) ) {
-		$custom_css = ".action-tax { background: url('$image') no-repeat center center; background-size: cover;
+		$custom_css = ".tax-header { background: url('$image') no-repeat center center; background-size: cover;
 		height: 100vh; width: 100%;}";
 	}
 

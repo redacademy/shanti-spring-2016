@@ -12,8 +12,8 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="entry-header action-tax">
-				
+			<header class="tax-header">
+
 			</header>
 			<div class="gift-header">
 				<?php
