@@ -25,13 +25,17 @@
 .site-branding {
   background: url(../../images/logooo.png) no-repeat center center;
   background-size: contain;
-  height: 100%;
-  width: 100%;
+  height: 30px;
+  width: 100px;
   margin: 0 auto;
 
   @include media-q {
 
     width: 25%;
+
+    .logo{
+      height: 50px
+    }
 
   }
 
