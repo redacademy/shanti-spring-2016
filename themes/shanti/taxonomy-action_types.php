@@ -23,15 +23,15 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="container gift">
-					<div class="gift-image">
+				<section class="alternating container">
+					<div class="alt-image">
 						<?php the_post_thumbnail('full'); ?>
 					</div>
-					<div class="gift-info">
+					<div class="alt-info">
 						<h3><?php the_title(); ?></h3>
 						<?php $term_list = wp_get_post_terms($post->ID, 'action_price');?>
 						<h4><?php echo $term_list[0]->name; ?></h4>
-						<div class="gift-text"><?php the_excerpt(); ?></div>
+						<div class="alt-text"><?php the_excerpt(); ?></div>
 						<a href="" class="cta">Buy</a>
 					</div>
 				</section>

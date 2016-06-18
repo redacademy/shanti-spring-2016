@@ -13,6 +13,91 @@
 
 }
 
+/* Styling of the alternating images and texts - reusable */
+
+section.alternating{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  height: 20vh;
+
+  @include media-q {
+    height: 30vh;
+  }
+
+  @include media-lg {
+    height: 40vh;
+  }
+
+  .alt-image {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      position: absolute;
+      max-width: none;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .alt-info {
+    width: 40%;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media-q {
+      padding-left: $base__space-unit;
+    }
+  }
+
+  h3, h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+
+    @include media-lg {
+      font-size: 1.35rem;
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  .alt-text {
+    display: none;
+
+
+    @include media-lg {
+      display: block;
+    }
+  }
+
+  p {
+      font-size: 1.1rem;
+  }
+}
+
+/* Alternating positioning of the photos */
+
+section.alternating:nth-child(odd) {
+  .alt-image {
+    order: 2;
+  }
+}
+
+
 /* Team Member Taxonomy Archive Pages */
 
 .staff {
@@ -57,93 +142,5 @@
 
   h2 {
     color: black;
-  }
-}
-
-section.gift {
-  display: flex;
-  flex-direction: row;
-  margin-top: 3rem;
-  height: 20vh;
-
-  @include media-q {
-    height: 30vh;
-  }
-
-  @include media-lg {
-    height: 40vh;
-  }
-
-  .gift-image {
-    width: 60%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-
-    img {
-      width: 100%;
-      position: absolute;
-      max-width: none;
-      height: auto;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .gift-info {
-    width: 40%;
-    padding-left: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @include media-q {
-      padding-left: $base__space-unit;
-    }
-  }
-
-  h3, h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1rem;
-    color: black;
-    
-    @include media-lg {
-      font-size: 1.35rem;
-    }
-  }
-
-  h4 {
-    font-weight: bold;
-  }
-
-  .gift-text {
-    display: none;
-
-
-    @include media-lg {
-      display: block;
-    }
-  }
-
-  p {
-      font-size: 1.1rem;
-  }
-
-  a {
-    width: 20%;
-    text-align: center;
-    display: inline-block;
-  }
-}
-
-/* Alternating positioning of the photos */
-
-section.gift:nth-child(odd) {
-  .gift-image {
-    order: 2;
   }
 }
