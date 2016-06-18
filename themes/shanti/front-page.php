@@ -59,16 +59,10 @@ get_header(); ?>
 								?>
 							</h3>
 							<div class="exerpt">
-								<?php
-								$my_id = 16;
-								$post_id_16 = get_post($my_id);
-								$exerpt = CFS()->get('exerpt');
-								// $exerpt = apply_filters('the_title', $title);
-								// $title = str_replace(']]>', ']]>', $title);
-								echo $exerpt;
-								?>
+								<!-- this is here the short exerpt should go -->
 							</div>
 							<div class="children">
+								<!-- this is where the links to the child pages should go -->
 							</div>
 						</div>
 
