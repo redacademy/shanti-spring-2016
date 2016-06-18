@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<header class="gift-header">
 				<?php
-					the_archive_title( '<h3 class="page-title">', '</h3>' );
+					the_archive_title( '<h2 class="page-title">', '</h2>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 
@@ -25,13 +25,13 @@ get_header(); ?>
 
 				<section class="container gift">
 					<div class="gift-image">
-						<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail('full'); ?>
 					</div>
-					<div class="gift-text">
-						<h4><?php the_title(); ?></h4>
+					<div class="gift-info">
+						<h3><?php the_title(); ?></h3>
 						<?php $term_list = wp_get_post_terms($post->ID, 'action_price');?>
-						<h5><?php echo $term_list[0]->name; ?></h5>
-						<?php the_excerpt(); ?>
+						<h4><?php echo $term_list[0]->name; ?></h4>
+						<div class="gift-text"><?php the_excerpt(); ?></div>
 						<a href="" class="cta">Buy</a>
 					</div>
 				</section>
