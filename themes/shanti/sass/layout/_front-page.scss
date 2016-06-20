@@ -70,7 +70,7 @@
     height: 20vh;
     min-height: 105px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
 
     @include media-q {
       height:48vh;
@@ -114,10 +114,16 @@
         width: 50%;
         height: 100%;
         overflow: hidden;
+        position: relative;
 
         img {
-          height:auto;
           width: 100%;
+          position: absolute;
+          max-width: none;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -155,10 +161,17 @@
         width: 50%;
         height: 100%;
         overflow: hidden;
+        position: relative;
+        // background-image: ;
 
         img {
-          height:auto;
           width: 100%;
+          position: absolute;
+          max-width: none;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -195,6 +208,7 @@
         img {
           height:auto;
           width: 100%;
+          transform: translate(0%, -10%);
         }
       }
     }
@@ -235,9 +249,8 @@
 
 
         img {
-          height:auto;
+          height:100%;
           width: 100%;
-          transform: translate(0, -10%);
 
 
         }
