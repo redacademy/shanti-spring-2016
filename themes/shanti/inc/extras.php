@@ -58,13 +58,17 @@ function shanti_taxonomy_archive_header() {
 
 add_action ( 'wp_enqueue_scripts', 'shanti_taxonomy_archive_header' );
 
+
+// add the custom coloured block to just below the header
 function shanti_featured_color_css() {
 
-	if(!is_page_template('parentpage.php')) {
+	if(!is_page_template('parentpage.php') && !is_page()) {
 		return;
 	}
 	$color = CFS()->get('color');
-	$custom_css = ".feature-color { background: $color;}";
+	$text_color = CFS()->get('text_color');
+	$custom_css = ".feature-color { background: $color; color: $text_color;}
+									.feature-color h2 {color: $text_color;}";
 
 	wp_add_inline_style('shanti-style', $custom_css);
 
@@ -102,6 +106,7 @@ function shanti_sort_gift_action_by_price( $query ) {
 
 add_action( 'pre_get_posts', "shanti_sort_gift_action_by_price");
 
+// Change how the action type taxonomy archive titles display
 
 function shanti_filter_action_archive_titles() {
 	if (!is_tax('action_types')) {

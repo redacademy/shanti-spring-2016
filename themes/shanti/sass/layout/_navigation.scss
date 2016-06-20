@@ -49,7 +49,7 @@ a {
 			flex-direction: column;
 			width: auto;
 			background: rgba(255,255,255,0.7);
-			border: 1px solid grey;
+			border: 1px solid #c4c4c4;
 
 			ul {
 				left: -999em;
@@ -117,6 +117,10 @@ a {
 .main-navigation > div > ul > li > a{
 		line-height: 10vh;
 	}
+
+.main-navigation > div> ul > li > ul {
+	border-top: none;
+}
 
 .main-navigation > div > ul > li li {
 	border-bottom: 1px solid #E3E3E3;
