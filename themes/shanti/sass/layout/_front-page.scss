@@ -70,16 +70,16 @@
     height: 20vh;
     min-height: 105px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
 
     @include media-q {
       height:48vh;
-      // max-height: 332px;
+      max-height: 332px;
     }
 
     @include media-lg {
       height:48vh;
-      // max-height: 450px;
+      max-height: 450px;
     }
 
     h3 {
@@ -101,6 +101,10 @@
       background: $color__brand-who-we-are;
       display:flex;
       justify-content: space-between;
+
+      @include media-q {
+        height:100%;
+      }
 
       .section-content {
         width: 50%;
@@ -145,6 +149,10 @@
       justify-content: space-between;
       flex-direction: row-reverse;
 
+      @include media-q {
+        height:100%;
+      }
+
       .section-content {
         width: 50%;
         display: flex;
@@ -162,7 +170,6 @@
         height: 100%;
         overflow: hidden;
         position: relative;
-        // background-image: ;
 
         img {
           width: 100%;
@@ -192,6 +199,10 @@
       display:flex;
       justify-content: space-between;
 
+      @include media-q {
+        height:100%;
+      }
+
       .section-content {
         width: 50%;
         display: flex;
@@ -204,11 +215,16 @@
         width: 50%;
         height: 100%;
         overflow: hidden;
+        position: relative;
 
         img {
-          height:auto;
           width: 100%;
-          transform: translate(0%, -10%);
+          position: absolute;
+          max-width: none;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -230,6 +246,10 @@
       justify-content: space-between;
       flex-direction: row-reverse;
 
+      @include media-q {
+        height:100%;
+      }
+
       .section-content {
         width: 50%;
         display: flex;
@@ -246,13 +266,16 @@
         width: 50%;
         height: 100%;
         overflow: hidden;
-
+        position: relative;
 
         img {
-          height:100%;
           width: 100%;
-
-
+          position: absolute;
+          max-width: none;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -272,6 +295,10 @@
 
       display:flex;
       justify-content: space-between;
+
+      @include media-q {
+        height:100%;
+      }
 
       .section-content {
         width: 50%;
