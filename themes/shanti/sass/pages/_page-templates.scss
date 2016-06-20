@@ -16,7 +16,7 @@
 /* Color-blocked header that sits under full-screen image header on most pages*/
 .sub-header {
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 8rem;
 
   h2 {
     margin-top: 0;
@@ -160,4 +160,42 @@ section.alternating:nth-child(odd) {
 .cta.buy {
   display: inline;
   width: auto;
+}
+
+/* Why Uganda Infographic */
+
+.why-uganda.infographic {
+  margin-top: 0;
+
+  ul {
+    background: white;
+  }
+  li {
+
+    width: 80%;
+    max-height: none;
+    padding: $base__space-unit;
+
+    @include media-q {
+      width: 40%;
+    }
+  }
+
+  img {
+    max-height: none;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.why-uganda.text {
+  padding-left: 20%;
+  padding-right: 20%;
+  opacity: 0.6;
+}
+
+.why-uganda-footer {
+  background: url('../../images/postpartum-health.png') no-repeat center center;
+  background-size: contain;
+  height: 30vh;
 }
