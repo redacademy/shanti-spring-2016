@@ -13,6 +13,18 @@
 
 }
 
+/* Color-blocked header that sits under full-screen image header on most pages*/
+.sub-header {
+  text-align: center;
+  padding: 3rem;
+
+  h2 {
+    margin-top: 0;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+
 /* Styling of the alternating images and texts - reusable */
 
 section.alternating{
