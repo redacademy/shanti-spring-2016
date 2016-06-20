@@ -12,27 +12,32 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="gift-header">
+			<header class="tax-header">
+
+			</header>
+			<div class="gift-header">
 				<?php
-					the_archive_title( '<h3 class="page-title">', '</h3>' );
+					the_archive_title( '<h2 class="page-title">', '</h2>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 
-			</header><!-- .page-header -->
+			</div><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="container gift">
-					<div class="gift-image">
-						<?php the_post_thumbnail(); ?>
+				<section class="alternating container">
+					<div class="alt-image">
+						<?php the_post_thumbnail('full'); ?>
 					</div>
-					<div class="gift-text">
-						<h4><?php the_title(); ?></h4>
+					<div class="alt-info">
+						<h3><?php the_title(); ?></h3>
 						<?php $term_list = wp_get_post_terms($post->ID, 'action_price');?>
-						<h5><?php echo $term_list[0]->name; ?></h5>
-						<?php the_excerpt(); ?>
-						<a href="" class="cta">Buy</a>
+						<h4><?php echo $term_list[0]->name; ?></h4>
+						<div class="alt-text"><?php the_excerpt(); ?></div>
+						<div class="alt-link">
+							<a href="" class="cta buy">Buy</a>
+						</div>
 					</div>
 				</section>
 
