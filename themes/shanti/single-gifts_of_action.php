@@ -26,9 +26,35 @@ get_header(); ?>
 			</div>
 			<div class="form-wrapper">
 				<h3><?php the_title(); ?></h3>
-				<form class="" action="" method="post">
 
-				</form>
+				<div class="cart-table">
+
+					<div class="price">
+						<h4>Price</h4>
+						<?php $term_list = wp_get_post_terms($post->ID, 'action_price');?>
+						<?php $price = $term_list[0]->name; ?>
+						<p><?php echo $price; ?></p>
+					</div>
+
+					<div class="qty">
+						<h4>Qty</h4>
+						<form>
+							<input type="text" name="qty" value="1">
+						</form>
+					</div>
+
+					<div class="line-total">
+						<p><?php echo $price; ?></p>
+					</div>
+
+				</div>
+
+				<div class="subtotal">
+					<h3>Subtotal</h3>
+					<h3 class="price"><?php echo $price; ?></h3>
+				</div>
+
+				<button type="button" name="check-out">Check Out</button>
 			</div>
 		</div>
 
@@ -48,6 +74,9 @@ get_header(); ?>
 						<input type="text" name="to" value="" id="to">
 					</label>
 					<textarea name="message"></textarea>
+
+				</fieldset>
+				<fieldset class="button">
 					<button type="submit" name="check-out">Check Out</button>
 				</fieldset>
 			</form>
