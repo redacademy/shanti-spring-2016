@@ -15,7 +15,7 @@
 
 /* Pages that don't have a full-size header image */
 
-.single-gifts_of_action, .error404, .search-results {
+.single-gifts_of_action, .error404, .search-results, .single-post {
   .site-content {
     margin-top: 12vh;
   }
@@ -172,6 +172,9 @@ section.alternating:nth-child(odd) {
 
 /* Gifts of Action Single Pages */
 
+
+
+
 .cart {
   display: flex;
 
@@ -187,6 +190,14 @@ section.alternating:nth-child(odd) {
   h3 {
     font-weight: normal;
     text-transform: uppercase;
+  }
+}
+
+.cart-table {
+  display: flex;
+
+  div {
+    width: 30%
   }
 }
 
