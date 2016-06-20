@@ -34,23 +34,24 @@ get_header(); ?>
   						$args = array( 'child_of' => $id, 'post_type' => 'page');
   						$child_pages = get_pages($args);
   						foreach($child_pages as $post): setup_postdata($post); ?>
-  						<div class="child-page">
-                <div class="child-page-text">
+  						<section class="alternating">
+								<div class="alt-image">
+                  <?php the_post_thumbnail('full'); ?>
+                </div>
+                <div class="alt-info">
 									<div class="our-story-headers">
                     <h3><?php the_title(); ?></h3>
 								 </div>
-								 <div class="excerpt">
+								 <div class="alt-text">
                   <?php echo CFS()->get('excerpt'); ?>
+							 	</div>
+								<div class="alt-link">
 									<a class="discover-button">
-									 Discover Our Story
+									 Discover <?php the_title(); ?>
 								 </a>
+								</div>
 							 </div>
-							 </div>
-                <div class="child-page-image">
-                  <?php the_post_thumbnail('full'); ?>
-                </div>
-
-  						</div>
+  						</section>
 
   					<?php endforeach; wp_reset_postdata();?>
         </section>
