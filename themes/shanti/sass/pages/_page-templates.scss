@@ -13,6 +13,26 @@
 
 }
 
+/* Pages that don't have a full-size header image */
+
+.single-gifts_of_action, .error404, .search-results, .single-post {
+  .site-content {
+    margin-top: 12vh;
+  }
+}
+
+/* Color-blocked header that sits under full-screen image header on most pages*/
+.sub-header {
+  text-align: center;
+  padding: 3rem 8rem;
+
+  h2 {
+    margin-top: 0;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+
 /* Styling of the alternating images and texts - reusable */
 
 section.alternating{
@@ -148,4 +168,109 @@ section.alternating:nth-child(odd) {
 .cta.buy {
   display: inline;
   width: auto;
+}
+
+/* Gifts of Action Single Pages */
+
+
+
+
+.cart {
+  display: flex;
+
+  .image {
+    width: 40%;
+
+  }
+
+  .form-wrapper {
+    width: 60%;
+  }
+
+  h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+.cart-table {
+  display: flex;
+
+  div {
+    width: 30%
+  }
+}
+
+.gift-form {
+  border-top: 1px solid grey;
+
+  p {
+    font-size: 1rem;
+  }
+
+  form>label {
+    margin: .625em ;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label.checkbox {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-right: 3rem;
+
+    &:before {
+      content: '';
+      display: inline-block;
+
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 0;
+      border: 2px solid grey;
+
+    }
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    content: "\2713";
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  input[type="text"] {
+    min-width: 30%;
+  }
+
+  span {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  label {
+    margin: $base__space-unit 0;
+  }
+
+
+  textarea {
+    margin: $base__space-unit 0;
+    width: 90%;
+    height: 20vh;
+    display: block;
+  }
+
 }
