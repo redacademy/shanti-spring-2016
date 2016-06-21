@@ -13,7 +13,7 @@
 
 				<div class="recentPosts">
 					<div class="recentPosts-content">
-						<h3><a href="blog">Recent Blog Posts!</a></h3>
+						<h3><a href="blog">Recent Blog Posts</a></h3>
 						<ul class="blogPosts">
 							<?php
 				   $args = array( 'post_type' => 'post',
