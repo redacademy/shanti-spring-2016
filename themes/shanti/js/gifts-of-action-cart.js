@@ -31,7 +31,15 @@ jQuery(document).ready(function($){
   $giftForm = $('.gift-form fieldset');
 
   $checkbox.on('click', function() {
-    $giftForm.css('visibility', 'visible');
+
+    if ($checkbox.siblings('input').is(':checked')) {
+      $giftForm.css('visibility', 'hidden');
+    } else {
+      $giftForm.css('visibility', 'visible');
+    }
+
+    // console.log();
+
   });
 
 });
