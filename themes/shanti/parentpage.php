@@ -29,7 +29,7 @@ get_header(); ?>
 
         <!-- loop of child pages -->
 
-        <section class="child-pages container">
+        <section class="child-pages">
   					<?php global $id;
   						$args = array( 'child_of' => $id, 'post_type' => 'page');
   						$child_pages = get_pages($args);

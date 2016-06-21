@@ -44,6 +44,8 @@ section.alternating{
   display: flex;
   flex-direction: row;
   height: 20vh;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 
   @include media-q {
     height: 30vh;
