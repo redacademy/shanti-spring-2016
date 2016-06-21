@@ -21,6 +21,8 @@
     min-height: 105px;
     width: 100%;
     max-width: 1440px;
+    border-bottom: solid white 2px;
+
 
     @include media-q {
       height:48vh;
@@ -263,6 +265,7 @@
         h3 {
           max-width: 75%;
           text-align: center;
+            color: $color__text-secondary;
         }
       }
 

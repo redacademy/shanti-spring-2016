@@ -48,23 +48,22 @@ get_header(); ?>
 		<div class="front-page-content">
 			<section class="who-we-are">
 				<div class="who-we-are-content">
+					<?
+					$my_id = 16;
+					$post_id_16 = get_post($my_id);
+					$title = $post_id_16->post_title;
+					$title = apply_filters('the_title', $title);
+					$title = str_replace(']]>', ']]>', $title);
+					$link = get_page_link($my_id);
+					?>
 					<div class="section-content">
+						<a href="<? echo $link ?>">
 						<h3 class="title">
 							<?php
-								$my_id = 16;
-								$post_id_16 = get_post($my_id);
-								$title = $post_id_16->post_title;
-								$title = apply_filters('the_title', $title);
-								$title = str_replace(']]>', ']]>', $title);
 								echo $title;
 								?>
 							</h3>
-							<div class="exerpt">
-								<!-- this is here the short exerpt should go -->
-							</div>
-							<div class="children">
-								<!-- this is where the links to the child pages should go -->
-							</div>
+						</a>
 						</div>
 
 					<div class="thumbnail">
@@ -80,29 +79,22 @@ get_header(); ?>
 			</section>
 			<section class="why-uganda">
 				<div class="why-uganda-content">
+					<?php
+					$my_id = 24;
+					$post_id_24 = get_post($my_id);
+					$title = $post_id_24->post_title;
+					$title = apply_filters('the_title', $title);
+					$title = str_replace(']]>', ']]>', $title);
+					$link = get_page_link($my_id);
+					?>
 					<div class="section-content">
+						<a href="<? echo $link ?>">
 						<h3 class="title">
 							<?php
-								$my_id = 24;
-								$post_id_24 = get_post($my_id);
-								$title = $post_id_24->post_title;
-								$title = apply_filters('the_title', $title);
-								$title = str_replace(']]>', ']]>', $title);
 								echo $title;
 								?>
 							</h3>
-							<div class="exerpt">
-								<?php
-								$my_id = 24;
-								$post_id_24 = get_post($my_id);
-								$exerpt = CFS()->get('exerpt');
-								// $exerpt = apply_filters('the_title', $title);
-								// $title = str_replace(']]>', ']]>', $title);
-								echo $exerpt;
-								?>
-							</div>
-							<div class="children">
-							</div>
+						</a>
 						</div>
 					<div class="thumbnail">
 						<?php
@@ -115,29 +107,24 @@ get_header(); ?>
 			</section>
 			<section class="our-projects">
 				<div class="our-projects-content">
+					<?php
+					$my_id = 30;
+					$post_id_30 = get_post($my_id);
+					$title = $post_id_30->post_title;
+					$title = apply_filters('the_title', $title);
+					$title = str_replace(']]>', ']]>', $title);
+					$link = get_page_link($my_id);
+					 ?>
+
 					<div class="section-content">
-						<h3 class="title">
-							<?php
-								$my_id = 30;
-								$post_id_30 = get_post($my_id);
-								$title = $post_id_30->post_title;
-								$title = apply_filters('the_title', $title);
-								$title = str_replace(']]>', ']]>', $title);
-								echo $title;
-								?>
-							</h3>
-							<div class="exerpt">
-								<?php
-								$my_id = 30;
-								$post_id_30 = get_post($my_id);
-								$exerpt = CFS()->get('exerpt');
-								// $exerpt = apply_filters('the_title', $title);
-								// $title = str_replace(']]>', ']]>', $title);
-								echo $exerpt;
-								?>
-							</div>
-							<div class="children">
-							</div>
+					<a href="<? echo $link ?>">
+					<h3 class="title">
+						<?php
+							echo $title;
+							?>
+						</h3>
+					</a>
+
 						</div>
 
 					<div class="thumbnail">
@@ -151,29 +138,23 @@ get_header(); ?>
 			</section>
 			<section class="get-involved">
 				<div class="get-involved-content">
+					<?php
+					$my_id = 40;
+					$post_id_40 = get_post($my_id);
+					$title = $post_id_40->post_title;
+					$title = apply_filters('the_title', $title);
+					$title = str_replace(']]>', ']]>', $title);
+					$link = get_page_link($my_id);
+					?>
 					<div class="section-content">
+						<a href="<? echo $link ?>">
 						<h3 class="title">
 							<?php
-								$my_id = 40;
-								$post_id_40 = get_post($my_id);
-								$title = $post_id_40->post_title;
-								$title = apply_filters('the_title', $title);
-								$title = str_replace(']]>', ']]>', $title);
 								echo $title;
 								?>
 							</h3>
-							<div class="exerpt">
-								<?php
-								$my_id = 40;
-								$post_id_40 = get_post($my_id);
-								$exerpt = CFS()->get('exerpt');
-								// $exerpt = apply_filters('the_title', $title);
-								// $title = str_replace(']]>', ']]>', $title);
-								echo $exerpt;
-								?>
-							</div>
-							<div class="children">
-							</div>
+						</a>
+
 						</div>
 
 					<div class="thumbnail">
@@ -187,29 +168,23 @@ get_header(); ?>
 			</section>
 			<section class="donate">
 				<div class="donate-content">
+					<?php
+					$my_id = 52;
+					$post_id_16 = get_post($my_id);
+					$title = $post_id_16->post_title;
+					$title = apply_filters('the_title', $title);
+					$title = str_replace(']]>', ']]>', $title);
+					$link = get_page_link($my_id);
+					?>
 					<div class="section-content">
+						<a href="<? echo $link ?>">
 						<h3 class="title">
 							<?php
-								$my_id = 52;
-								$post_id_16 = get_post($my_id);
-								$title = $post_id_16->post_title;
-								$title = apply_filters('the_title', $title);
-								$title = str_replace(']]>', ']]>', $title);
 								echo $title;
 								?>
 							</h3>
-							<div class="exerpt">
-								<?php
-								$my_id = 52;
-								$post_id_52 = get_post($my_id);
-								$exerpt = CFS()->get('exerpt');
-								// $exerpt = apply_filters('the_title', $title);
-								// $title = str_replace(']]>', ']]>', $title);
-								echo $exerpt;
-								?>
-							</div>
-							<div class="children">
-							</div>
+						</a>
+
 						</div>
 
 					<div class="thumbnail">
