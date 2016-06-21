@@ -162,11 +162,9 @@
 
       @include media-q {
         width: 100%;
-        // width: 50vw;
+        height: 100%;
         max-width: none;
-        height: 9.9vh;
         margin-bottom:0;
-        border-bottom: solid grey 2px;
       };
 
     div {
@@ -178,7 +176,7 @@
       justify-content: space-between;
 
       @include media-q {
-        width: 50vw;
+        width: 55vw;
         max-width: 512px;
         height: 6.6vh;
         max-height: 46px;
@@ -198,19 +196,24 @@
 
 
         @include media-q {
-          width: 36vw;
+          width: 40vw;
           max-width: 376px;
           height: 6.6vh;
           max-height: 46px;
         };
 
         i {
-          z-index: 1;
-          font-size: 2rem;
           color: grey;
-          padding-left: 10px;
+          z-index: 1;
+          font-size: 1rem;
+          padding: 2%;
+
+          @include media-q {
+          font-size: 2rem;
+          padding: 1%;
           width: 10%;
         }
+      }
 
         input {
           border: none;
@@ -226,6 +229,7 @@
         background-color: $color__brand-main;
         text-transform: uppercase;
         text-align: center;
+        font-size: 1rem;
         color: $color__text-secondary;
         border-radius: 0;
         border: none;
@@ -233,7 +237,7 @@
         padding: 0;
 
         @include media-q {
-          width: 11vw;
+          width: 13vw;
           max-width: 116px;
           height: 6.6vh;
           max-height: 46px;
