@@ -28,6 +28,9 @@
 								 	<?php the_post_thumbnail( 'thumbnail' ); ?>
 							 	<?php endif; ?>
 					 		</div>
+							<h4>
+								<?php echo the_title() ?>
+							</h4>
 							<p>
 								<?php echo CFS()->get( 'subtitle' ); ?>
 							</p>
