@@ -14,10 +14,10 @@ get_header(); ?>
 			<header class="tax-header">
 
 			</header>
-			<divclass="role-header">
-				<?php
-					the_archive_title( '<h2 class="page-title">', '</h2>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			<div class="role-header">
+
+					<h2><?php single_term_title(); ?></h2>
+					<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</div><!-- .page-header -->
 

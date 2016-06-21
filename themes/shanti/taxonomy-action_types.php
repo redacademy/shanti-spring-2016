@@ -17,7 +17,7 @@ get_header(); ?>
 			</header>
 			<div class="gift-header">
 				<?php
-					the_archive_title( '<h2 class="page-title">', '</h2>' );
+					the_archive_title( '<h3 class="page-title">', '</h3>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 
@@ -26,7 +26,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="alternating container">
+				<section class="alternating">
 					<div class="alt-image">
 						<?php the_post_thumbnail('full'); ?>
 					</div>
