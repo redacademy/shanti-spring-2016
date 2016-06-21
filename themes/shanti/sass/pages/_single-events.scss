@@ -1,3 +1,28 @@
 .event-image{
-  
+
+}
+
+.event-post-container{
+  background-color: $color__brand-why-uganda;
+  text-align: center;
+  padding-top: .2rem;
+  padding-bottom: 2rem;
+  @include media-lg{
+    padding-top: 2rem;
+    padding-top: 4rem;
+  }
+}
+
+.event-post-title{
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.event-entry-content{
+  text-align: center;
+}
+
+.event-post-container h3{
+  text-transform: uppercase;
 }
