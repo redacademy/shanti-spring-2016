@@ -205,12 +205,15 @@
         i {
           color: grey;
           z-index: 1;
+          height: 100%;
+          width:15%;
           font-size: 1rem;
-          padding: 2%;
+          display: flex;
+          justify-content: center;
+          align-items: center
 
           @include media-q {
           font-size: 2rem;
-          padding: 1%;
           width: 10%;
         }
       }
