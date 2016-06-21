@@ -47,7 +47,10 @@
 					</h3>
 					<form>
 						<div>
-	     				<input type="email" placeholder="Your e-mail Address...."required></input>
+							<div class="subscribe-input">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+	     					<input type="email" placeholder="Your e-mail Address...."required></input>
+							</div>
 	     				<button type="submit">Subscribe</button>
 						</div>
 					</form>

@@ -3,7 +3,6 @@
 
   h3 {
     text-transform: uppercase;
-    color: white;
   }
 
   @include media-q {
@@ -65,6 +64,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-secondary;
+        }
       }
 
       .thumbnail {
@@ -113,6 +116,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary;
+        }
       }
 
       .thumbnail {
@@ -157,6 +164,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-secondary;
+        }
       }
 
       .thumbnail {
@@ -200,6 +211,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary;
+        }
       }
 
       .thumbnail {

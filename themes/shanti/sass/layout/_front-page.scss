@@ -113,6 +113,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+           color: $color__text-tertiary
+        }
       }
 
       .thumbnail {
@@ -162,7 +166,7 @@
         align-items: center;
 
         h3 {
-          color: white;
+          color: $color__text-secondary;
         }
       }
 
@@ -210,6 +214,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary
+        }
       }
 
       .thumbnail {
@@ -259,7 +267,7 @@
         align-items: center;
 
         h3 {
-          color: white;
+          color: $color__text-secondary;
         }
       }
 
@@ -307,6 +315,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary
+        }
       }
 
       .thumbnail {
