@@ -8,9 +8,17 @@
   }
   li {
 
-    width: 80%;
+    width: 60%;
     max-height: none;
     padding: $base__space-unit;
+
+    &:nth-child(odd) {
+      margin-left: auto;
+    }
+
+    &:nth-child(even) {
+      margin-right: auto;
+    }
 
     @include media-q {
       width: 40%;
@@ -34,4 +42,10 @@
   background: url('../../images/postpartum-health.png') no-repeat center center;
   background-size: contain;
   height: 30vh;
+
+
+  @include media-lg {
+    background-size: cover;
+    width: 100%;
+  }
 }
