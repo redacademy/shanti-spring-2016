@@ -69,6 +69,7 @@
   }
   input {
     width: 50%;
+    border: 1px solid black;
   }
 }
 
@@ -137,6 +138,7 @@
 
   fieldset {
     border: none;
+    visibility: hidden;
   }
 
   input[type="text"] {

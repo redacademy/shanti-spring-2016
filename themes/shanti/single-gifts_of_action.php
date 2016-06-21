@@ -39,7 +39,7 @@ get_header(); ?>
 					<div class="qty">
 						<h4>Qty</h4>
 						<form>
-							<input type="text" name="qty" value="1">
+							<input type="number" name="qty" value="1">
 						</form>
 					</div>
 
