@@ -78,6 +78,12 @@ function shanti_action_type_taxonomy() {
 		'items_list'                 => 'Action Types list',
 		'items_list_navigation'      => 'Action Types list navigation',
 	);
+	$rewrite = array(
+		'slug'									=> 'collection',
+		'with_front'						=> true,
+		'pages'									=> true,
+		'feeds'									=> true
+	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -86,6 +92,7 @@ function shanti_action_type_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
+		'rewrite'										 => $rewrite
 	);
 	register_taxonomy( 'action_types', array( 'gifts_of_action' ), $args );
 
@@ -117,6 +124,12 @@ function shanti_action_price_taxonomy() {
 		'items_list'                 => 'Action Prices list',
 		'items_list_navigation'      => 'Action Prices list navigation',
 	);
+	$rewrite = array(
+		'slug'									=> 'gifts',
+		'with_front'						=> true,
+		'pages'									=> true,
+		'feeds'									=> true
+	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -125,6 +138,7 @@ function shanti_action_price_taxonomy() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
+		'rewrite'										 => $rewrite
 	);
 	register_taxonomy( 'action_price', array( 'gifts_of_action' ), $args );
 
