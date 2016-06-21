@@ -28,6 +28,8 @@ get_header(); ?>
         </article><!-- #post-## -->
 
         <!-- loop of child pages -->
+				<?php global $this_page;
+				 		$this_page_ID = get_the_ID();?>
 
         <section class="child-pages">
   					<?php global $id;
@@ -45,11 +47,17 @@ get_header(); ?>
 								 <div class="alt-text">
                   <?php echo CFS()->get('excerpt'); ?>
 							 	</div>
+
 								<div class="alt-link">
-									<a class="discover-button">
-									 Discover <?php the_title(); ?>
+									<a class="discover-button" href="<?php the_permalink(); ?>">
+										<?php if(get_the_title($this_page_ID) === 'Get Involved' || get_the_title($this_page_ID) === 'Donate Now'): ?>
+										<?php echo get_the_title($this_page_ID); ?>
+									<?php else: ?>
+									 Discover <?php echo get_the_title($this_page_ID); ?>
+								 <?php endif; ?>
 								 </a>
 								</div>
+
 							 </div>
   						</section>
 

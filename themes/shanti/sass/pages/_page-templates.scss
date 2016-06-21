@@ -123,6 +123,17 @@ section.alternating:nth-child(odd) {
   }
 }
 
+/* 50% width */
+
+.alternating.equal {
+  .alt-image {
+    width: 50%;
+  }
+  .alt-info {
+    width: 50%;
+  }
+}
+
 
 /* Team Member Taxonomy Archive Pages */
 
