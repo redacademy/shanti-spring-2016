@@ -41,18 +41,16 @@ get_header(); ?>
             		<h3><?php echo $board_of_directors->name; ?></h3>
           		</div>
           		<div class="thumbnail">
-								<?php
+								 <?php
 									$my_id = 16;
-									$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
+										$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 									?>
-									<img src="<?php echo $feat_image ?>" alt="test" />
+									<img src="<?php echo $image ?>" alt="test" />
           		</div>
 						</a>
 					</div>
         </section>
-			</div>
 
-			<div class="meet-our-team-content">
         <section class="advisory_board">
 					<div class="advisory_board-content">
           	<a href="<?php echo get_term_link($advisory_board, 'our-team');?>">
@@ -69,9 +67,7 @@ get_header(); ?>
 						</a>
 					</div>
         </section>
-			</div>
 
-			<div class="meet-our-team-content">
         <section class="our_staff">
 					<div class="our_staff-content">
           	<a href="<?php echo get_term_link($our_staff, 'our-team');?>">
@@ -88,9 +84,7 @@ get_header(); ?>
 						</a>
 					</div>
         </section>
-			</div>
 
-			<div class="meet-our-team-content">
         <section class="our_partners">
 					<div class="our_partners-content">
           	<a href="<?php echo get_term_link($our_partners, 'our-team');?>">
@@ -107,9 +101,7 @@ get_header(); ?>
 						</a>
 					</div>
         </section>
-			</div>
 
-			<div class="meet-our-team-content">
         <section class="wigg">
 					<div class="wigg-content">
           	<a href="<?php echo get_term_link($wigg, 'our-team');?>">
