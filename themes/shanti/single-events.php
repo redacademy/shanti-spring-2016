@@ -22,9 +22,7 @@ get_header(); ?>
 								 <div class="event-entry-content container">
 
 								<?php the_content(); ?>
-                <a class="discover-button">
-                 Discover More
-               </a>
+
 						</div><!-- .entry-content -->
 					</article><!-- #post-## -->
 

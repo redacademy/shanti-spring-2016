@@ -1,5 +1,7 @@
 .event-image{
-
+  @include media-lg {
+    text-align: center;
+}
 }
 
 .event-post-container{
@@ -21,6 +23,7 @@
 
 .event-entry-content{
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .event-post-container h3{

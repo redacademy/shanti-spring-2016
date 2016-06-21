@@ -29,11 +29,14 @@ get_header(); ?>
                   <?php the_post_thumbnail( 'full' ); ?>
                 <?php endif; ?>
               </div>
-              <div class="event-subheader">
+              <div class="event-post-container">
                 <?php echo CFS()->get('excerpt'); ?>
               </div>
-              <div class="event-info">
-                <?php the_content(); ?>
+              <div class="event-entry-content">
+                <?php the_excerpt(); ?>
+								<a href="<?php the_permalink(); ?>" class="discover-button">
+                 Discover More
+               </a>
               </div>
 
             </section>
