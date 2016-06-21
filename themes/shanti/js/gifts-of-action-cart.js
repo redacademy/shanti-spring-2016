@@ -15,7 +15,6 @@ jQuery(document).ready(function($){
 
   //conver to a number
   itemPrice = parseInt(itemPrice, 10);
-  console.log(itemPrice);
 
   $userQty.on('change', function(){
     var total = itemPrice * $userQty.val();
@@ -38,7 +37,6 @@ jQuery(document).ready(function($){
       $giftForm.css('visibility', 'visible');
     }
 
-    // console.log();
 
   });
 
