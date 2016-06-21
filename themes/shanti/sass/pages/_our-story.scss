@@ -42,12 +42,12 @@ ul.values  {
 
   @include media-q {
     width: 39%;
-    height: 40vh;
+    // height: 40vh;
   }
 
   @include media-lg {
     width: 26%;
-    height: 30vh;
+    // height: 30vh;
   }
 
   img {
@@ -68,7 +68,7 @@ ul.values  {
 }
 
 .history-header {
-  margin-top: 3rem;
+  margin-top: 5rem;
   height: 20vh;
   overflow: hidden;
   position: relative;
