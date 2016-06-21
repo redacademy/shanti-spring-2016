@@ -17,7 +17,7 @@
 						<ul class="blogPosts">
 							<?php
 				   $args = array( 'post_type' => 'post',
-												 	'posts_per_page' => 3);
+												 	'posts_per_page' => 1);
 				   $blog_posts = get_posts( $args ); // returns an array of posts
 				 ?>
 				 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
@@ -64,15 +64,15 @@
 				<div class="insite-links">
 					<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ) ?>">Blog</a>
 						<span> &bull; </span>
-  				<a href="#">Press</a>
+  				<a href="http://shantiuganda.org/about/press/">Press</a>
 						<span> &bull; </span>
-					<a href="#">Careers</a>
+					<a href="http://shantiuganda.org/get-involved/job-opportunities/">Careers</a>
 						<span> &bull; </span>
  					<a href="#">Events</a>
 						<span class="hiddenBullet"> &bull; </span>
-					<a href="#">Newsletter</a>
+					<a href="http://shantiuganda.org/contact/newsletter/">Newsletter</a>
 						<span> &bull; </span>
-					<a href="#">Contact Us</a>
+					<a href="http://shantiuganda.org/contact/">Contact Us</a>
 				</div>
 			</div>
 			</footer><!-- #colophon -->
