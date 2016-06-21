@@ -263,6 +263,49 @@ a {
 	}
 }
 
+/* Call-To-Action Styling of the Donate Now menu item in the main navigation */
+
+.main-navigation .menu-item {
+	z-index: 11;
+}
+.main-navigation .menu-item-93>a {
+	color: white;
+
+}
+.main-navigation .menu-item-93>a::after {
+	background: $color__brand-main;
+	content: '';
+	width: 110%;
+	height: 1.5rem;
+	position: absolute;
+	top: 3.4vh;
+	z-index: -1;
+	font-size: 0.83rem;
+	color: white;
+	text-align: center;
+	line-height: 1.6;
+	left: -5%;
+
+}
+
+
+
+// Reset on the toggled mobile navigation
+.main-navigation.toggled .menu-item-93>a{
+	color: black;
+
+	&::after{
+		height: 0;
+		width: 0;
+		content: '';
+		top: 3.4vh;
+		left: -5%;
+		z-index: -1;
+	}
+
+
+}
+
 /* Search Bar in mobile nav */
 
 .nav-search {
