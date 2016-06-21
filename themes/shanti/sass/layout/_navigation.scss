@@ -33,6 +33,7 @@ a {
 	float: left;
 
 
+
 	ul {
 		display: none;
 		list-style: none;
@@ -114,8 +115,19 @@ a {
 	}
 }
 
+.main-navigation-solid {
+	ul {
+		ul {
+			background: rgba(255,255,255,1);
+
+		}
+	}
+	background: rgba(255,255,255,1);
+
+}
+
 .main-navigation > div > ul > li > a{
-		line-height: 10vh;
+		line-height: 9.9vh;
 	}
 
 .main-navigation > div> ul > li > ul {

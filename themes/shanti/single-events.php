@@ -14,15 +14,17 @@ get_header(); ?>
 
         <header class="entry-header hero"></header>
 
-			<article class="container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="blog-post-container">
-					<span class="blog-post-title"><?php the_title(); ?></span>
-					<span><?php shanti_posted_on(); ?></span>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class="event-post-container">
+          <?php echo CFS()->get('excerpt'); ?>
 				</div>
 
-								 <div class="entry-content container">
+								 <div class="event-entry-content container">
 
 								<?php the_content(); ?>
+                <a class="discover-button">
+                 Discover More
+               </a>
 						</div><!-- .entry-content -->
 					</article><!-- #post-## -->
 
