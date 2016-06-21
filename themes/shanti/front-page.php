@@ -20,6 +20,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+						<section> This is for the new section the client wants here.... whatever that may be </section>
 
 						<section class="infographic">
 							<h3>Our Accomplishments</h3>

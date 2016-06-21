@@ -71,6 +71,7 @@
     min-height: 105px;
     width: 100%;
     max-width: 1440px;
+    border-bottom: solid white 2px;
 
     @include media-q {
       height:48vh;

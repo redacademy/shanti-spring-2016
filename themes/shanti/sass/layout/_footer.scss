@@ -13,6 +13,7 @@
   margin: 2vh 0 2.5vh 0;
   color:$color__text-secondary;
   font-weight: normal;
+  text-transform: uppercase;
 
   @include media-q {
   margin: 5.4vh 0 5vh 0;
@@ -92,6 +93,7 @@
 
       div{
         text-align: center;
+
       }
       img {
         height: 14vh;
@@ -100,12 +102,16 @@
         border-radius: 50%;
         // border: solid white 2px;
 
-        
+
 
         @include media-q {
           height:26vh;
           max-height: 176px;
         };
+
+        :hover {
+
+        }
         }
       p {
       text-align: center;
@@ -223,21 +229,33 @@
     .socialMedia-links {
       display:flex;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
-      max-width: 282px;
+      max-width: 250px;
 
       @include media-q {
-        width: 30vw;
-        max-width: 310px;
+        width: 50vw;
+        max-width: 400px;
         margin: 3vh 0;
       };
 
       a {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
       }
 
+      i {
+        color: white;
+        height: 4vh;
+        font-size: 1rem;
 
+        @include media-q {
+          height: 6vh;
+          font-size: 2rem;
+        };
+      }
       img {
       height: 4vh;
 
