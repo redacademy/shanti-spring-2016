@@ -7,14 +7,33 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class="blog-post-container">
+					<span class="blog-post-title"><?php the_title(); ?></span>
+					<span><?php shanti_posted_on(); ?></span>
+				</div>
+								<?php if ( has_post_thumbnail() ) : ?>
+									<div class="circle-image">
+															 <?php the_post_thumbnail( 'medium' ); ?>
+									</div>
+								<?php endif; ?>
 
-			<?php the_post_navigation(); ?>
+								 <div class="entry-content container">
+
+								<?php the_content(); ?>
+						</div><!-- .entry-content -->
+					</article><!-- #post-## -->
+
+				<footer class="entry-footer">
+					<?php shanti_entry_footer(); ?>
+				</footer><!-- .entry-footer -->
+			</article><!-- #post-## -->
+
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

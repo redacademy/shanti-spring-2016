@@ -1,0 +1,166 @@
+
+/* Gifts of Action Taxonomy Archive Pages */
+.gift-header {
+  width: 100%;
+  background: $color__background_footer-recent;
+  color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+
+  h2 {
+    color: black;
+  }
+}
+
+.cta.buy {
+  display: inline;
+  width: auto;
+}
+
+/* Gifts of Action Single Pages */
+
+
+.single-gifts_of_action .site-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $base__space-unit;
+  margin-bottom: $base__space-unit;
+
+
+  .image {
+    width: 40%;
+  }
+
+  .form-wrapper {
+    width: 50%;
+    text-align: right;
+  }
+
+  h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+}
+
+.cart-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+
+  div {
+    width: 20%;
+
+  }
+
+  .line-total {
+    align-self: flex-end;
+    text-align: right;
+  }
+  input {
+    width: 50%;
+  }
+}
+
+.subtotal {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: flex-end;
+
+  h3 {
+    padding-left: $base__space-unit;
+    font-weight: bold;
+  }
+
+  .price {
+    color: $color__brand-dark;
+  }
+}
+
+.gift-form {
+  border-top: 1px solid grey;
+
+
+  p {
+    font-size: 1rem;
+  }
+
+  form>label {
+    margin: .625em ;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label.checkbox {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-right: 3rem;
+
+    &:before {
+      content: '';
+      display: inline-block;
+
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 0;
+      border: 2px solid grey;
+
+    }
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    content: "\2713";
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  input[type="text"] {
+    min-width: 30%;
+  }
+
+  span {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  label {
+    margin: $base__space-unit 0;
+  }
+
+
+  textarea {
+    margin: $base__space-unit 0;
+    height: 20vh;
+    display: block;
+  }
+
+  .button {
+    text-align: right;
+  }
+
+}

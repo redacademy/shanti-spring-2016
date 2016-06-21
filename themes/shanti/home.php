@@ -36,7 +36,7 @@ get_header(); ?>
                <?php endif; ?>
 
                 <div class="entry-content container">
-                  <div class="blog-date-title">
+                  <div class="blog-post-container">
                     <span class="blog-post-title"><?php the_title(); ?></span>
                     <span><?php shanti_posted_on(); ?></span>
                   </div>
