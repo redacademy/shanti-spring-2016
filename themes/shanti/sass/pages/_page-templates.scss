@@ -29,12 +29,22 @@
 /* Color-blocked header that sits under full-screen image header on most pages*/
 .sub-header {
   text-align: center;
-  padding: 3rem 8rem;
+  padding: 3rem 2rem;
 
   h2 {
     margin-top: 0;
     color: black;
     text-transform: uppercase;
+  }
+}
+
+h2.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+
+  @include media-lg {
+    font-size: 1.8rem;
   }
 }
 
@@ -89,7 +99,7 @@ section.alternating{
     margin-bottom: 0;
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: black;
 
     @include media-lg {
