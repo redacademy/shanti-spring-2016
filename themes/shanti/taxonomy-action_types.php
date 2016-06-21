@@ -36,7 +36,7 @@ get_header(); ?>
 						<h4><?php echo $term_list[0]->name; ?></h4>
 						<div class="alt-text"><?php the_excerpt(); ?></div>
 						<div class="alt-link">
-							<a href="" class="cta buy">Buy</a>
+							<a href="<?php the_permalink(); ?>" class="cta buy">Buy</a>
 						</div>
 					</div>
 				</section>

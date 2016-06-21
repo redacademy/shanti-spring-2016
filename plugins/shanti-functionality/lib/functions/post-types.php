@@ -160,6 +160,12 @@ function shanti_gifts_of_action() {
 		'items_list_navigation' => 'Gifts of Action list navigation',
 		'filter_items_list'     => 'Filter Gifts of Action list',
 	);
+	$rewrite = array(
+		'slug'									=> 'gift-of-action',
+		'with_front'						=> true,
+		'pages'									=> true,
+		'feeds'									=> true
+	);
 	$args = array(
 		'label'                 => 'Gift of Action',
 		'description'           => 'These are the potential gifts of action for potential supporters of Shanti',
@@ -178,6 +184,7 @@ function shanti_gifts_of_action() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite'								=> $rewrite,
 	);
 	register_post_type( 'gifts_of_action', $args );
 

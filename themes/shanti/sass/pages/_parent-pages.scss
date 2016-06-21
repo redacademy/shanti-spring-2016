@@ -3,14 +3,17 @@
   color: white;
   padding-top: 10rem;
   padding-left: 10rem;
-  width: 60%;
+  width: 80%;
   @include media-lg {
-    width: 50%;
+    width: 60%;
   }
 
   h2 {
     color: white;
     text-transform: uppercase;
+  }
+  p {
+    font-size: 1.2rem;
   }
 }
 
@@ -23,10 +26,9 @@
     color: white;
   }
   h2 {
-    font-size: 31px;
+    font-size: 2rem;
   }
   p {
-    font-size: 28px;
     opacity: 0.75;
   }
 
