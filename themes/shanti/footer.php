@@ -17,7 +17,7 @@
 						<ul class="blogPosts">
 							<?php
 				   $args = array( 'post_type' => 'post',
-												 	'posts_per_page' => 3);
+												 	'posts_per_page' => 1);
 				   $blog_posts = get_posts( $args ); // returns an array of posts
 				 ?>
 				 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
