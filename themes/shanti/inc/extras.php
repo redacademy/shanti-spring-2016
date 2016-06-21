@@ -109,7 +109,7 @@ add_action( 'pre_get_posts', "shanti_sort_gift_action_by_price");
 // Change how the action type taxonomy archive titles display
 
 function shanti_filter_action_archive_titles() {
-	if (!is_tax('action_types')) {
+	if (!is_tax('action_types') && !is_tax('action_price')) {
 		return;
 	}
 
@@ -119,8 +119,10 @@ function shanti_filter_action_archive_titles() {
 		return 'Gifts of Community';
 	} elseif (is_tax('action_types', 'empowerment')) {
 		return 'Gifts of Empowerment';
-	} else if (is_tax('action_types', 'family')) {
-		return ('Gifts of Family');
+	} elseif (is_tax('action_types', 'family')) {
+		return 'Gifts of Family';
+	} elseif (is_tax('action_price')) {
+		return 'Gifts of Action';
 	}
 }
 

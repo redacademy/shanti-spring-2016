@@ -11,25 +11,27 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+			<header class="tax-header">
 
-			<header class="gift-header">
+			</header>
+			<div class="gift-header">
 				<?php
-					the_archive_title( '<h2 class="page-title">', '</h2>' );
+					the_archive_title( '<h3 class="page-title">', '</h3>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 
-			</header><!-- .page-header -->
+			</div><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="container alternating">
+				<section class="alternating">
 					<div class="alt-image">
 						<?php the_post_thumbnail(); ?>
 					</div>
 					<div class="alt-info">
 						<h3><?php the_title(); ?></h3>
-						<?php $term_list = wp_get_post_terms($post->ID, 'action_price');?>
+						<?php $term_list = wp_get_post_terms($post->ID, 'action_types');?>
 						<h4><?php echo $term_list[0]->name; ?></h4>
 						<div class="alt-text"><?php the_excerpt(); ?></div>
 						<div class="alt-link">
