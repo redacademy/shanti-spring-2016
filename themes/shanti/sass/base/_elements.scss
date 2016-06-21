@@ -77,3 +77,37 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+
+// For pages that have large round-bordered numbers, use the class big-number on the ol element
+
+ol.big-numbers {
+	margin-left: $base__space-unit;
+	padding-left: 0;
+	list-style-type: none;
+	width: 80%;
+}
+
+.big-numbers li {
+	counter-increment: step-counter;
+	padding-left: 5rem;
+	position: relative;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+
+}
+
+.big-numbers li::before {
+	content: counter(step-counter);
+	display: inline-block;
+	text-align: center;
+	color: $color__brand-main;
+	border: 2px solid $color__brand-main;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 50%;
+	margin-right: $base__space-unit;
+	position: absolute;
+	left: 0;
+
+}
