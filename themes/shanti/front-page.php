@@ -20,7 +20,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<section> This is for the new section the client wants here.... whatever that may be </section>
+						<section> <?php the_content(); ?></section>
 
 						<section class="infographic">
 							<h3>Our Accomplishments</h3>
@@ -48,7 +48,7 @@ get_header(); ?>
 		<div class="front-page-content">
 			<section class="who-we-are">
 				<div class="who-we-are-content">
-					<?
+					<?php
 					$my_id = 16;
 					$post_id_16 = get_post($my_id);
 					$title = $post_id_16->post_title;
@@ -57,7 +57,7 @@ get_header(); ?>
 					$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
-						<a href="<? echo $link ?>">
+						<a href="<?php echo $link ?>">
 						<h3 class="title">
 							<?php
 								echo $title;
@@ -88,7 +88,7 @@ get_header(); ?>
 					$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
-						<a href="<? echo $link ?>">
+						<a href="<?php echo $link ?>">
 						<h3 class="title">
 							<?php
 								echo $title;
@@ -117,7 +117,7 @@ get_header(); ?>
 					 ?>
 
 					<div class="section-content">
-					<a href="<? echo $link ?>">
+					<a href="<?php echo $link ?>">
 					<h3 class="title">
 						<?php
 							echo $title;
@@ -147,7 +147,7 @@ get_header(); ?>
 					$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
-						<a href="<? echo $link ?>">
+						<a href="<?php echo $link ?>">
 						<h3 class="title">
 							<?php
 								echo $title;
@@ -177,7 +177,7 @@ get_header(); ?>
 					$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
-						<a href="<? echo $link ?>">
+						<a href="<?php echo $link ?>">
 						<h3 class="title">
 							<?php
 								echo $title;
