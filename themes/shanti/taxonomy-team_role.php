@@ -11,13 +11,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+			<header class="tax-header">
 
-			<header class="entry-header">
+			</header>
+			<divclass="role-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h2 class="page-title">', '</h2>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			</div><!-- .page-header -->
 
 			<div class="staff container">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -25,7 +27,7 @@ get_header(); ?>
 				<div class="staff-member">
 					<?php the_post_thumbnail('thumbnail'); ?>
 					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-					
+
 						<?php the_excerpt(); ?>
 
 				</div>
