@@ -71,6 +71,7 @@
     min-height: 105px;
     width: 100%;
     max-width: 1440px;
+    border-bottom: solid white 2px;
 
     @include media-q {
       height:48vh;
@@ -112,6 +113,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+           color: $color__text-tertiary
+        }
       }
 
       .thumbnail {
@@ -161,7 +166,7 @@
         align-items: center;
 
         h3 {
-          color: white;
+          color: $color__text-secondary;
         }
       }
 
@@ -209,6 +214,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary
+        }
       }
 
       .thumbnail {
@@ -258,7 +267,7 @@
         align-items: center;
 
         h3 {
-          color: white;
+          color: $color__text-secondary;
         }
       }
 
@@ -306,6 +315,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary
+        }
       }
 
       .thumbnail {

@@ -3,7 +3,6 @@
 
   h3 {
     text-transform: uppercase;
-    color: white;
   }
 
   @include media-q {
@@ -46,7 +45,7 @@
 
     .board_of_directors-content{
       width: 100%;
-      height: 80%;
+      height: 100%;
       background: $color__brand-board-of-directors;
       display:flex;
       justify-content: space-between;
@@ -65,6 +64,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-secondary;
+        }
       }
 
       .thumbnail {
@@ -95,7 +98,7 @@
 
     .advisory_board-content{
       width: 100%;
-      height: 80%;
+      height: 100%;
       background: $color__brand-advisory-board;
       display:flex;
       justify-content: space-between;
@@ -113,6 +116,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary;
+        }
       }
 
       .thumbnail {
@@ -138,7 +145,7 @@
 
     .our_staff-content{
       width: 100%;
-      height: 80%;
+      height: 100%;
       background: $color__brand-our-staff;
       display:flex;
       justify-content: space-between;
@@ -157,6 +164,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-secondary;
+        }
       }
 
       .thumbnail {
@@ -182,7 +193,7 @@
 
     .our_partners-content{
       width: 100%;
-      height: 80%;
+      height: 100%;
       background: $color__brand-our-partners;
       display:flex;
       justify-content: space-between;
@@ -200,6 +211,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: $color__text-tertiary;
+        }
       }
 
       .thumbnail {
@@ -225,7 +240,7 @@
 
     .wigg-content{
       width: 100%;
-      height: 80%;
+      height: 100%;
       background: $color__brand-wigg;
       display:flex;
       justify-content: space-between;
@@ -244,6 +259,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          max-width: 75%;
+          text-align: center;
+        }
       }
 
       .thumbnail {
