@@ -18,7 +18,7 @@ get_header(); ?>
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
               <?php echo CFS()->get('excerpt'); ?>
             </div>
-        	</header><!-- .entry-header -->
+        	</header>
 
 			<?php endwhile; // End of the loop. ?>
 
