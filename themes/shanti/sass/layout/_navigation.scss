@@ -203,8 +203,8 @@ a {
 }
 
 .menu-toggle {
-	height: auto;
-	width: auto;
+	height: 6px;
+	width: 21px;
 	position: absolute;
 	top: 2.5rem;
 	line-height: 0;
@@ -213,7 +213,8 @@ a {
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
-	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+				transform: rotate(-90deg);
 	color: $color__brand-dark;
 	font-size: 2rem;
 	padding: 0;
