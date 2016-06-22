@@ -13,6 +13,7 @@
   }
 
   h2 {
+    margin-top: 0.3rem;
     color: white;
     text-transform: uppercase;
   }
@@ -21,8 +22,17 @@
 .story-content {
   text-align: center;
   width: 80%;
-  margin: 0 auto;
+  margin: $base__space-unit auto;
   border-bottom: 1px solid $color__background-hr;
+
+  h2 {
+    text-transform: uppercase;
+    padding-top: $base__space-unit;
+  }
+
+  p {
+    opacity: 0.6;
+  }
 }
 
 ul.values  {
@@ -36,7 +46,6 @@ ul.values  {
 
 .values li {
   width: 80%;
-  height: 55vh;
   text-align: center;
   margin: $base__space-unit;
 
@@ -51,8 +60,12 @@ ul.values  {
   }
 
   img {
-    height: 50%;
     width: auto;
+    height: 8rem;
+  }
+
+  &:last-child img { // the unity icon is a very different shape
+    height: 6rem;
   }
 
   h4 {
@@ -69,7 +82,7 @@ ul.values  {
 
 .history-header {
   margin-top: 5rem;
-  height: 20vh;
+  height: 30vh;
   overflow: hidden;
   position: relative;
 
