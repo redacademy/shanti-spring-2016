@@ -31,7 +31,7 @@
   text-align: center;
   padding: 3rem 2rem;
 
-  h2 {
+  h2, h3 {
     margin-top: 0;
     color: black;
     text-transform: uppercase;
@@ -147,6 +147,11 @@ section.alternating:nth-child(odd) {
 
 /* Team Member Taxonomy Archive Pages */
 
+.role-header {
+  text-align: center;
+  background: $color__brand-why-uganda;
+  padding-top: 2rem;
+}
 .staff {
   display: flex;
   flex-wrap: wrap;

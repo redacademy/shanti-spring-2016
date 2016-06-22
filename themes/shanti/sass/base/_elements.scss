@@ -54,6 +54,9 @@ ol {
 	list-style: decimal;
 }
 
+.content-area li {
+	margin-bottom: $base__space-unit;
+}
 li > ul,
 li > ol {
 	margin-bottom: 0;
@@ -81,17 +84,19 @@ table {
 // For pages that have large round-bordered numbers, use the class big-number on the ol element
 
 ol.big-numbers {
-	margin-left: $base__space-unit;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 0;
 	list-style-type: none;
-	width: 80%;
+	width: 75%;
+
 }
 
 .big-numbers li {
 	counter-increment: step-counter;
-	padding-left: 5rem;
+	padding-left: 8rem;
 	position: relative;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	font-size: 1.2rem;
 
 }
@@ -102,12 +107,13 @@ ol.big-numbers {
 	text-align: center;
 	color: $color__brand-main;
 	border: 2px solid $color__brand-main;
-	width: 3rem;
-	height: 3rem;
-	line-height: 3rem;
+	width: 5rem;
+	height: 5rem;
+	line-height: 5rem;
 	border-radius: 50%;
 	margin-right: $base__space-unit;
 	position: absolute;
 	left: 0;
+	font-size: 4rem;
 
 }
