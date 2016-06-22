@@ -19,11 +19,13 @@ get_header(); ?>
 					<header class="entry-header hero">
 					</header><!-- .entry-header -->
 
-					<div class="entry-content">
+					<div class="front-page-content">
 						<section> <?php the_content(); ?></section>
 
 						<section class="infographic">
+						<div class="accomplishments">
 							<h3>Our Accomplishments</h3>
+						</div>
 							<ul>
 								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
 										foreach($infographic as $pic):?>
