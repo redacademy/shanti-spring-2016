@@ -76,7 +76,9 @@ get_header(); ?>
 							$my_id = 16;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
+						<a href="<?php echo $link ?>">
+						<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
 					</div>
 
 
@@ -106,8 +108,10 @@ get_header(); ?>
 							$my_id = 24;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 			<section class="our-projects">
@@ -137,8 +141,10 @@ get_header(); ?>
 							$my_id = 30;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 			<section class="get-involved">
@@ -167,8 +173,10 @@ get_header(); ?>
 							$my_id = 40;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 			<section class="donate">
@@ -197,8 +205,10 @@ get_header(); ?>
 							$my_id = 52;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 		</div>
