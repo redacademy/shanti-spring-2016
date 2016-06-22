@@ -17,7 +17,7 @@ get_header(); ?>
 
         	</header><!-- .entry-header -->
 
-            <div class="feature-color sub-header">
+            <div class="feature-color sub-header why">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
           		<?php echo CFS()->get('excerpt'); ?>
             </div>

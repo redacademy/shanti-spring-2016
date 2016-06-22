@@ -17,7 +17,7 @@
 		<?php echo CFS()->get('excerpt'); ?>
 	</div>
 
-	<div class="entry-content container">
+	<div class="container">
 		<?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
 		<?php the_content(); ?>
 

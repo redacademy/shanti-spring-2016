@@ -28,8 +28,8 @@ get_header(); ?>
             <ul class="values">
               <?php $values = CFS()->get('value'); ?>
               <?php foreach($values as $value): ?>
-                 <li>
-                   <img src="<?php echo $value['image']; ?>" alt="graphical icon of value" />
+                 <li>                  
+                   	<img src="<?php echo $value['image']; ?>" alt="graphical icon of <?php echo $value['label']; ?>" />
                    <h4><?php echo $value['label']; ?></h4>
                    <p><?php echo $value['text']; ?></p>
                  </li>

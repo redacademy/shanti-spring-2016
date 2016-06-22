@@ -33,7 +33,7 @@ get_header(); ?>
 
         <section class="child-pages">
   					<?php global $id;
-  						$args = array( 'child_of' => $id, 'post_type' => 'page');
+  						$args = array( 'child_of' => $id, 'post_type' => 'page', 'sort_column' => 'menu_order', 'sort_order' => 'ASC');
   						$child_pages = get_pages($args);
   						foreach($child_pages as $post): setup_postdata($post); ?>
   						<section class="alternating">
