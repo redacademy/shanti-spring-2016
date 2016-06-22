@@ -17,7 +17,7 @@ get_header(); ?>
 
         	</header><!-- .entry-header -->
 
-            <div class="feature-color sub-header">
+            <div class="feature-color sub-header why">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
           		<?php echo CFS()->get('excerpt'); ?>
             </div>
@@ -25,6 +25,9 @@ get_header(); ?>
 
             <div class="why-uganda text">
               <?php the_content(); ?>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
             </div>
 
             <section class="why-uganda infographic">

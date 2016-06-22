@@ -32,6 +32,11 @@
   }
 }
 
+.sub-header.why {
+  p {
+    opacity: 0.6;
+  }
+}
 .why-uganda.text {
   padding-left: 20%;
   padding-right: 20%;
@@ -42,6 +47,8 @@
   background: url('../../images/postpartum-health.png') no-repeat center center;
   background-size: contain;
   height: 30vh;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
 
 
   @include media-lg {
