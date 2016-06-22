@@ -53,9 +53,12 @@ get_header(); ?>
 									<a class="discover-button" href="<?php the_permalink(); ?>">
 
 										<?php if(get_the_title($this_page_ID) === 'Get Involved'): ?>
+
 										<?php echo get_the_title($this_page_ID); ?>
+
 									<?php elseif(get_the_title($this_page_ID) === 'Donate Now'): ?>
-										Discover Our <?php echo $post->post_name; ?>
+
+										Our <?php echo $post->post_name; ?>
 									<?php else: ?>
 									 Discover More
 								 <?php endif; ?>
