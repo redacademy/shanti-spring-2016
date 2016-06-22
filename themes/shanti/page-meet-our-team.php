@@ -39,7 +39,7 @@ get_header(); ?>
 
 						</div>
 						<div class="alt-info">
-							<a href="<?php echo get_term_link($team_role, 'team_role') ?>"><h2><?php echo $team_role->name; ?></h2></a>
+							<a href="<?php echo get_term_link($team_role, 'team_role') ?>"><h3><?php echo $team_role->name; ?></h3></a>
 
 						</div>
 					</section>
