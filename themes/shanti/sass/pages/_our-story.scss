@@ -1,4 +1,4 @@
-.our-story-header {
+.pink-header {
   position: absolute;
   background: $color__brand-main;
   color: white;
@@ -6,6 +6,11 @@
   width: 100%;
   padding: $base__space-unit;
 
+  text-align: center;
+
+  @include media-q {
+    text-align: left;
+  }
   @include media-q {
     width: 45%;
     right: 5%;
@@ -16,6 +21,7 @@
     margin-top: 0.3rem;
     color: white;
     text-transform: uppercase;
+
   }
 }
 

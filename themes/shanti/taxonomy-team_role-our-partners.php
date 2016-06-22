@@ -24,12 +24,11 @@ get_header(); ?>
 			<?php $terms = get_the_terms($post->ID, 'team_role');
                          $term = array_shift($terms);?>
 
-            <div class="staff container">
+            <div class="partners">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="staff-member">
-					<?php the_post_thumbnail('thumbnail'); ?>
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+				<div class="partner">
+					<a href="#"><?php the_post_thumbnail('medium'); ?></a>
 
 						<?php the_excerpt(); ?>
 
