@@ -280,14 +280,14 @@ a {
 	width: 110%;
 	height: 1.5rem;
 	position: absolute;
-	top: 2.8vh;
+	top: 0;
+	bottom: 0;
 	z-index: -1;
-	font-size: 0.83rem;
 	color: white;
 	text-align: center;
-	line-height: 1.6;
 	left: -5%;
-
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 
