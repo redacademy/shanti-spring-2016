@@ -6,7 +6,7 @@
   background: rgba(255,255,255,0.7);
   margin-top: -5rem;
   position: relative;
-
+  background-color: #f2f2f2;
   ul {
     display: flex;
     margin: 0;
@@ -45,9 +45,12 @@
   }
 
   h3 {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     text-align: center;
     text-transform: uppercase;
+    background-color: #f2f2f2;
+    color: $color__brand-dark;
+    margin-bottom: .2rem;
 
   }
 }
