@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
   $menu_button.on('click', function(event){
     event.preventDefault();
     $main_nav.toggleClass('toggled');
+
     $menu_open = !$menu_open;
   });
 
@@ -19,6 +20,9 @@ jQuery(document).ready(function($) {
       event.preventDefault();
       console.log($(this).parent().children('ul'));
       $(this).parent().children('ul').toggle();
+      console.log($(this).parent().siblings().children('ul'));
+      $(this).parent().siblings().children('ul').hide();
+
     }
 
   });
