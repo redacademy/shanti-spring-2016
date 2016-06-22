@@ -100,7 +100,7 @@ section.alternating{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
-    
+
 
     @include media-lg {
       font-size: 1.35rem;
@@ -150,7 +150,7 @@ section.alternating:nth-child(odd) {
 .role-header {
   text-align: center;
   background: $color__brand-why-uganda;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 .staff {
   display: flex;
