@@ -14,18 +14,18 @@ get_header(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         	<header class="entry-header hero">
-            <div class="our-story-header">
+            <div class="pink-header">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
               <?php echo CFS()->get('excerpt'); ?>
             </div>
-        	</header><!-- .entry-header -->
+        	</header>
 
 			<?php endwhile; // End of the loop. ?>
 
       <!-- Loop through the Custom Taxonomy (Team Roles) -->
 			<div class="meet-our-team-content">
 
-      	<?php $team_roles = get_terms('team_role', array('parent' => 0, 'orderby' => 'term_order'));?>
+      	<?php $team_roles = get_terms('team_role', array('parent' => 0, 'orderby' => 'term_order', 'order' => 'ASC'));?>
 
 
 				<?php foreach($team_roles as $team_role): ?>

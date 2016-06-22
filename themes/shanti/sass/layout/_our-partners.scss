@@ -1,0 +1,12 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+     div.partner {
+      //  width: 100vw;
+       text-align: center;
+       max-width: 80vw;
+       padding: 5vh 0;
+     }
+}

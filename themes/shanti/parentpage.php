@@ -49,11 +49,18 @@ get_header(); ?>
 							 	</div>
 
 								<div class="alt-link">
+
 									<a class="discover-button" href="<?php the_permalink(); ?>">
-										<?php if(get_the_title($this_page_ID) === 'Get Involved' || get_the_title($this_page_ID) === 'Donate Now'): ?>
+
+										<?php if(get_the_title($this_page_ID) === 'Get Involved'): ?>
+
 										<?php echo get_the_title($this_page_ID); ?>
+
+									<?php elseif(get_the_title($this_page_ID) === 'Donate Now'): ?>
+
+										Our <?php echo $post->post_name; ?>
 									<?php else: ?>
-									 Discover <?php echo get_the_title($this_page_ID); ?>
+									 Discover More
 								 <?php endif; ?>
 								 </a>
 								</div>
