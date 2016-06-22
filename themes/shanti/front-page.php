@@ -17,15 +17,18 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header hero">
+						<div class="border">
+							<!-- transparent bottom border of the header image on home page  -->
+						</div>
 					</header><!-- .entry-header -->
 
-					<div class="front-page-content">
-						<section> <?php the_content(); ?></section>
+					<div class="entry-content">
+						<div class="container"> <?php the_content(); ?></div>
 
 						<section class="infographic">
-						<div class="accomplishments">
+
 							<h3>Our Accomplishments</h3>
-						</div>
+
 							<ul>
 								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
 										foreach($infographic as $pic):?>
