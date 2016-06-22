@@ -25,7 +25,7 @@ get_header(); ?>
       <!-- Loop through the Custom Taxonomy (Team Roles) -->
 			<div class="meet-our-team-content">
 
-      	<?php $team_roles = get_terms('team_role', array('parent' => 0, 'orderby' => 'term_order'));?>
+      	<?php $team_roles = get_terms('team_role', array('parent' => 0, 'orderby' => 'term_order', 'order' => 'ASC'));?>
 
 
 				<?php foreach($team_roles as $team_role): ?>
