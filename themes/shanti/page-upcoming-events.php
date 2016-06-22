@@ -14,7 +14,7 @@ get_header(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         	<header class="entry-header hero">
-            <div class="our-story-header">
+            <div class="pink-header">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
               <?php echo CFS()->get('excerpt'); ?>
             </div>

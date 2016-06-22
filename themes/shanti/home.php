@@ -1,6 +1,6 @@
 <?php
 /**
-* The main template file.
+* The template for the blog archive.
 *
 * @package Shanti_Uganda_Theme
 */
@@ -14,6 +14,9 @@ get_header(); ?>
   </div>
 
 </header>
+<div class="blog-color-block">
+    <h3>Recent Posts</h3>
+</div>
 
     <div id="primary" class="content-area container">
         <main id="main" class="site-main" role="main">
@@ -35,12 +38,16 @@ get_header(); ?>
                  </div>
                <?php endif; ?>
 
-                <div class="entry-content container">
-                  <div class="blog-post-container">
-                    <span class="blog-post-title"><?php the_title(); ?></span>
-                    <span><?php shanti_posted_on(); ?></span>
+                <div class="container">
+
+                  <div class="blog-post">
+                    <h3>
+                      <?php the_title(); ?>
+                      <span class="date"><?php shanti_posted_on(); ?></span>
+                    </h3>
+                    <?php the_content(); ?>
                   </div>
-               <?php the_content(); ?>
+
            </div><!-- .entry-content -->
          </article><!-- #post-## -->
 
@@ -56,7 +63,7 @@ get_header(); ?>
 
         <div class="newsletter-tag">
 
-          <p>Stay updated and sign up for our newsletter and blog!<p>
+          <h5>Stay updated and sign up for our newsletter and blog!<h5>
         </div>
         </main><!-- #main -->
     </div><!-- #primary -->

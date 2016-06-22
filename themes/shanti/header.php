@@ -26,7 +26,7 @@
 					</div>
 
 					<div class="call-to-action">
-						<a href="#" class="button cta">Donate Now</a>
+						<a href="<?php echo get_permalink( get_page_by_path( 'donate-now' ) ); ?>" class="button cta">Donate Now</a>
 					</div>
 			<!-- .site-branding -->
 

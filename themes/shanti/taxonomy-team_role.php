@@ -29,7 +29,8 @@ get_header(); ?>
 
 				<div class="staff-member">
 					<?php the_post_thumbnail('thumbnail'); ?>
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					<?php echo CFS()->get('role'); ?></h4>
 
 						<?php the_excerpt(); ?>
 
