@@ -1,6 +1,6 @@
 <?php
 /**
-* The main template file.
+* The template for the blog archive.
 *
 * @package Shanti_Uganda_Theme
 */
