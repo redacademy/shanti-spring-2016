@@ -75,8 +75,12 @@
     text-align: right;
   }
   input {
-    width: 50%;
+    width: 100%;
     border: 1px solid black;
+
+    @include media-lg {
+      width: 50%;
+    }
   }
 }
 
@@ -88,6 +92,11 @@
   h3 {
     padding-left: $base__space-unit;
     font-weight: bold;
+    font-size: 1rem;
+
+    @include media-q {
+      font-size: 1.3rem;
+    }
   }
 
   .price {
