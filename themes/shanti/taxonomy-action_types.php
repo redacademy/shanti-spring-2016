@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying custom taxonomy .
+ * The template for displaying custom taxonomy Action Type.
  *
  * @package RED_Starter_Theme
  */

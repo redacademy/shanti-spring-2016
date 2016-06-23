@@ -32,37 +32,48 @@ get_header(); ?>
 				 		$this_page_ID = get_the_ID();?>
 
         <section class="child-pages">
+
   					<?php global $id;
-  						$args = array( 'child_of' => $id, 'post_type' => 'page', 'sort_column' => 'menu_order', 'sort_order' => 'ASC');
-  						$child_pages = get_pages($args);
+  						$args = array( 'child_of' 		=> $id,
+														 'post_type' 		=> 'page',
+														 'sort_column' 	=> 'menu_order',
+														 'sort_order' 	=> 'ASC');
+
+  						$child_pages = get_pages($args); //returns an array of the child pages of the current page
   						foreach($child_pages as $post): setup_postdata($post); ?>
+
   						<section class="alternating">
+
 								<div class="alt-image">
                   <?php the_post_thumbnail('full'); ?>
                 </div>
+
                 <div class="alt-info">
 									<div class="our-story-headers">
                     <h3><?php the_title(); ?></h3>
 								 </div>
+
 								 <div class="alt-text">
                   <?php echo CFS()->get('excerpt'); ?>
 							 	</div>
 
 								<div class="alt-link">
 
+									<!-- Different Parent pages get different customized links to their child pages -->
 									<a class="discover-button" href="<?php the_permalink(); ?>">
 
 										<?php if(get_the_title($this_page_ID) === 'Get Involved'): ?>
 
-										<?php echo get_the_title($this_page_ID); ?>
+											<?php echo get_the_title($this_page_ID); ?>
 
-									<?php elseif(get_the_title($this_page_ID) === 'Donate Now'): ?>
+										<?php elseif(get_the_title($this_page_ID) === 'Donate Now'): ?>
 
-										Our <?php echo $post->post_name; ?>
-									<?php else: ?>
-									 Discover More
-								 <?php endif; ?>
+												Our <?php echo $post->post_name; ?>
+										<?php else: ?>
+									 		Discover More
+								 		<?php endif; ?>
 								 </a>
+								 
 								</div>
 
 							 </div>

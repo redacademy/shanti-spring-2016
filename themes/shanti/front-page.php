@@ -23,19 +23,23 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+
 						<div class="container"> <?php the_content(); ?></div>
+
 							<h3>Our Accomplishments</h3>
+
 						<section class="infographic">
-
-
 
 							<ul>
 								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
 										foreach($infographic as $pic):?>
 
-										<li><img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" /></li>
+										<li>
+											<img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
+										</li>
 								 <?php endforeach;?>
 						 </ul>
+
 						</section>
 
 					</div><!-- .entry-content -->
@@ -54,12 +58,12 @@ get_header(); ?>
 			<section class="who-we-are">
 				<div class="who-we-are-content">
 					<?php
-					$my_id = 16;
-					$post_id_16 = get_post($my_id);
-					$title = $post_id_16->post_title;
-					$title = apply_filters('the_title', $title);
-					$title = str_replace(']]>', ']]>', $title);
-					$link = get_page_link($my_id);
+						$my_id = 16;
+						$post_id_16 = get_post($my_id);
+						$title = $post_id_16->post_title;
+						$title = apply_filters('the_title', $title);
+						$title = str_replace(']]>', ']]>', $title);
+						$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
 						<a href="<?php echo $link ?>">

@@ -14,6 +14,7 @@ get_header(); ?>
 
 
 		<div class="cart-header container">
+
 			<h4>Your Cart</h4>
 			<p>
 				Thank you for supporting Shanti Uganda Society. Your generous donation will help pave the road to a bright future for young women.
@@ -66,6 +67,7 @@ get_header(); ?>
 				<input type="checkbox" name="is-gift" value="is-gift" id="is-gift">
 				<label class="checkbox" for="is-gift">Gift of Action</label>
 
+				<!-- The field is hidden on loading, shows when the checkbox is clicked  -->
 				<fieldset>
 					<label for="from"><span>From:</span>
 						<input type="text" name="from" value="" id="from">

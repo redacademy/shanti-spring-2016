@@ -12,31 +12,35 @@
 
 
 				<div class="recentPosts">
+
 					<div class="recentPosts-content">
+
 						<h3><a href="blog">Recent Blog Posts</a></h3>
+
 						<ul class="blogPosts">
 							<?php
-				   $args = array( 'post_type' => 'post',
-												 	'posts_per_page' => 3);
-				   $blog_posts = get_posts( $args ); // returns an array of posts
-				 ?>
-				 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
-					 <li>
-						 <a href="<?php the_permalink(); ?>">
-						 	<div>
-							 	<?php if ( has_post_thumbnail() ) : ?>
-								 	<?php the_post_thumbnail( 'thumbnail' ); ?>
-							 	<?php endif; ?>
-					 		</div>
-							<h4>
-								<?php echo the_title() ?>
-							</h4>
-							<p>
-								<?php echo CFS()->get( 'subtitle' ); ?>
-							</p>
-						</a>
-					</li>
-			 	 <?php endforeach; wp_reset_postdata(); ?>
+							   $args = array( 'post_type' => 'post',
+															 	'posts_per_page' => 3);
+							   $blog_posts = get_posts( $args ); // returns an array of posts
+				 			?>
+
+						 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
+							 <li>
+								 <a href="<?php the_permalink(); ?>">
+								 	<div>
+									 	<?php if ( has_post_thumbnail() ) : ?>
+										 	<?php the_post_thumbnail( 'thumbnail' ); ?>
+									 	<?php endif; ?>
+							 		</div>
+									<h4>
+										<?php echo the_title() ?>
+									</h4>
+									<p>
+										<?php echo CFS()->get( 'subtitle' ); ?>
+									</p>
+								</a>
+								</li>
+			 	 			<?php endforeach; wp_reset_postdata(); ?>
 
 						</ul>
 
@@ -48,12 +52,15 @@
 					<h3>
 						Sign up to hear from us!
 					</h3>
+
 					<form>
+
 						<div>
 							<div class="subscribe-input">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 	     					<input type="email" placeholder="Your e-mail Address...."required></input>
 							</div>
+							
 	     				<button type="submit">Subscribe</button>
 						</div>
 					</form>
