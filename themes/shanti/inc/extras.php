@@ -37,6 +37,7 @@ function shanti_featured_image_header() {
 				background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
 				url('$thumb_url') no-repeat center center;
 				background-size: cover;
+				-webkit-filter: grayscale(1);
 				filter: grayscale(1);
 		}";
 
