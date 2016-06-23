@@ -84,15 +84,15 @@ function shanti_featured_color_css() {
 	if(!is_page_template('parentpage.php') && !is_page()) {
 		return;
 	}
-	$color = CFS()->get('color');
-	$text_color = CFS()->get('text_color');
+	$color = esc_html( CFS()->get('color') );
+	$text_color = esc_html( CFS()->get('text_color') );
 
 	if ( empty($color)) {
 		$color = '#E61367';
 	}
 
 	if ( empty($text_color) ) {
-		$text_color = 'black';
+		$text_color = 'white';
 	}
 	$custom_css = ".feature-color { background: $color; color: $text_color;}
 									.feature-color h2 {color: $text_color;}";

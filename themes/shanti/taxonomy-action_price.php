@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="alt-info">
 						<h3><?php the_title(); ?></h3>
 						<?php $term_list = wp_get_post_terms($post->ID, 'action_types');?>
-						<h4><?php echo $term_list[0]->name; ?></h4>
+						<h4><?php echo wp_kses_post( $term_list[0]->name ); ?></h4>
 						<div class="alt-text"><?php the_excerpt(); ?></div>
 						<div class="alt-link">
 							<a href="<?php the_permalink(); ?>" class="cta buy">Buy</a>

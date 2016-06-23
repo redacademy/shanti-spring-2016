@@ -35,7 +35,7 @@ get_header(); ?>
 										foreach($infographic as $pic):?>
 
 										<li>
-											<img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
+											<img src="<?php echo esc_url( $pic['image'] ); ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
 										</li>
 								 <?php endforeach;?>
 						 </ul>

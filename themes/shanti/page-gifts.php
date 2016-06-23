@@ -16,7 +16,7 @@ get_header(); ?>
         	<header class="entry-header hero">
             <div class="pink-header">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-              <?php echo CFS()->get('excerpt'); ?>
+              <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	</header><!-- .entry-header -->
 
@@ -34,13 +34,13 @@ get_header(); ?>
 	                  $image_data = wp_get_attachment_image_src( $image_id, 'full');
 	                  $image = $image_data[0];
 	             ?>
-	             <img src="<?php echo $image; ?>" alt="<?php echo $gift->name; ?>" />
+	             <img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $gift->name ); ?>" />
 
 	          </div>
 	          <div class="alt-info">
 	            <a href="<?php echo get_term_link($gift, 'action_types') ?>"><h3>Gifts of <?php echo $gift->name; ?></h3></a>
 	            <div class="alt-text">
-	              <?php echo $gift->description; ?>
+	              <?php echo wp_kses_post( $gift->description ); ?>
 	            </div>
 	            <div class="alt-link">
 	              <a class="cta buy" href="<?php echo get_term_link($gift, 'action_types') ?>">Buy Now</a>

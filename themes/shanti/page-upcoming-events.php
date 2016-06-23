@@ -16,7 +16,7 @@ get_header(); ?>
         	<header class="entry-header hero">
             <div class="pink-header">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-              <?php echo CFS()->get('excerpt'); ?>
+              <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	</header><!-- .entry-header -->
 
@@ -30,7 +30,7 @@ get_header(); ?>
                 <?php endif; ?>
               </div>
               <div class="event-post-container">
-                <?php echo CFS()->get('excerpt'); ?>
+                <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
               </div>
               <div class="event-entry-content">
                 <?php the_excerpt(); ?>

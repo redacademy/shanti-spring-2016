@@ -16,7 +16,7 @@ get_header(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="event-post-container">
-          <?php echo CFS()->get('excerpt'); ?>
+          <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
 				</div>
 
 								 <div class="event-entry-content container">
