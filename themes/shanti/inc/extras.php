@@ -28,7 +28,7 @@ function shanti_featured_image_header() {
 	} else {
 		$thumb_id = get_post_thumbnail_id();
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
-		$thumb_url = $thumb_url_array[0];
+		$thumb_url = esc_url( $thumb_url_array[0] );
 	}
 
 	if( is_page_template('parentpage.php') ) {
@@ -63,7 +63,7 @@ function shanti_taxonomy_archive_header() {
 	$term_id = get_queried_object_id();
 	$image_id = get_term_meta($term_id, 'image', true);
 	$image_data = wp_get_attachment_image_src( $image_id, 'full');
-	$image = $image_data[0];
+	$image = esc_url( $image_data[0] );
 
 	if ( empty($image) ) {
 		$image = get_template_directory_uri() . '/images/home-header.jpg';

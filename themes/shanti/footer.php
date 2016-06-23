@@ -26,7 +26,7 @@
 
 						 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 							 <li>
-								 <a href="<?php the_permalink(); ?>">
+								 <a href="<?php esc_url(the_permalink()); ?>">
 								 	<div>
 									 	<?php if ( has_post_thumbnail() ) : ?>
 										 	<?php the_post_thumbnail( 'thumbnail' ); ?>
@@ -36,7 +36,7 @@
 										<?php echo the_title() ?>
 									</h4>
 									<p>
-										<?php echo CFS()->get( 'subtitle' ); ?>
+										<?php echo wp_kses_post( CFS()->get( 'subtitle' ) ); ?>
 									</p>
 								</a>
 								</li>
@@ -60,7 +60,7 @@
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 	     					<input type="email" placeholder="Your e-mail Address...."required></input>
 							</div>
-							
+
 	     				<button type="submit">Subscribe</button>
 						</div>
 					</form>

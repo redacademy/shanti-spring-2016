@@ -66,7 +66,7 @@ get_header(); ?>
 						$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
-						<a href="<?php echo $link ?>">
+						<a href="<?php echo esc_url( $link ); ?>">
 						<h3 class="title">
 							<?php
 								echo $title;
