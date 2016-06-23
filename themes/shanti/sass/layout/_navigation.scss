@@ -41,7 +41,7 @@ a {
 		padding-left: 0;
 
 
-		ul {
+		ul { // styling of the dropdown navigation box
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			position: absolute;
 			left: -999em;
@@ -126,16 +126,19 @@ a {
 
 }
 
+// the main desktop menus need to have enough line height so that they connect to the dropdown menu
 .main-navigation > div > ul > li > a{
 		line-height: 9.9vh;
 	}
 
+// the dropdown menus on desktop
 .main-navigation > div> ul > li > ul {
 	border-top: none;
 }
 
 .main-navigation > div > ul > li li {
 	border-bottom: 1px solid #E3E3E3;
+	padding-left: 0.2rem;
 }
 
 
@@ -204,7 +207,7 @@ a {
 }
 
 .menu-toggle {
-	height: 10px;
+	height: 15px;
 	width: 21px;
 	position: absolute;
 	top: 1.8rem;
@@ -225,6 +228,7 @@ a {
 	&:hover{
 		box-shadow: none;
 		border: none;
+		background: transparent;
 	}
 }
 
@@ -290,8 +294,6 @@ a {
 	margin-bottom: auto;
 }
 
-
-
 // Reset on the toggled mobile navigation
 .main-navigation.toggled .menu-item-93>a{
 	color: black;
@@ -304,7 +306,6 @@ a {
 		left: -5%;
 		z-index: -1;
 	}
-
 
 }
 
@@ -330,8 +331,11 @@ a {
 	}
 
 	input {
+		-webkit-appearance: none;
 		display: inline;
-		width: 100%
+		width: 100%;
+		border-radius: 0;
+		font-size: 0.8rem;
 	}
 }
 
@@ -354,14 +358,26 @@ a {
 a.button {
 	text-transform: uppercase;
 	border: 1px solid $color__brand-main;
-	padding: 0.5rem $base__space-unit;
+	padding: 0.5rem;
 	color: $color__brand-main;
 	text-decoration: none;
-	font-size: 1rem;
+
 }
 
 a.cta {
 	@extend .button;
 	background: $color__brand-main;
 	color: #fff;
+}
+
+.cta.buy {
+  display: inline;
+  width: auto;
+	font-size: 0.8rem;
+	padding: 0.25rem 0.7rem;
+
+	@include media-q {
+		font-size: 1rem;
+		padding: 0.5rem $base__space-unit;
+	}
 }

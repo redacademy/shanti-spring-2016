@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying custom taxonomy archive page for the team role custom taxonomy.
  *
  * @package Shanti_Uganda_Theme
  */

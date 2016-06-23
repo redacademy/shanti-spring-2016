@@ -1,3 +1,8 @@
+/*--------------------------------------------------------------
+# Parent Page Template 
+--------------------------------------------------------------*/
+
+
 .header-text {
 
   color: white;
@@ -19,7 +24,7 @@
   }
 }
 
-.page-parent .entry-content {
+.page-template-parentpage .entry-content {
   text-align: center;
   padding: $base__space-unit 15%;
   margin-top: 0;
@@ -27,7 +32,7 @@
   h2, p {
     color: white;
   }
-  h2 {
+  h1, h2, h3, h4 {
     font-size: 2rem;
     text-transform: uppercase;
   }

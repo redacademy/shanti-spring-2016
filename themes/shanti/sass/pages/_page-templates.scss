@@ -27,6 +27,7 @@
 }
 
 /* Color-blocked header that sits under full-screen image header on most pages*/
+
 .sub-header {
   text-align: center;
   padding: 3rem 2rem;
@@ -88,6 +89,7 @@ section.alternating{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 
     @include media-q {
       padding-left: $base__space-unit;
@@ -99,9 +101,11 @@ section.alternating{
     margin-bottom: 0;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
 
-
+    @include media-q {
+      font-size: 1rem;
+    }
     @include media-lg {
       font-size: 1.35rem;
     }
@@ -141,44 +145,5 @@ section.alternating:nth-child(odd) {
   }
   .alt-info {
     width: 50%;
-  }
-}
-
-
-/* Team Member Taxonomy Archive Pages */
-
-.role-header {
-  text-align: center;
-  background: $color__brand-why-uganda;
-  padding: 2rem;
-}
-.staff {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.staff-member {
-  text-align: center;
-
-  @include media-lg {
-    width: 40%;
-  }
-
-  img {
-    border-radius: 50%;
-  }
-
-  a {
-    color: $color__brand-dark;
-  }
-
-  h4 {
-    margin: 0;
-    line-height: normal;
-  }
-
-  p {
-    margin-top: 0;
   }
 }

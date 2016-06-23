@@ -15,11 +15,9 @@
   font-weight: normal;
   text-transform: uppercase;
 
-  @include media-q {
-  margin: 5.4vh 0 5vh 0;
-  };
-
-
+    @include media-q {
+      margin: 5.4vh 0 5vh 0;
+    }
 
   }
 
@@ -44,12 +42,11 @@
   align-items: center;
   background: $color__background_footer-recent;
   width: 100%;
-  // height: 90%;
   margin: 16px 0;
 
   @include media-q {
     margin: 33px;
-  };
+  }
 
   a{
     text-decoration: none;
@@ -69,15 +66,12 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-around;
-    };
+    }
 
-
-
-    li{
+    li {
 
       width: 50vw;
       min-width: 158px;
-      // height: 26vh;
       min-height: 160px;
       display: flex;
       flex-direction: column;
@@ -86,10 +80,10 @@
 
       @include media-q {
         width: 30%;
-      };
+      }
       @include media-lg {
         width: 25%;
-      };
+      }
 
       div{
         text-align: center;
@@ -100,19 +94,14 @@
         min-height: 82px;
         width: auto;
         border-radius: 50%;
-        // border: solid white 2px;
-
-
 
         @include media-q {
           height:26vh;
           max-height: 176px;
-        };
-
-        :hover {
-
         }
-        }
+
+      }
+
       h4 {
         text-align: center;
         text-transform: uppercase;
@@ -120,6 +109,7 @@
         padding: 0;
         font-size: 1rem;
       }
+
       p {
       text-align: center;
       margin: 0;
@@ -127,37 +117,37 @@
       }
     }
 
-  }
+    }
   }
 }
 
 
   .subscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-              linear-gradient( $color__background_footer-subscribe, $color__background_footer-subscribe);
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                linear-gradient( $color__background_footer-subscribe, $color__background_footer-subscribe);
+    width: 100%;
   }
 
   .subscribe-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background: $color__background_footer-subscribe;
-  width: 100%;
-  // height: 27vh;
-  min-height: 150px;
-  margin: 0 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: $color__background_footer-subscribe;
+    width: 100%;
+    min-height: 150px;
+    margin: 0 0 32px 0;
+
     @include media-q {
       margin: 0 0 62px 0;
-    };
+    }
 
 
-    form{
+    form {
       width: 88vw;
       min-width:282px;
       max-width: 512px;
@@ -171,8 +161,8 @@
         width: 100%;
         height: 100%;
         max-width: none;
-        margin-bottom:0;
-      };
+        margin-bottom:2rem;
+      }
 
     div {
       width: 88vw;
@@ -187,9 +177,7 @@
         max-width: 512px;
         height: 6.6vh;
         max-height: 46px;
-      };
-
-
+      }
 
     }
       .subscribe-input {
@@ -207,7 +195,7 @@
           max-width: 376px;
           height: 6.6vh;
           max-height: 46px;
-        };
+        }
 
         i {
           color: grey;
@@ -250,7 +238,7 @@
           max-width: 116px;
           height: 6.6vh;
           max-height: 46px;
-        };
+        }
 
       }
     }
@@ -266,7 +254,7 @@
         width: 50vw;
         max-width: 400px;
         margin: 3vh 0;
-      };
+      }
 
       a {
         display: flex;
@@ -283,14 +271,14 @@
         @include media-q {
           height: 6vh;
           font-size: 2rem;
-        };
+        }
       }
       img {
       height: 4vh;
 
       @include media-q {
         height: 6vh;
-      };
+      }
       }
     }
 
@@ -307,7 +295,7 @@
       @include media-q {
         max-width: none;
         font-size: 15px;
-      };
+      }
 
       a {
         text-decoration: none;
@@ -323,7 +311,7 @@
 
         @include media-q {
           display: inline;
-        };
+        }
       }
     }
   }

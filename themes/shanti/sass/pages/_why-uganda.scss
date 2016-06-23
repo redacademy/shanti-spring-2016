@@ -1,3 +1,8 @@
+/*--------------------------------------------------------------
+# Why Uganda custom page
+--------------------------------------------------------------*/
+
+
 /* Why Uganda Infographic */
 
 .why-uganda.infographic {
@@ -10,7 +15,7 @@
 
     width: 60%;
     max-height: none;
-    padding: 0.2rem $base__space-unit;
+    padding: $base__space-unit;
     margin-bottom: 0;
 
     &:nth-child(odd) {
@@ -41,6 +46,8 @@
   padding-left: 20%;
   padding-right: 20%;
   opacity: 0.6;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .why-uganda-footer {

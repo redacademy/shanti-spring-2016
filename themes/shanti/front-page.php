@@ -23,19 +23,23 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+
 						<div class="container"> <?php the_content(); ?></div>
 
-						<section class="infographic">
-
 							<h3>Our Accomplishments</h3>
+
+						<section class="infographic">
 
 							<ul>
 								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
 										foreach($infographic as $pic):?>
 
-										<li><img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" /></li>
+										<li>
+											<img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
+										</li>
 								 <?php endforeach;?>
 						 </ul>
+
 						</section>
 
 					</div><!-- .entry-content -->
@@ -54,12 +58,12 @@ get_header(); ?>
 			<section class="who-we-are">
 				<div class="who-we-are-content">
 					<?php
-					$my_id = 16;
-					$post_id_16 = get_post($my_id);
-					$title = $post_id_16->post_title;
-					$title = apply_filters('the_title', $title);
-					$title = str_replace(']]>', ']]>', $title);
-					$link = get_page_link($my_id);
+						$my_id = 16;
+						$post_id_16 = get_post($my_id);
+						$title = $post_id_16->post_title;
+						$title = apply_filters('the_title', $title);
+						$title = str_replace(']]>', ']]>', $title);
+						$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
 						<a href="<?php echo $link ?>">
@@ -76,7 +80,9 @@ get_header(); ?>
 							$my_id = 16;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
+						<a href="<?php echo $link ?>">
+						<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
 					</div>
 
 
@@ -106,8 +112,10 @@ get_header(); ?>
 							$my_id = 24;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 			<section class="our-projects">
@@ -137,8 +145,10 @@ get_header(); ?>
 							$my_id = 30;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 			<section class="get-involved">
@@ -167,8 +177,10 @@ get_header(); ?>
 							$my_id = 40;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 			<section class="donate">
@@ -197,8 +209,10 @@ get_header(); ?>
 							$my_id = 52;
 							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
 						?>
-						<img src="<?php echo $feat_image ?>" alt="test" />
-					</div>
+						<a href="<?php echo $link ?>">
+							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
+							</a>
+						</div>
 				</div>
 			</section>
 		</div>

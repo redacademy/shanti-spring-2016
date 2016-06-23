@@ -15,6 +15,7 @@
 	<div class="feature-color sub-header">
 
 		<?php echo CFS()->get('excerpt'); ?>
+		
 	</div>
 
 	<div class="container">

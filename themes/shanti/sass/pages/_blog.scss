@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# Blog Pages
+--------------------------------------------------------------*/
+
 .blog-header {
   height: 100vh;
   width: 100vw;
@@ -19,6 +23,7 @@
     padding-top: 10rem;
     padding-left: 10rem;
     width: 60%;
+
     @include media-lg {
       width: 45%;
     }
@@ -64,8 +69,8 @@
 
 // Alternating image position
 .blog, .single-post {
-color: black;
-// padding-top: 100px;
+  
+  color: black;
 
  article:nth-child(odd) .circle-image{
    float:left;

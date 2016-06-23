@@ -25,16 +25,23 @@ get_header(); ?>
       <!-- Loop through the Custom Taxonomy (Team Roles) -->
 			<div class="meet-our-team-content">
 
-      	<?php $team_roles = get_terms('team_role', array('parent' => 0, 'orderby' => 'term_order', 'order' => 'ASC'));?>
-
+      	<?php $team_roles = get_terms('team_role',
+																array('parent' 	=> 0,
+																			'orderby' => 'term_order',
+																			'order' 	=> 'ASC'));
+						//returns an array of the team_role custom taxonomy terms
+				?>
 
 				<?php foreach($team_roles as $team_role): ?>
 					<section class="alternating equal <?php echo $team_role->slug ?>">
 						<div class="alt-image">
+
+							<!-- get the custom term meta (an image) and display on the page -->
 							<?php $image_id = get_term_meta($team_role->term_id, 'image', true);
 										$image_data = wp_get_attachment_image_src( $image_id, 'full');
 										$image = $image_data[0];
 							 ?>
+
 							 <img src="<?php echo $image; ?>" alt="<?php echo $team_role->name; ?>" />
 
 						</div>

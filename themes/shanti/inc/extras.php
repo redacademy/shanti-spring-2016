@@ -23,20 +23,37 @@ add_filter( 'body_class', 'shanti_body_classes' );
 
 function shanti_featured_image_header() {
 
-
+	if( !has_post_thumbnail()) {
+		$thumb_url = get_template_directory_uri() . '/images/home-header.jpg';
+	} else {
 		$thumb_id = get_post_thumbnail_id();
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
 		$thumb_url = $thumb_url_array[0];
+	}
 
-	$custom_css = ".entry-header.hero {
-			background: url('$thumb_url') no-repeat center center;
-			background-size: cover;
-	}";
+	if( is_page_template('parentpage.php') ) {
+
+		$custom_css = ".entry-header.hero {
+				background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+				url('$thumb_url') no-repeat center center;
+				background-size: cover;
+				-webkit-filter: grayscale(1);
+				filter: grayscale(1);
+		}";
+
+	} else {
+		$custom_css = ".entry-header.hero {
+				background: url('$thumb_url') no-repeat center center;
+				background-size: cover;
+		}";
+	}
+
 
 	wp_add_inline_style('shanti-style', $custom_css);
 }
 add_action( 'wp_enqueue_scripts', 'shanti_featured_image_header' );
 
+// Use the custom taxonomy term meta image as the header for the archive pages
 function shanti_taxonomy_archive_header() {
 
 	if(!is_tax('action_types') && !is_tax('action_price') && !is_tax('team_role')) {
@@ -48,10 +65,12 @@ function shanti_taxonomy_archive_header() {
 	$image_data = wp_get_attachment_image_src( $image_id, 'full');
 	$image = $image_data[0];
 
-	if ( !empty($image) ) {
-		$custom_css = ".tax-header { background: url('$image') no-repeat center center; background-size: cover;
-		height: 100vh; width: 100%;}";
-	}
+	if ( empty($image) ) {
+		$image = get_template_directory_uri() . '/images/home-header.jpg';
+	} //a fallback if no metadata image is provided
+
+	$custom_css = ".tax-header { background: url('$image') no-repeat center center; background-size: cover;
+	height: 100vh; width: 100%;}";
 
 	wp_add_inline_style('shanti-style', $custom_css);
 }
@@ -67,6 +86,14 @@ function shanti_featured_color_css() {
 	}
 	$color = CFS()->get('color');
 	$text_color = CFS()->get('text_color');
+
+	if ( empty($color)) {
+		$color = '#E61367';
+	}
+
+	if ( empty($text_color) ) {
+		$text_color = 'black';
+	}
 	$custom_css = ".feature-color { background: $color; color: $text_color;}
 									.feature-color h2 {color: $text_color;}";
 

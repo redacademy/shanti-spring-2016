@@ -57,7 +57,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "base/typography";
 @import "base/elements";
 @import "layout/forms";
-@import "layout/front-page";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
@@ -65,15 +64,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/modules";
 @import "layout/widgets";
 @import "layout/content";
-@import "layout/meet-our-team";
-@import "layout/our-partners";
 @import "base/media";
-@import "pages/page-templates";
-@import "pages/parent-pages";
-@import "pages/blog";
-@import "pages/our-story";
-@import "pages/gifts-of-action";
-@import "pages/why-uganda";
-@import "layout/search-results";
-@import "layout/404";
-@import "pages/single-events";
+@import 'pages/pages';
