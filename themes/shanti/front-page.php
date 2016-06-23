@@ -17,9 +17,7 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header hero">
-						<div class="border">
-							<!-- transparent bottom border of the header image on home page  -->
-						</div>
+			
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -55,7 +53,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<!-- Start loop of child pages -->
-		
+
 		<?php $args = array('post_type' => 'page',
 												'meta_key' => 'homepage',
 												'meta_value' => 1,
@@ -81,5 +79,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

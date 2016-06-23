@@ -3,12 +3,13 @@
 --------------------------------------------------------------*/
 
 
-.entry-header .border {
+.entry-header::after {
   width: 100%;
   height: 5vh;
   position: absolute;
   bottom: 0;
   background: rgba(255,255,255,0.7);
+  content: '';
 }
 
 .infographic {
