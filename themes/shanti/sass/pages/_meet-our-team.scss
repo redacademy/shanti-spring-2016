@@ -1,3 +1,8 @@
+/*--------------------------------------------------------------
+# Meet Our Team pages
+--------------------------------------------------------------*/
+
+
 .meet-our-team-content {
   border-top: solid lightgrey 25px;
   display: flex;
@@ -68,5 +73,45 @@
   background: $color__brand-wigg;
   a h3 {
     color: white;
+  }
+}
+
+
+/* Team Member Taxonomy Archive Pages */
+
+.role-header {
+  text-align: center;
+  background: $color__brand-why-uganda;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.staff-member {
+  text-align: center;
+
+  @include media-lg {
+    width: 40%;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  a {
+    color: $color__brand-dark;
+  }
+
+  h4 {
+    margin: 0;
+    line-height: normal;
+  }
+
+  p {
+    margin-top: 0;
   }
 }

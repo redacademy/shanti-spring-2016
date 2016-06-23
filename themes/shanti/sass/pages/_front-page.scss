@@ -10,10 +10,12 @@
   bottom: 0;
   background: rgba(255,255,255,0.7);
 }
+
 .infographic {
   background: rgba(255,255,255,0.7);
   position: relative;
   background-color: #f2f2f2;
+
   ul {
     display: flex;
     margin: 0;
@@ -105,11 +107,11 @@ h3 {
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
                 linear-gradient( $color__brand-who-we-are, $color__brand-who-we-are);
 
-                @include media-q {
-                  background: white;
-                  }
+    @include media-q {
+      background: white;
+    }
 
-    .who-we-are-content{
+    .who-we-are-content {
       width: 100%;
       height: 80%;
       background: $color__brand-who-we-are;
@@ -158,9 +160,9 @@ h3 {
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
                 linear-gradient( $color__brand-why-uganda, $color__brand-why-uganda);
 
-                @include media-q {
-                  background: white;
-                  }
+      @include media-q {
+        background: white;
+      }
 
     .why-uganda-content {
       width: 100%;
@@ -213,9 +215,9 @@ h3 {
     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
                 linear-gradient( $color__brand-our-projects, $color__brand-our-projects);
 
-                @include media-q {
-                  background: white;
-                  }
+    @include media-q {
+      background: white;
+      }
 
     .our-projects-content {
       width: 100%;
