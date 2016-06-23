@@ -41,7 +41,7 @@ a {
 		padding-left: 0;
 
 
-		ul {
+		ul { // styling of the dropdown navigation box
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			position: absolute;
 			left: -999em;
@@ -126,16 +126,19 @@ a {
 
 }
 
+// the main desktop menus need to have enough line height so that they connect to the dropdown menu
 .main-navigation > div > ul > li > a{
 		line-height: 9.9vh;
 	}
 
+// the dropdown menus on desktop
 .main-navigation > div> ul > li > ul {
 	border-top: none;
 }
 
 .main-navigation > div > ul > li li {
 	border-bottom: 1px solid #E3E3E3;
+	padding-left: 0.2rem;
 }
 
 
