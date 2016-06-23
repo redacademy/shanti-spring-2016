@@ -3,12 +3,23 @@
 --------------------------------------------------------------*/
 
 .error-404 {
-
-  p{
+  margin: 0 auto;
+  max-width: 1000px;
+  
+ p{
     font-size: 1rem;
+  }
+  .search-field{
+    padding: 4px;
   }
 
   .page-title{
     margin-top: 3rem;
   }
+  form fieldset {
+    border: 0;
+  }
+}
+.here{
+  text-decoration: underline;
 }
