@@ -27,7 +27,6 @@ get_header(); ?>
 
 								<?php the_content(); ?>
 						</div><!-- .entry-content -->
-					</article><!-- #post-## -->
 
 				<footer class="entry-footer">
 					<?php shanti_entry_footer(); ?>

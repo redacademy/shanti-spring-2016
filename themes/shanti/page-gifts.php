@@ -19,7 +19,7 @@ get_header(); ?>
               <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	</header><!-- .entry-header -->
-
+				</article>
 			<?php endwhile; // End of the loop. ?>
 
       <!-- Loop through the Custom Taxonomy (Action Types) -->
