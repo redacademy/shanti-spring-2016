@@ -15,34 +15,27 @@ get_header(); ?>
         <header class="entry-header hero"></header>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 				<div class="event-post-container">
           <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
 				</div>
 
-								 <div class="event-entry-content container">
+				<div class="event-entry-content container">
 
-								<?php the_content(); ?>
+					<?php the_content(); ?>
 
-						</div><!-- .entry-content -->
-					</article><!-- #post-## -->
+				</div><!-- .entry-content -->
+
 
 				<footer class="entry-footer">
-					<?php shanti_entry_footer(); ?>
+						<?php shanti_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
+
 			</article><!-- #post-## -->
-
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

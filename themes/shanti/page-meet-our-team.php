@@ -38,17 +38,19 @@ get_header(); ?>
 
 							<!-- get the custom term meta (an image) and display on the page -->
 							<?php $image_id = get_term_meta($team_role->term_id, 'image', true);
-										$image_data = wp_get_attachment_image_src( $image_id, 'full');
+										$image_data = wp_get_attachment_image_src( $image_id, 'large');
 										$image = $image_data[0];
 							 ?>
 
 							 <img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $team_role->name ); ?>" />
-
 						</div>
+
 						<div class="alt-info">
-							<a href="<?php echo get_term_link($team_role, 'team_role') ?>"><h3><?php echo wp_kses_post( $team_role->name ); ?></h3></a>
-
+							<a href="<?php echo get_term_link($team_role, 'team_role') ?>">
+								<h3><?php echo wp_kses_post( $team_role->name ); ?></h3>
+							</a>
 						</div>
+						
 					</section>
   			<?php endforeach; ?>
 			</div>

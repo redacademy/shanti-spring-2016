@@ -13,24 +13,27 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="blog-post-container">
-					<span class="blog-post-title"><?php the_title(); ?></span>
-					<span><?php shanti_posted_on(); ?></span>
+
+				<div class="blog-post">
+					<h3>
+						<?php the_title(); ?>
+						<span class="date"><?php shanti_posted_on(); ?></span>
+					</h3>
+
+					<?php if ( has_post_thumbnail() ) : ?>
+						<div class="circle-image">
+							<?php the_post_thumbnail( 'medium' ); ?>
+						</div>
+					<?php endif; ?>
+
+					<?php the_content(); ?>
+
 				</div>
-								<?php if ( has_post_thumbnail() ) : ?>
-									<div class="circle-image">
-															 <?php the_post_thumbnail( 'medium' ); ?>
-									</div>
-								<?php endif; ?>
-
-								 <div class="entry-content container">
-
-								<?php the_content(); ?>
-						</div><!-- .entry-content -->
 
 				<footer class="entry-footer">
 					<?php shanti_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
+
 			</article><!-- #post-## -->
 
 
@@ -46,5 +49,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

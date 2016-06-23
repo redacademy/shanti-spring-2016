@@ -16,11 +16,10 @@ get_header(); ?>
 			</header>
 			<div class="role-header">
 
-					<h2><?php single_term_title(); ?></h2>
-					<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				<h2><?php single_term_title(); ?></h2>
+				<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</div><!-- .page-header -->
-
 
       <div class="partners">
 
@@ -46,5 +45,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

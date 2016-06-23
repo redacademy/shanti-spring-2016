@@ -21,11 +21,15 @@ get_header(); ?>
 			</p>
 		</div>
 
+
 		<div class="cart container">
+
 			<div class="image">
 				<?php the_post_thumbnail('medium'); ?>
 			</div>
+
 			<div class="form-wrapper">
+
 				<h3><?php the_title(); ?></h3>
 
 				<div class="cart-table">
@@ -48,7 +52,7 @@ get_header(); ?>
 						<p><?php echo wp_kses_post( $price ); ?></p>
 					</div>
 
-				</div>
+				</div> <!-- end cart table -->
 
 				<div class="subtotal">
 					<h3>Subtotal</h3>
@@ -56,33 +60,41 @@ get_header(); ?>
 				</div>
 
 				<button type="button" name="check-out">Check Out</button>
-			</div>
-		</div>
+
+			</div> <!-- end form -->
+		</div> <!-- end cart -->
 
 		<div class="gift-form container">
 			<p>
 				Shopping for a friend? Each gift includes a photo card highlighting the program your gift supports. You can choose to hand deliver your gift or have it directly to your recipient.
 			</p>
+
 			<form class="" action="index.html" method="post">
+
 				<input type="checkbox" name="is-gift" value="is-gift" id="is-gift">
 				<label class="checkbox" for="is-gift">Gift of Action</label>
 
 				<!-- The field is hidden on loading, shows when the checkbox is clicked  -->
+
 				<fieldset>
 					<label for="from"><span>From:</span>
 						<input type="text" name="from" value="" id="from">
 					</label>
+
 					<label for="to"><span>To:</span>
 						<input type="text" name="to" value="" id="to">
 					</label>
+
 					<textarea name="message"></textarea>
 
 				</fieldset>
+
 				<fieldset class="button">
 					<button type="submit" name="check-out">Check Out</button>
 				</fieldset>
-			</form>
-		</div>
+
+			</form> <!-- end form-->
+		</div> <!-- end gift form container -->
 
 		<?php endwhile; // End of the loop. ?>
 

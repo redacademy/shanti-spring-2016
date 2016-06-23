@@ -31,14 +31,16 @@ get_header(); ?>
 	        <section class="alternating">
 	          <div class="alt-image">
 	            <?php $image_id = get_term_meta($gift->term_id, 'image', true);
-	                  $image_data = wp_get_attachment_image_src( $image_id, 'full');
+	                  $image_data = wp_get_attachment_image_src( $image_id, 'large');
 	                  $image = $image_data[0];
 	             ?>
 	             <img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $gift->name ); ?>" />
-
 	          </div>
+
 	          <div class="alt-info">
-	            <a href="<?php echo get_term_link($gift, 'action_types') ?>"><h3>Gifts of <?php echo $gift->name; ?></h3></a>
+	            <a href="<?php echo get_term_link($gift, 'action_types') ?>">
+								<h3>Gifts of <?php echo $gift->name; ?></h3>
+							</a>
 	            <div class="alt-text">
 	              <?php echo wp_kses_post( $gift->description ); ?>
 	            </div>
@@ -46,6 +48,7 @@ get_header(); ?>
 	              <a class="cta buy" href="<?php echo get_term_link($gift, 'action_types') ?>">Buy Now</a>
 	            </div>
 	          </div>
+
 	        </section>
 	      <?php endforeach; ?>
 			</div>

@@ -27,6 +27,7 @@ get_header(); ?>
           <?php foreach ($events as $post): setup_postdata($post); ?>
 
             <section>
+							
               <div class="event-image">
                 <?php if ( has_post_thumbnail() ) : ?>
                   <?php the_post_thumbnail( 'full' ); ?>
@@ -40,13 +41,16 @@ get_header(); ?>
               <div class="event-entry-content">
                 <?php the_excerpt(); ?>
 								<a href="<?php the_permalink(); ?>" class="discover-button">
-                 Discover More
-               </a>
+                 	Discover More
+               	</a>
               </div>
 
             </section>
+
           <?php endforeach; wp_reset_postdata(); // end events loop ?>
+
 				</article>
+
 			<?php endwhile;// End of the loop. ?>
 
 		</main>
