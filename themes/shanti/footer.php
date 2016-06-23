@@ -60,7 +60,7 @@
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 	     					<input type="email" placeholder="Your e-mail Address...."required></input>
 							</div>
-							
+
 	     				<button type="submit">Subscribe</button>
 						</div>
 					</form>
@@ -74,15 +74,15 @@
 				<div class="insite-links">
 					<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ) ?>">Blog</a>
 						<span> &bull; </span>
-  				<a href="http://shantiuganda.org/about/press/">Press</a>
+  				<a href="<?php echo get_page_link(577); ?>">Press</a>
 						<span> &bull; </span>
-					<a href="http://shantiuganda.org/get-involved/job-opportunities/">Careers</a>
+					<a href="<?php echo get_page_link(42); ?>">Careers</a>
 						<span> &bull; </span>
- 					<a href="#">Events</a>
+ 					<a href="<?php echo get_page_link(50); ?>">Events</a>
 						<span class="hiddenBullet"> &bull; </span>
-					<a href="http://shantiuganda.org/contact/newsletter/">Newsletter</a>
+					<a href="<?php echo get_page_link(575); ?>">Newsletter</a>
 						<span> &bull; </span>
-					<a href="http://shantiuganda.org/contact/">Contact Us</a>
+					<a href="<?php echo get_page_link(62); ?>">Contact Us</a>
 				</div>
 			</div>
 			</footer><!-- #colophon -->
