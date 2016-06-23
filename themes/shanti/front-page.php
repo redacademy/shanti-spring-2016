@@ -24,10 +24,10 @@ get_header(); ?>
 
 					<div class="entry-content">
 						<div class="container"> <?php the_content(); ?></div>
-
+							<h3>Our Accomplishments</h3>
 						<section class="infographic">
 
-							<h3>Our Accomplishments</h3>
+
 
 							<ul>
 								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images

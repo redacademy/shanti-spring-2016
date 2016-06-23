@@ -36,16 +36,17 @@
 
     @include media-q {
       width: 20%;
-      max-height: 200px;
+      max-height: 300px;
+      margin-top: 1.5rem
     }
 
     img {
-      
+
       width: auto;
 
       @include media-q {
         min-height: 0;
-        max-height: 80%;
+        height: 80%;
       }
     }
   }
