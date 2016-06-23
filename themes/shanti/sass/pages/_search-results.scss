@@ -4,11 +4,19 @@
 
 
 .search{
+  .site-main{
+    margin: 0 auto;
+    max-width: 1000px;
+
+  }
+  .page-title{
+    font-size: 50px;
+  }
 
   .site-main{
     margin-top: 4rem;
   }
-  
+
   .entry-title {
     font-size: 2rem;
   }
@@ -21,4 +29,8 @@
   .entry-header{
     height: 50px;
   }
+}
+
+.search-results{
+  border-bottom: 1px solid rgb(205, 198, 198);
 }

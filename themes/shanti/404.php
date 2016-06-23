@@ -18,14 +18,10 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
-
+					<p>Return the home page <a href="<?php echo home_url(); ?>" class="here">here</a>.</p>
 					<?php get_search_form(); ?>
 
-					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
