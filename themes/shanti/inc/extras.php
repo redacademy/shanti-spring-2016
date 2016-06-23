@@ -31,10 +31,22 @@ function shanti_featured_image_header() {
 		$thumb_url = $thumb_url_array[0];
 	}
 
-	$custom_css = ".entry-header.hero {
-			background: url('$thumb_url') no-repeat center center;
-			background-size: cover;
-	}";
+	if( is_page_template('parentpage.php') ) {
+
+		$custom_css = ".entry-header.hero {
+				background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+				url('$thumb_url') no-repeat center center;
+				background-size: cover;
+				filter: grayscale(1);
+		}";
+
+	} else {
+		$custom_css = ".entry-header.hero {
+				background: url('$thumb_url') no-repeat center center;
+				background-size: cover;
+		}";
+	}
+
 
 	wp_add_inline_style('shanti-style', $custom_css);
 }
