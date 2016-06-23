@@ -66,303 +66,45 @@ h3 {
 .front-page-content {
   border-top: solid lightgrey 25px;
 
-  @include media-q {
-    border-top:none none 0px;
+
+}
+
+.alternating.who-we-are {
+  background: $color__brand-who-we-are;
+
+  h3 {
+    color: $color__text-tertiary;
   }
+}
 
-  @include media-lg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.alternating.why-uganda {
+  background: $color__brand-why-uganda;
+
+  h3 {
+    color: $color__text-secondary;
   }
+}
 
-  section{
-    height: 20vh;
-    min-height: 105px;
-    width: 100%;
-    max-width: 1440px;
-    border-bottom: solid white 2px;
+.alternating.our-projects {
+  background: $color__brand-our-projects;
 
-    @include media-q {
-      height:48vh;
-      max-height: 332px;
-    }
-
-    @include media-lg {
-      height:48vh;
-      max-height: 450px;
-    }
-
-    h3 {
-      text-transform: uppercase;
-    }
+  h3 {
+    color: $color__text-tertiary;
   }
+}
 
-  .who-we-are {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( $color__brand-who-we-are, $color__brand-who-we-are);
+.alternating.get-involved {
+  background: $color__brand-get-involved;
 
-    @include media-q {
-      background: white;
-    }
-
-    .who-we-are-content {
-      width: 100%;
-      height: 80%;
-      background: $color__brand-who-we-are;
-      display:flex;
-      justify-content: space-between;
-
-      @include media-q {
-        height:90%;
-      }
-
-      .section-content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-           color: $color__text-tertiary
-        }
-      }
-
-      .thumbnail {
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-
-        img {
-          width: 100%;
-          position: absolute;
-          max-width: none;
-          height: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
+  h3 {
+    color: $color__text-secondary;
   }
-  .why-uganda {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( $color__brand-why-uganda, $color__brand-why-uganda);
+}
 
-      @include media-q {
-        background: white;
-      }
+.alternating.donate-now {
+  background: $color__brand-who-donate;
 
-    .why-uganda-content {
-      width: 100%;
-      height: 80%;
-      background: $color__brand-why-uganda;
-
-      display:flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-
-      @include media-q {
-        height:90%;
-      }
-
-      .section-content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-          color: $color__text-secondary;
-        }
-      }
-
-      .thumbnail {
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-
-        img {
-          width: 100%;
-          position: absolute;
-          max-width: none;
-          height: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
+  h3 {
+    color: $color__text-tertiary;
   }
-  .our-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( $color__brand-our-projects, $color__brand-our-projects);
-
-    @include media-q {
-      background: white;
-      }
-
-    .our-projects-content {
-      width: 100%;
-      height: 80%;
-      background: $color__brand-our-projects;
-
-      display:flex;
-      justify-content: space-between;
-
-      @include media-q {
-        height:90%;
-      }
-
-      .section-content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-          color: $color__text-tertiary
-        }
-      }
-
-      .thumbnail {
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-
-        img {
-          width: 100%;
-          position: absolute;
-          max-width: none;
-          height: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  }
-  .get-involved {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( $color__brand-get-involved, $color__brand-get-involved);
-
-                @include media-q {
-                  background: white;
-                  }
-
-    .get-involved-content {
-      width: 100%;
-      height: 80%;
-      background: $color__brand-get-involved;
-
-      display:flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-
-      @include media-q {
-        height:90%;
-      }
-
-      .section-content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-          color: $color__text-secondary;
-        }
-      }
-
-      .thumbnail {
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-
-        img {
-          width: 100%;
-          position: absolute;
-          max-width: none;
-          height: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  }
-  .donate {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-                linear-gradient( $color__brand-who-donate, $color__brand-who-donate);
-
-    @include media-q {
-      background: white;
-      }
-
-    .donate-content {
-      width: 100%;
-      height: 80%;
-      background: $color__brand-who-donate;
-
-      display:flex;
-      justify-content: space-between;
-
-      @include media-q {
-        height:90%;
-      }
-
-      .section-content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-          color: $color__text-tertiary;
-        }
-      }
-
-      .thumbnail {
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
-
-        img {
-          height:auto;
-          width: 100%;
-        }
-      }
-    }
-  }
-
 }

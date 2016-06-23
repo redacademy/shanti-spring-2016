@@ -33,7 +33,7 @@ get_header(); ?>
 				?>
 
 				<?php foreach($team_roles as $team_role): ?>
-					<section class="alternating equal <?php echo $team_role->slug ?>">
+					<section class="alternating equal <?php echo esc_attr($team_role->slug); ?>">
 						<div class="alt-image">
 
 							<!-- get the custom term meta (an image) and display on the page -->
