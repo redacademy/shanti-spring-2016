@@ -28,7 +28,7 @@ function shanti_featured_image_header() {
 	} else {
 		$thumb_id = get_post_thumbnail_id();
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
-		$thumb_url = $thumb_url_array[0];
+		$thumb_url = esc_url( $thumb_url_array[0] );
 	}
 
 	if( is_page_template('parentpage.php') ) {
@@ -63,7 +63,7 @@ function shanti_taxonomy_archive_header() {
 	$term_id = get_queried_object_id();
 	$image_id = get_term_meta($term_id, 'image', true);
 	$image_data = wp_get_attachment_image_src( $image_id, 'full');
-	$image = $image_data[0];
+	$image = esc_url( $image_data[0] );
 
 	if ( empty($image) ) {
 		$image = get_template_directory_uri() . '/images/home-header.jpg';
@@ -84,15 +84,15 @@ function shanti_featured_color_css() {
 	if(!is_page_template('parentpage.php') && !is_page()) {
 		return;
 	}
-	$color = CFS()->get('color');
-	$text_color = CFS()->get('text_color');
+	$color = esc_html( CFS()->get('color') );
+	$text_color = esc_html( CFS()->get('text_color') );
 
 	if ( empty($color)) {
 		$color = '#E61367';
 	}
 
 	if ( empty($text_color) ) {
-		$text_color = 'black';
+		$text_color = 'white';
 	}
 	$custom_css = ".feature-color { background: $color; color: $text_color;}
 									.feature-color h2 {color: $text_color;}";

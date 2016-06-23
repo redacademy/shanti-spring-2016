@@ -40,7 +40,9 @@ get_header(); ?>
 
                   <div class="blog-post">
                     <h3>
+                    <a href="<?php the_permalink(); ?>">
                       <?php the_title(); ?>
+                    </a>
                       <span class="date"><?php shanti_posted_on(); ?></span>
                     </h3>
                     <?php the_content(); ?>

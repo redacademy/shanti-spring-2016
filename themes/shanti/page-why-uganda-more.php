@@ -19,7 +19,7 @@ get_header(); ?>
 
             <div class="feature-color sub-header why">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-          		<?php echo CFS()->get('excerpt'); ?>
+          		<?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	<div class="entry-content">
 
@@ -33,7 +33,7 @@ get_header(); ?>
                 <?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
                     foreach($infographic as $pic):?>
 
-                    <li><img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" /></li>
+                    <li><img src="<?php echo esc_url( $pic['image'] ); ?>" alt="<?php echo esc_attr($pic['text']); ?>" /></li>
                  <?php endforeach;?>
              </ul>
             </section>

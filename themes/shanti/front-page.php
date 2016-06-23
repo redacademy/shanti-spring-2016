@@ -35,7 +35,7 @@ get_header(); ?>
 										foreach($infographic as $pic):?>
 
 										<li>
-											<img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
+											<img src="<?php echo esc_url( $pic['image'] ); ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
 										</li>
 								 <?php endforeach;?>
 						 </ul>
@@ -66,7 +66,7 @@ get_header(); ?>
 						$link = get_page_link($my_id);
 					?>
 					<div class="section-content">
-						<a href="<?php echo $link ?>">
+						<a href="<?php echo esc_url( $link ); ?>">
 						<h3 class="title">
 							<?php
 								echo $title;

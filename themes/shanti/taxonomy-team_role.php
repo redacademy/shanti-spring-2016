@@ -21,23 +21,18 @@ get_header(); ?>
 				?>
 			</div><!-- .page-header -->
 
-			<?php $terms = get_the_terms($post->ID, 'team_role');
-                         $term = array_shift($terms);?>
-
             <div class="staff container">
-				<?php while ( have_posts() ) : the_post(); ?>
+							<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="staff-member">
-					<?php the_post_thumbnail('thumbnail'); ?>
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					<?php echo CFS()->get('role'); ?></h4>
+								<div class="staff-member">
+									<?php the_post_thumbnail('thumbnail'); ?>
+									<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									<?php echo wp_kses_post( CFS()->get('role') ); ?></h4>
 
-						<?php the_excerpt(); ?>
+										<?php the_excerpt(); ?>
 
-				</div>
-
-
-				<?php endwhile; ?>
+								</div>
+							<?php endwhile; ?>
 			</div>
 
 		<?php else : ?>
