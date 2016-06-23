@@ -16,7 +16,7 @@ get_header(); ?>
         	<header class="entry-header hero">
             <div class="pink-header">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-              <?php echo CFS()->get('excerpt'); ?>
+              <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	</header><!-- .entry-header -->
 
@@ -29,20 +29,20 @@ get_header(); ?>
               <?php $values = CFS()->get('value'); ?>
               <?php foreach($values as $value): ?>
                  <li>
-                   	<img src="<?php echo $value['image']; ?>" alt="graphical icon of <?php echo $value['label']; ?>" />
-                   <h4><?php echo $value['label']; ?></h4>
-                   <p><?php echo $value['text']; ?></p>
+                   	<img src="<?php echo esc_url( $value['image'] ); ?>" alt="graphical icon of <?php echo esc_attr( $value['label'] ); ?>" />
+                   <h4><?php echo wp_kses_post( $value['label'] ); ?></h4>
+                   <p><?php echo wp_kses_post( $value['text'] ); ?></p>
                  </li>
               <?php endforeach; ?>
             </ul>
 
             <div class="history">
               <div class="history-header">
-                <img src="<?php echo CFS()->get('history_image'); ?>" alt="Our History">
+                <img src="<?php echo esc_url( CFS()->get('history_image') ); ?>" alt="Our History">
                 <h3>History</h3>
               </div>
 							<div class="history-content container">
-								<?php echo CFS()->get('history'); ?>
+								<?php echo wp_kses_post( CFS()->get('history') ); ?>
 							</div>
             </div>
         	</div><!-- .entry-content -->

@@ -21,19 +21,18 @@ get_header(); ?>
 				?>
 			</div><!-- .page-header -->
 
-			<?php $terms = get_the_terms($post->ID, 'team_role');
-                         $term = array_shift($terms);?>
 
-            <div class="partners">
+      <div class="partners">
+
 				<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="partner">
-					<a href="#"><?php the_post_thumbnail('medium'); ?></a>
+					<div class="partner">
+
+						<a href="#"><?php the_post_thumbnail('medium'); ?></a>
 
 						<?php the_excerpt(); ?>
 
-				</div>
-
+					</div>
 
 				<?php endwhile; ?>
 			</div>

@@ -17,9 +17,7 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header hero">
-						<div class="border">
-							<!-- transparent bottom border of the header image on home page  -->
-						</div>
+			
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -35,7 +33,7 @@ get_header(); ?>
 										foreach($infographic as $pic):?>
 
 										<li>
-											<img src="<?php echo $pic['image']; ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
+											<img src="<?php echo esc_url( $pic['image'] ); ?>" alt="<?php echo esc_attr($pic['text']); ?>" />
 										</li>
 								 <?php endforeach;?>
 						 </ul>
@@ -54,171 +52,32 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<div class="front-page-content">
-			<section class="who-we-are">
-				<div class="who-we-are-content">
-					<?php
-						$my_id = 16;
-						$post_id_16 = get_post($my_id);
-						$title = $post_id_16->post_title;
-						$title = apply_filters('the_title', $title);
-						$title = str_replace(']]>', ']]>', $title);
-						$link = get_page_link($my_id);
-					?>
-					<div class="section-content">
-						<a href="<?php echo $link ?>">
-						<h3 class="title">
-							<?php
-								echo $title;
-								?>
-							</h3>
-						</a>
-						</div>
+		<!-- Start loop of child pages -->
 
-					<div class="thumbnail">
-						<?php
-							$my_id = 16;
-							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
-						?>
-						<a href="<?php echo $link ?>">
-						<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
-							</a>
-					</div>
+		<?php $args = array('post_type' => 'page',
+												'meta_key' => 'homepage',
+												'meta_value' => 1,
+												'order' => 'ASC',
+												'orderby' => 'date'
+											 );
+					$child_pages = get_posts($args);
+		?>
 
+		<?php foreach( $child_pages as $post ): setup_postdata( $post); ?>
 
+			<section class="alternating equal <?php echo esc_attr( $post->post_name ); ?>">
+				<div class="alt-image">
+					<?php the_post_thumbnail('large'); ?>
 				</div>
-			</section>
-			<section class="why-uganda">
-				<div class="why-uganda-content">
-					<?php
-					$my_id = 24;
-					$post_id_24 = get_post($my_id);
-					$title = $post_id_24->post_title;
-					$title = apply_filters('the_title', $title);
-					$title = str_replace(']]>', ']]>', $title);
-					$link = get_page_link($my_id);
-					?>
-					<div class="section-content">
-						<a href="<?php echo $link ?>">
-						<h3 class="title">
-							<?php
-								echo $title;
-								?>
-							</h3>
-						</a>
-						</div>
-					<div class="thumbnail">
-						<?php
-							$my_id = 24;
-							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
-						?>
-						<a href="<?php echo $link ?>">
-							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
-							</a>
-						</div>
+				<div class="alt-info">
+					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 				</div>
+
 			</section>
-			<section class="our-projects">
-				<div class="our-projects-content">
-					<?php
-					$my_id = 30;
-					$post_id_30 = get_post($my_id);
-					$title = $post_id_30->post_title;
-					$title = apply_filters('the_title', $title);
-					$title = str_replace(']]>', ']]>', $title);
-					$link = get_page_link($my_id);
-					 ?>
-
-					<div class="section-content">
-					<a href="<?php echo $link ?>">
-					<h3 class="title">
-						<?php
-							echo $title;
-							?>
-						</h3>
-					</a>
-
-						</div>
-
-					<div class="thumbnail">
-						<?php
-							$my_id = 30;
-							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
-						?>
-						<a href="<?php echo $link ?>">
-							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
-							</a>
-						</div>
-				</div>
-			</section>
-			<section class="get-involved">
-				<div class="get-involved-content">
-					<?php
-					$my_id = 40;
-					$post_id_40 = get_post($my_id);
-					$title = $post_id_40->post_title;
-					$title = apply_filters('the_title', $title);
-					$title = str_replace(']]>', ']]>', $title);
-					$link = get_page_link($my_id);
-					?>
-					<div class="section-content">
-						<a href="<?php echo $link ?>">
-						<h3 class="title">
-							<?php
-								echo $title;
-								?>
-							</h3>
-						</a>
-
-						</div>
-
-					<div class="thumbnail">
-						<?php
-							$my_id = 40;
-							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
-						?>
-						<a href="<?php echo $link ?>">
-							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
-							</a>
-						</div>
-				</div>
-			</section>
-			<section class="donate">
-				<div class="donate-content">
-					<?php
-					$my_id = 52;
-					$post_id_16 = get_post($my_id);
-					$title = $post_id_16->post_title;
-					$title = apply_filters('the_title', $title);
-					$title = str_replace(']]>', ']]>', $title);
-					$link = get_page_link($my_id);
-					?>
-					<div class="section-content">
-						<a href="<?php echo $link ?>">
-						<h3 class="title">
-							<?php
-								echo $title;
-								?>
-							</h3>
-						</a>
-
-						</div>
-
-					<div class="thumbnail">
-						<?php
-							$my_id = 52;
-							$feat_image = wp_get_attachment_url(get_post_thumbnail_id($my_id));
-						?>
-						<a href="<?php echo $link ?>">
-							<img src="<?php echo $feat_image ?>" alt="<?php echo $title;?>" />
-							</a>
-						</div>
-				</div>
-			</section>
-		</div>
+		<?php endforeach; ?>
 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

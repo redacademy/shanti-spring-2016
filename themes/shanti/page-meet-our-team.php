@@ -16,7 +16,7 @@ get_header(); ?>
         	<header class="entry-header hero">
             <div class="pink-header">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-              <?php echo CFS()->get('excerpt'); ?>
+              <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	</header>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 				?>
 
 				<?php foreach($team_roles as $team_role): ?>
-					<section class="alternating equal <?php echo $team_role->slug ?>">
+					<section class="alternating equal <?php echo esc_attr($team_role->slug); ?>">
 						<div class="alt-image">
 
 							<!-- get the custom term meta (an image) and display on the page -->
@@ -42,11 +42,11 @@ get_header(); ?>
 										$image = $image_data[0];
 							 ?>
 
-							 <img src="<?php echo $image; ?>" alt="<?php echo $team_role->name; ?>" />
+							 <img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $team_role->name ); ?>" />
 
 						</div>
 						<div class="alt-info">
-							<a href="<?php echo get_term_link($team_role, 'team_role') ?>"><h3><?php echo $team_role->name; ?></h3></a>
+							<a href="<?php echo get_term_link($team_role, 'team_role') ?>"><h3><?php echo wp_kses_post( $team_role->name ); ?></h3></a>
 
 						</div>
 					</section>

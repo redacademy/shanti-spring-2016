@@ -18,7 +18,7 @@ get_header(); ?>
         	<header class="entry-header hero">
         		<div class="header-text">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-              <?php echo CFS()->get('excerpt'); ?>
+              <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
         	</header><!-- .entry-header -->
 
@@ -54,7 +54,7 @@ get_header(); ?>
 								 </div>
 
 								 <div class="alt-text">
-                  <?php echo CFS()->get('excerpt'); ?>
+                  <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
 							 	</div>
 
 								<div class="alt-link">
@@ -73,7 +73,7 @@ get_header(); ?>
 									 		Discover More
 								 		<?php endif; ?>
 								 </a>
-								 
+
 								</div>
 
 							 </div>
