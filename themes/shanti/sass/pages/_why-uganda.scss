@@ -18,11 +18,11 @@
     padding: $base__space-unit;
     margin-bottom: 0;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       margin-left: auto;
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       margin-right: auto;
     }
 

@@ -10,13 +10,11 @@
   bottom: 0;
   width: 100%;
   padding: $base__space-unit;
-  text-align: center;
+  text-align: left;
 
   @include media-q {
+
     text-align: left;
-  }
-
-  @include media-q {
     width: 45%;
     right: 5%;
     bottom: 40%;
