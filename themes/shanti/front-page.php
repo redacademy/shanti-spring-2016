@@ -17,7 +17,7 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header hero">
-			
+
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -54,6 +54,8 @@ get_header(); ?>
 
 		<!-- Start loop of child pages -->
 
+		<div class="front-page-content">
+
 		<?php $args = array('post_type' => 'page',
 												'meta_key' => 'homepage',
 												'meta_value' => 1,
@@ -75,6 +77,7 @@ get_header(); ?>
 
 			</section>
 		<?php endforeach; ?>
+	</div>
 
 
 		</main><!-- #main -->
