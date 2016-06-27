@@ -15,21 +15,24 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
         	<header class="entry-header hero">
+
         		<div class="header-text">
               <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
               <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
             </div>
+
         	</header><!-- .entry-header -->
 
         	<div class="entry-content feature-color">
         		<?php the_content(); ?>
         	</div><!-- .entry-content -->
+
         </article><!-- #post-## -->
 
         <!-- loop of child pages -->
-				<?php global $this_page;
-				 		$this_page_ID = get_the_ID();?>
+				<?php global $this_page; $this_page_ID = get_the_ID();?>
 
         <section class="child-pages">
 
@@ -45,7 +48,7 @@ get_header(); ?>
   						<section class="alternating">
 
 								<div class="alt-image">
-                  <?php the_post_thumbnail('full'); ?>
+                  <?php the_post_thumbnail('large'); ?>
                 </div>
 
                 <div class="alt-info">
@@ -60,6 +63,7 @@ get_header(); ?>
 								<div class="alt-link">
 
 									<!-- Different Parent pages get different customized links to their child pages -->
+
 									<a class="discover-button" href="<?php the_permalink(); ?>">
 
 										<?php if(get_the_title($this_page_ID) === 'Get Involved'): ?>
@@ -80,6 +84,7 @@ get_header(); ?>
   						</section>
 
   					<?php endforeach; wp_reset_postdata();?>
+
         </section>
 			<?php endwhile; // End of the loop. ?>
 
@@ -87,5 +92,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

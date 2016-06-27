@@ -55,6 +55,10 @@
     min-height: 100%;
     max-width: none;
     transform: translate(-12%, 0%);
+
+    @include media-lg {
+      transform: none;
+    }
   }
 }
 
@@ -69,7 +73,7 @@
 
 // Alternating image position
 .blog, .single-post {
-  
+
   color: black;
 
  article:nth-child(odd) .circle-image{

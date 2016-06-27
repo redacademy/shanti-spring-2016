@@ -32,7 +32,7 @@ get_header(); ?>
 
                <?php if ( has_post_thumbnail() ) : ?>
                  <div class="circle-image">
-                              <?php the_post_thumbnail( 'large' ); ?>
+                    <?php the_post_thumbnail( 'large' ); ?>
                  </div>
                <?php endif; ?>
 
@@ -40,9 +40,9 @@ get_header(); ?>
 
                   <div class="blog-post">
                     <h3>
-                    <a href="<?php the_permalink(); ?>">
-                      <?php the_title(); ?>
-                    </a>
+                      <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                      </a>
                       <span class="date"><?php shanti_posted_on(); ?></span>
                     </h3>
                     <?php the_content(); ?>
