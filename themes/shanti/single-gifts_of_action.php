@@ -56,7 +56,7 @@ get_header(); ?>
 
 				<div class="subtotal">
 					<h3>Subtotal</h3>
-					<h3 class="price"><?php wp_kses_post( $price ); ?></h3>
+					<h3 class="price"><?php echo wp_kses_post( $price ); ?></h3>
 				</div>
 
 				<button type="button" name="check-out">Check Out</button>
