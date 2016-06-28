@@ -20,7 +20,7 @@
   ul {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: $base__space-unit 0.2rem;
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,6 +28,7 @@
 
     @include media-q {
       background: #E3E3E3;
+      padding: 0;
     }
   }
 
