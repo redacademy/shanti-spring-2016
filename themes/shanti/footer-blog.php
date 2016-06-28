@@ -17,7 +17,7 @@
 							Sign up to hear from us!
 						</h3>
 
-						<form>
+						<form action="<?php echo get_page_link(559); ?>">
 							<div>
 								<div class="subscribe-input">
 									<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -48,7 +48,7 @@
 							<span> &bull; </span>
 						<a href="http://shantiuganda.org/contact/">Contact Us</a>
 					</div>
-					
+
 				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
