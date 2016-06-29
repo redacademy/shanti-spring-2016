@@ -68,6 +68,11 @@ h3 {
 .front-page-content {
   border-top: solid lightgrey 25px;
 
+  .alternating h3 {
+    @include media-lg {
+      font-size: 1.9rem
+    }
+  }
 
 }
 
