@@ -10,6 +10,8 @@
 
   ul {
     background: white;
+
+
   }
   li {
 
@@ -26,9 +28,10 @@
       margin-right: auto;
     }
 
-    @include media-q {
-      width: 40%;
+    @include media-lg {
+      width: 20%;
     }
+
   }
 
   img {
