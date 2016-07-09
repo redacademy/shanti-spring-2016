@@ -25,7 +25,13 @@
     font-size: 1rem;
   }
 
+  
+  .blogPosts {
+    width: 100%;
+  }
+
   .recentPosts {
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -61,6 +67,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
 
     @include media-q {
       flex-direction: row;

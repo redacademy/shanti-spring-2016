@@ -154,3 +154,9 @@ function shanti_filter_action_archive_titles() {
 }
 
 add_filter( 'get_the_archive_title', 'shanti_filter_action_archive_titles');
+
+/** Excerpt on recent blog posts showing 20 words */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

@@ -19,10 +19,9 @@
 					<ul class="blogPosts">
 						<?php
 						   $args = array( 'post_type' => 'post',
-														 	'posts_per_page' => 3);
+														 	'posts_per_page' => 1);
 						   $blog_posts = get_posts( $args ); // returns an array of posts
 			 			?>
-
 					 <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 						 <li>
 							 <a href="<?php esc_url(the_permalink()); ?>">
@@ -31,12 +30,17 @@
 									 	<?php the_post_thumbnail( 'thumbnail' ); ?>
 								 	<?php endif; ?>
 						 		</div>
+								<div class="blogstuff">
 								<h4>
 									<?php echo the_title() ?>
 								</h4>
 								<p>
 									<?php echo wp_kses_post( CFS()->get( 'subtitle' ) ); ?>
 								</p>
+								<p>
+								<?php the_excerpt(); ?>
+							</p>
+						</div>
 							</a>
 							</li>
 		 	 			<?php endforeach; wp_reset_postdata(); ?>
@@ -76,7 +80,8 @@
 						<a href="https://www.youtube.com/user/shantiug">
 							<i class="fa fa-youtube-play" aria-hidden="true"></i>
 						</a>
-						<a href="https://www.instagram.com/shantiuganda/"><i class="fa fa-instagram" aria-hidden="true"><i>
+						<a href="https://www.instagram.com/shantiuganda/">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
 						</a>
 					</div> <!-- end socialmedia links -->
 
