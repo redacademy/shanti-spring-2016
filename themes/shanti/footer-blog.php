@@ -32,7 +32,10 @@
 							<a href="https://www.facebook.com/shantiuganda"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							<a href="https://www.flickr.com/photos/shantiugandasociety/sets/"><i class="fa fa-flickr" aria-hidden="true"></i></a>
 							<a href="https://www.pinterest.com/shantiuganda/"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-							<a href="https://www.youtube.com/user/shantiug"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+							<a href="https://www.youtube.com/user/shantiug"><i class="fa
+         			fa-youtube-play" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/shantiuganda/"><i class="fa fa-instagram" aria-hidden="true"><i>
+							</a>
 					</div>
 
 					<div class="insite-links">
@@ -48,7 +51,7 @@
 							<span> &bull; </span>
 						<a href="http://shantiuganda.org/contact/">Contact Us</a>
 					</div>
-					
+
 				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
