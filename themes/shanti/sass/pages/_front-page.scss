@@ -20,7 +20,7 @@
   ul {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: $base__space-unit 0.2rem;
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,6 +28,7 @@
 
     @include media-q {
       background: #E3E3E3;
+      padding: $base__space-unit;
     }
   }
 
@@ -37,7 +38,7 @@
     justify-content: center;
     align-items: center;
 
-    @include media-q {
+    @include media-lg {
       width: 20%;
       max-height: 300px;
       margin-top: 1.5rem
@@ -67,6 +68,11 @@ h3 {
 .front-page-content {
   border-top: solid lightgrey 25px;
 
+  .alternating h3 {
+    @include media-lg {
+      font-size: 1.9rem
+    }
+  }
 
 }
 

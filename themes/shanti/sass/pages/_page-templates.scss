@@ -55,8 +55,7 @@ section.alternating{
   display: flex;
   flex-direction: row;
   height: 20vh;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+
 
   @include media-q {
     height: 30vh;
@@ -101,11 +100,8 @@ section.alternating{
     margin-bottom: 0;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
-    @include media-q {
-      font-size: 1rem;
-    }
     @include media-lg {
       font-size: 1.35rem;
     }
@@ -126,6 +122,10 @@ section.alternating{
 
   p {
       font-size: 1.1rem;
+
+      @include media-lg {
+        font-size: 1rem;
+      }
   }
 }
 
