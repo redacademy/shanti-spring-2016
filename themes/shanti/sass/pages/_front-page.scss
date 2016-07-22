@@ -2,13 +2,35 @@
 # Front Page
 --------------------------------------------------------------*/
 
+.bam-statement{
+  color: #fff;
+  background-color: #d22785;
+  text-align: center;
+}
+
+.bam-statement h2{
+  margin-top: -20px;
+}
+
+.alt-image-home {
+  width: 100%;
+}
+
+.attachment-large{
+  width: 100%;
+}
+
+.alt-info-home{
+  position: relative;
+  margin-top: -400px;
+  width: 50%;
+}
 
 .home .entry-header::after {
   width: 100%;
   height: 5vh;
   position: absolute;
   bottom: 0;
-  background: rgba(255,255,255,0.7);
   content: '';
 }
 
@@ -78,8 +100,8 @@ h3 {
 
 
 .alternating.who-we-are {
-  background: $color__brand-who-we-are;
 
+  background: $color__brand-who-we-are;
   h3 {
     color: $color__text-tertiary;
   }

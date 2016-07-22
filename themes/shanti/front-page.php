@@ -23,7 +23,10 @@ get_header(); ?>
 					<div class="entry-content">
 
 						<div class="container"> <?php the_content(); ?></div>
-
+						<div class="bam-statement">
+							<h2>Our Goal<h2>
+								<p>By 2030, all Ethiopians will have access to quality education free of forgein aid.</p>
+						</div>
 							<h3>Our Accomplishments</h3>
 
 						<section class="infographic">
@@ -68,14 +71,12 @@ get_header(); ?>
 		<?php foreach( $child_pages as $post ): setup_postdata( $post); ?>
 
 			<section class="alternating equal <?php echo esc_attr( $post->post_name ); ?>">
-				<div class="alt-image">
+				<div class="alt-image-home">
 					<?php the_post_thumbnail('large'); ?>
+					<div class="alt-info-home">
+						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+					</div>
 				</div>
-				<div class="alt-info">
-					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-
-				</div>
-
 			</section>
 		<?php endforeach; ?>
 	</div>

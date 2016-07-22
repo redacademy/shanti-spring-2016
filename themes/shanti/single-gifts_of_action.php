@@ -59,7 +59,7 @@ get_header(); ?>
 					<h3 class="price"><?php echo wp_kses_post( $price ); ?></h3>
 				</div>
 
-				<button type="button" name="check-out">Check Out</button>
+				<button type="button" name="read-more">Check Out</button>
 
 			</div> <!-- end form -->
 		</div> <!-- end cart -->

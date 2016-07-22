@@ -1,6 +1,18 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.blog-image{
+  width: 100%;
+}
+
+.blog-post-alignment li{
+  display: flex;
+}
+
+.blog-link{
+  margin-top: -2rem;
+  padding-left: 1rem;
+}
 
 .site-footer {
   display: flex;
@@ -25,7 +37,7 @@
     font-size: 1rem;
   }
 
-  
+
   .blogPosts {
     width: 100%;
   }
