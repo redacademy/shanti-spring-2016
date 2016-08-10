@@ -27,7 +27,7 @@ get_header(); ?>
           <?php foreach ($events as $post): setup_postdata($post); ?>
 
             <section>
-							
+
               <div class="event-image">
                 <?php if ( has_post_thumbnail() ) : ?>
                   <?php the_post_thumbnail( 'full' ); ?>
@@ -36,10 +36,15 @@ get_header(); ?>
 
               <div class="event-post-container">
                 <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
+								<p><?php echo wp_kses_post( CFS()->get('date') ); ?></p>
+								<p>
+									<?php echo wp_kses_post( CFS()->get('location') ); ?>
+								</p>
               </div>
 
               <div class="event-entry-content">
-                <?php the_excerpt(); ?>
+                p	<?php the_excerpt(); ?>
+
 								<a href="<?php the_permalink(); ?>" class="discover-button">
                  	Discover More
                	</a>

@@ -18,6 +18,10 @@ get_header(); ?>
 
 				<div class="event-post-container">
           <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
+					<p><?php echo wp_kses_post( CFS()->get('date') ); ?></p>
+					<p>
+						<?php echo wp_kses_post( CFS()->get('location') ); ?>
+					</p>
 				</div>
 
 				<div class="event-entry-content container">
