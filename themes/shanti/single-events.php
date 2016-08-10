@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-
+        <header class="entry-header hero"></header>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -25,9 +25,7 @@ get_header(); ?>
 				</div>
 
 				<div class="event-entry-content container">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
+
 					<?php the_content(); ?>
 
 				</div><!-- .entry-content -->
