@@ -15,9 +15,7 @@ get_header(); ?>
 
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'large' ); ?>
-				<?php endif; ?>
+
 				<div class="event-post-container">
           <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
 					<p><?php echo wp_kses_post( CFS()->get('date') ); ?></p>
@@ -27,7 +25,9 @@ get_header(); ?>
 				</div>
 
 				<div class="event-entry-content container">
-
+					<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'medium' ); ?>
+					<?php endif; ?>
 					<?php the_content(); ?>
 
 				</div><!-- .entry-content -->
