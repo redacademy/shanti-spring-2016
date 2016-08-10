@@ -45,7 +45,7 @@ get_header(); ?>
   						$child_pages = get_pages($args); //returns an array of the child pages of the current page
   						foreach($child_pages as $post): setup_postdata($post); ?>
 
-  						<section class="alternating">
+  						<section class="alternating equal">
 
 								<div class="alt-image">
                   <?php the_post_thumbnail('large'); ?>

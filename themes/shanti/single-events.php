@@ -12,10 +12,12 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-        <header class="entry-header hero"></header>
+
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'large' ); ?>
+				<?php endif; ?>
 				<div class="event-post-container">
           <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
 					<p><?php echo wp_kses_post( CFS()->get('date') ); ?></p>
