@@ -6,24 +6,101 @@
   color: #fff;
   background-color: #d22785;
   text-align: center;
-}
-
-.bam-statement h2{
-  margin-top: -20px;
-}
-
-.alt-image-home {
+  padding: $base__space-unit 0;
   width: 100%;
+
+  h2 {
+    text-transform: uppercase;
+  }
 }
 
-.attachment-large{
-  width: 100%;
+.home .entry-content, .home .hentry {
+  margin: 0;
 }
 
-.alt-info-home{
+
+.homepage.who-we-are, .homepage.donate-now {
   position: relative;
-  margin-top: -400px;
-  width: 50%;
+  height: 20vh;
+  overflow: hidden;
+
+
+    @include media-q {
+      height: 30vh;
+    }
+
+    @include media-lg {
+      height: 40vh;
+    }
+  img {
+    position: absolute;
+    top: -50%;
+    width: 100%;
+  }
+
+  .wrapper {
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+}
+
+.homepage.why-uganda, .homepage.our-projects, .homepage.get-involved {
+  width: 30%;
+  margin: 1.5%;
+  float: left;
+  height: 20vh;
+  position: relative;
+  @include media-q {
+    height: 30vh;
+  }
+
+  @include media-lg {
+    height: 40vh;
+  }
+
+  img {
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .wrapper {
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+  }
+}
+
+.homepage.donate-now {
+  clear: both;
 }
 
 .home .entry-header::after {
@@ -96,45 +173,4 @@ h3 {
     }
   }
 
-}
-
-
-.alternating.who-we-are {
-
-  background: $color__brand-who-we-are;
-  h3 {
-    color: $color__text-tertiary;
-  }
-}
-
-.alternating.why-uganda {
-  background: $color__brand-why-uganda;
-
-  h3 {
-    color: $color__text-secondary;
-  }
-}
-
-.alternating.our-projects {
-  background: $color__brand-our-projects;
-
-  h3 {
-    color: $color__text-tertiary;
-  }
-}
-
-.alternating.get-involved {
-  background: $color__brand-get-involved;
-
-  h3 {
-    color: $color__text-secondary;
-  }
-}
-
-.alternating.donate-now {
-  background: $color__brand-who-donate;
-
-  h3 {
-    color: $color__text-tertiary;
-  }
 }

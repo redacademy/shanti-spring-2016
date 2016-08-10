@@ -28,7 +28,7 @@ get_header(); ?>
 
 	      <?php $gift_types = get_terms('action_types'); ?>
 	      <?php foreach( $gift_types as $gift): ?>
-	        <section class="alternating">
+	        <section class="alternating equal">
 	          <div class="alt-image">
 	            <?php $image_id = get_term_meta($gift->term_id, 'image', true);
 	                  $image_data = wp_get_attachment_image_src( $image_id, 'large');
