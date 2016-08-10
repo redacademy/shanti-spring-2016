@@ -26,10 +26,10 @@ get_header(); ?>
 						<div class="bam-statement">
 							<?php the_content(); ?></div>
 
-							<h3>Our Accomplishments</h3>
 
 						<section class="infographic">
 
+							<h3>Our Accomplishments</h3>
 							<ul>
 								<?php $infographic = CFS()->get('infographic'); //create an array of the infographic images
 										foreach($infographic as $pic):?>
@@ -74,7 +74,7 @@ get_header(); ?>
 					<?php the_post_thumbnail('large'); ?>
 
 						<a class="wrapper" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-					
+
 
 
 			</section>

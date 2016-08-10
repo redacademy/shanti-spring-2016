@@ -26,7 +26,7 @@ get_header(); ?>
         		<div class="entry-content">
 
 	            <div class="why-uganda text">
-	              <?php the_content(); ?>
+	              <?php echo wp_kses_post( CFS()->get('pull-quote')); ?>
 	            </div>
 
             	<section class="why-uganda infographic">
@@ -43,6 +43,10 @@ get_header(); ?>
             	<div class="why-uganda-footer">
 
             	</div>
+
+							<div class="why-uganda text">
+	              <?php the_content(); ?>
+	            </div>
 
         	</div><!-- .entry-content -->
         </article><!-- #post-## -->

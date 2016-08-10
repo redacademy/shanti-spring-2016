@@ -82,6 +82,7 @@
 
   .wrapper {
     position: absolute;
+    display: block;
     background: rgba(255,255,255,0.5);
     z-index: 2;
     top: 0;
@@ -112,9 +113,10 @@
 }
 
 .infographic {
-  background: rgba(255,255,255,0.7);
+  background: #f2f2f2;
   position: relative;
-  background-color: #f2f2f2;
+
+
 
   ul {
     display: flex;
@@ -126,7 +128,7 @@
     align-items: center;
 
     @include media-q {
-      background: #E3E3E3;
+
       padding: $base__space-unit;
     }
   }
@@ -162,15 +164,4 @@ h3 {
   text-transform: uppercase;
   color: $color__brand-dark;
   margin: 0;
-}
-
-.front-page-content {
-  border-top: solid lightgrey 25px;
-
-  .alternating h3 {
-    @include media-lg {
-      font-size: 1.9rem
-    }
-  }
-
 }

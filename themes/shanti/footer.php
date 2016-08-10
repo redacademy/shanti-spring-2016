@@ -14,7 +14,7 @@
 
 				<div class="recentPosts-content">
 
-					<h3><a href="blog">Recent Blog Posts</a></h3>
+					<h3><a href="blog">Recent Blog Post</a></h3>
 
 
 						<?php
@@ -52,10 +52,6 @@
 
 			<div class="subscribe">
 				<div class="subscribe-content">
-
-
-
-
 
 
 						<h3>Sign up to hear from us</h3>

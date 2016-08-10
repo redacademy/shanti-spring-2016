@@ -1,8 +1,8 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.blog-image{
-  width: 100%;
+.blog-post-alignment img{
+  border-radius: 50%;
 }
 
 .blog-post-alignment li{
@@ -48,7 +48,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  background:
               linear-gradient( $color__background_footer-recent, $color__background_footer-recent);
   width: 100%;
   }
@@ -145,7 +145,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    background:
                 linear-gradient( $color__background_footer-subscribe, $color__background_footer-subscribe);
     width: 100%;
   }
