@@ -26,7 +26,7 @@ get_header(); ?>
 
 				<div class="event-entry-content container">
 					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'medium' ); ?>
+						<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
 					<?php the_content(); ?>
 
