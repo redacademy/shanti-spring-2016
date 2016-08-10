@@ -43,7 +43,7 @@ get_header(); ?>
               </div>
 
               <div class="event-entry-content">
-                p	<?php the_excerpt(); ?>
+              	<?php the_excerpt(); ?>
 
 								<a href="<?php the_permalink(); ?>" class="discover-button">
                  	Discover More
