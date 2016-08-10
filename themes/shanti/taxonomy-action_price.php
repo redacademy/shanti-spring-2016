@@ -44,7 +44,7 @@ get_header(); ?>
 						</div>
 
 						<div class="alt-link">
-							<a href="<?php the_permalink(); ?>" class="cta buy">Buy</a>
+							<a href="<?php echo esc_url($link['url']); ?>" class="cta buy">Buy</a>
 						</div>
 
 					</div>
