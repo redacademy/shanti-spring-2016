@@ -32,7 +32,7 @@ get_header(); ?>
 								<?php if( CFS()->get('poster') ): ?>
 									<img src="<?php echo esc_url(CFS()->get('poster')); ?>" alt="Poster for this event. See below for details" />
                 <?php elseif ( has_post_thumbnail() ) : ?>
-                  <?php the_post_thumbnail( 'full' ); ?>
+        
                 <?php endif; ?>
               </div>
 

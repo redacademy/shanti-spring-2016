@@ -18,9 +18,7 @@ get_header(); ?>
 
 				<div class="event-post-container">
           <?php if (CFS()->get('excerpt')): ?>
-
-          <?php endif; ?><?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
-
+						<?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
 				<?php endif; if (CFS()->get('date')):?>
 					<p><?php echo wp_kses_post( CFS()->get('date') ); ?></p>
 				<?php endif; if ( CFS()->get('location')): ?>
