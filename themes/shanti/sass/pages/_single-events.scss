@@ -5,6 +5,8 @@
 
 .event-image{
   text-align: center;
+  max-height: 100vh;
+  margin-top: 2rem;
   @include media-lg {
     text-align: center;
   }
@@ -14,12 +16,11 @@
 
   background-color: $color__brand-why-uganda;
   text-align: center;
-  padding-top: .2rem;
-  padding-bottom: 2rem;
+  padding: 0.2rem 5%;
 
   @include media-lg {
-    padding-top: 2rem;
-    padding-top: 4rem;
+
+    padding: 4rem 15%;
   }
 }
 

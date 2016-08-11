@@ -14,9 +14,12 @@ get_header(); ?>
 
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php if(CFS()->get('poster')): ?>
-					<img src="<?php echo esc_url(CFS()->get('poster')); ?>" alt="Poster for this event. See below for details" />
-				<?php endif; ?>
+				<div class="event-image">
+					<?php if(CFS()->get('poster')): ?>
+						<img class=src="<?php echo esc_url(CFS()->get('poster')); ?>" alt="Poster for this event. See below for details" />
+					<?php endif; ?>
+				</div>
+
 				<div class="event-post-container">
           <?php if (CFS()->get('excerpt')): ?>
 						<?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
