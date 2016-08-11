@@ -17,15 +17,24 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<div class="event-post-container">
-          <?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
+          <?php if (CFS()->get('excerpt')): ?>
+
+          <?php endif; ?><?php echo wp_kses_post( CFS()->get('excerpt') ); ?>
+
+				<?php endif; if (CFS()->get('date')):?>
 					<p><?php echo wp_kses_post( CFS()->get('date') ); ?></p>
+				<?php endif; if ( CFS()->get('location')): ?>
+
 					<p>
 						<?php echo wp_kses_post( CFS()->get('location') ); ?>
 					</p>
+				<?php endif; ?>
 				</div>
 
 				<div class="event-entry-content container">
-
+					<?php if(CFS()->get('poster')): ?>
+						<img src="<?php echo esc_url(CFS()->get('poster')); ?>" alt="Poster for this event. See below for details" />
+					<?php endif; ?>
 					<?php the_content(); ?>
 
 				</div><!-- .entry-content -->
