@@ -12,7 +12,6 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-        <header class="entry-header hero"></header>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
