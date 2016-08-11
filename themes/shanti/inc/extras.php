@@ -29,13 +29,14 @@ function shanti_featured_image_header() {
 		$thumb_id = get_post_thumbnail_id();
 		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
 		$thumb_url = esc_url( $thumb_url_array[0] );
+
 	}
 
 	if( is_page_template('parentpage.php') ) {
 
 		$custom_css = ".entry-header.hero {
 				background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-				url('$thumb_url') no-repeat center center;
+				url('thumb_url') no-repeat center center;
 				background-size: cover;
 				-webkit-filter: grayscale(1);
 				filter: grayscale(1);

@@ -12,11 +12,15 @@
 
 
 	</header><!-- .entry-header -->
-	<div class="feature-color sub-header">
 
-		<?php echo wp_kses_post( CFS()->get('excerpt') );  ?>
+	<?php if (CFS()->get('excerpt')): ?>
+		<div class="feature-color sub-header">
 
-	</div>
+			<?php echo wp_kses_post( CFS()->get('excerpt') );  ?>
+
+		</div>
+	<?php endif; ?>
+
 
 	<div class="container">
 		<?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
