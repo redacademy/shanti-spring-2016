@@ -16,7 +16,7 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="event-image">
 					<?php if(CFS()->get('poster')): ?>
-						<img class=src="<?php echo esc_url(CFS()->get('poster')); ?>" alt="Poster for this event. See below for details" />
+						<img src="<?php echo esc_url(CFS()->get('poster')); ?>" alt="Poster for this event. See below for details" />
 					<?php endif; ?>
 				</div>
 
