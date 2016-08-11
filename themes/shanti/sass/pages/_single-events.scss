@@ -5,8 +5,12 @@
 
 .event-image{
   text-align: center;
-  max-height: 100vh;
-  margin-top: 2rem;
+
+  margin-top: 11vh;
+
+  img {
+    max-height: 89vh;
+  }
   @include media-lg {
     text-align: center;
   }
